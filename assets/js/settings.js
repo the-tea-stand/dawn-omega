@@ -6,7 +6,7 @@
 // It can also just be a regular string, e.g. "This is a string"
 
 
-const description = "<span>We serve free tea to build soldiarity<br/>and community around Brooklyn.<br/><br/>🍵 4,166 cups and counting 🍵</span>"
+const description = "<span>We serve free tea to build soldiarity<br/>and community around Brooklyn.<br/><br/>4,166 cups and counting 🍵</span>"
 
 
 const articlesTitle = "Monthly Newsletters"
