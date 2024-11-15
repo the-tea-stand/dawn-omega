@@ -6,8 +6,11 @@
 // It can also just be a regular string, e.g. "This is a string"
 
 
-const description = "The Tea Stand serves free tea to build community. We've served 4,003 free cups and counting!"
-const articlesTitle = "Recaps"
+const description = "<span>We serve free tea to build soldiarity and community around Brooklyn.<br/><br/>We've served 4,166 cups and counting!"
+</span>""
+
+
+const articlesTitle = "Monthly Newsletters"
 
 // Modality cards on homepage
 //
