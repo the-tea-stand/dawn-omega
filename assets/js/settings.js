@@ -7,7 +7,7 @@
 
 
 const description = "<span>We serve free tea to build soldiarity and community around Brooklyn.<br/><br/>We've served 4,166 cups and counting!"
-</span>""
+</span>"
 
 
 const articlesTitle = "Monthly Newsletters"
