@@ -16,7 +16,6 @@
     margin: 0 auto;
  }
 
-
  .email-input {
     margin-bottom: 3rem;
  }
@@ -33,7 +32,11 @@
     display: none;
  }
 
-
+.signup-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 
 .membership-container {
     padding: 0px 2rem;

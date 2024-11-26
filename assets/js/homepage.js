@@ -1,5 +1,5 @@
 
-const populateText = () => {
+const populateHomepageText = () => {
     console.debug('Setting homepage text...')
     if (description && description.length) {
         const section = document.getElementById('cover-description')
@@ -9,9 +9,10 @@ const populateText = () => {
         const section = document.getElementById('articles-section-title')
         section.innerHTML += articlesTitle
     }
+    // TODO: add subtitles to programming and monthly newsletters
 }
 
-const populateCards = () => {
+const populateHomepageCards = () => {
     const setSectionAttributes = () => {
         console.debug('Setting section attributes...')
         const section = document.getElementById('card-container')
@@ -44,5 +45,5 @@ const populateCards = () => {
     }
 }
 
-populateText()
-populateCards()
+populateHomepageText()
+populateHomepageCards()

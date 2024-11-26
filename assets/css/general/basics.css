@@ -48,3 +48,7 @@ h6 {
     font-weight: 800;
     color: var(--darker-gray-color);
 }
+
+.link {
+    text-decoration: underline;
+}

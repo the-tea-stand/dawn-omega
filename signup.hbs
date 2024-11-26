@@ -19,6 +19,9 @@
                     </label>
                 <div id="error" class="error-container" data-members-error></div>
                 </div>
+                <div id="signup-description" class="signup-description">
+
+                </div>
             {{else }}
                 <h1>Choose a plan</h1>
                 <span id="signup-name" style="display: none;"></span>
@@ -29,6 +32,7 @@
                 {{/foreach}}
             {{/unless}}
             </div>
+            {{!-- (TODO) Add membership description paragraphs --}}
 
             <section class="membership-plans">
                 {{#get "tiers" include="id,name,description,monthly_price,benefits" limit="all" as |tiers|}}
@@ -121,6 +125,9 @@
         {{/if}}
     </div>
     </main>
+
+    <script src="{{asset 'js/settings.js'}}"></script>
+    <script src="{{asset 'js/signup.js'}}"></script>
 
     <script type="text/javascript">
         function connectMutationObserver() {
