@@ -33,11 +33,20 @@
     margin: 0 0.5rem;
 }
 
+.align-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
 .card-section-title {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
     flex-direction: column;
     text-align: center;
     width: 100%;
@@ -46,14 +55,15 @@
 .articles-section-title-container {
     display: flex;
     justify-content: center;
-    margin-top: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+    
     flex-direction: column;
     width: 100%;
     text-align: center;
 }
 
 .card-container {
-    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
