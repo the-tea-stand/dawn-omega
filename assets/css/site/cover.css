@@ -38,12 +38,18 @@
     justify-content: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
 }
 
 .articles-section-title-container {
     display: flex;
     justify-content: center;
     margin-top: 6rem;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
 }
 
 .card-container {

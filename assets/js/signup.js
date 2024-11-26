@@ -5,7 +5,6 @@ const populateSignupText = () => {
         const section = document.getElementById('signup-description')
         section.innerHTML += signupDescription
     }
-    // TODO: add subtitles to programming and monthly newsletters
 }
 
 populateSignupText()    

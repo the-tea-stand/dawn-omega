@@ -10,6 +10,10 @@ const description = "<span>We serve free tea to build solidarity<br/>and communi
 
 const articlesTitle = "Monthly Newsletters"
 
+const programmingSubtitle = ""
+
+const newsletterSubtitle = ""
+
 // Modality cards on homepage
 //
 // Notes:
