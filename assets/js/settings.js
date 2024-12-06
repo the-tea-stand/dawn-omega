@@ -64,7 +64,9 @@ const cards = [
 
 const signupDescription = `
 <div>
-The Membership Program sustains The Tea Stand: it enables us to host free events, pay for bike tune-ups, and serve free tea for all forever.
+The Tea Stand is my full-time work and only source of income.
+In order to keep The Tea Stand running as an anti-capitalist, community-oriented project, we created this membership program.
+It enables us to host free events, serve free tea, and create freeing spaces.
 </div>
 <div>
 Explore the tiers below, featuring perks like seasonal 
