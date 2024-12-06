@@ -64,14 +64,14 @@ const cards = [
 
 const signupDescription = `
 <div>
-The Tea Stand is my full-time work and only source of income.
-In order to keep The Tea Stand running as an anti-capitalist, community-oriented project, we created this membership program.
+The Tea Stand is my full-time work and only source of income.<br/>
+In order to keep The Tea Stand running as an anti-capitalist, community-oriented project, we created this membership program.<br/>
 It enables us to host free events, serve free tea, and create freeing spaces.
 </div>
 <div>
 Explore the tiers below, featuring perks like seasonal 
 <a href='/the-tea-box' class='link'>Tea Boxes</a>, 
-issues of our zine <a href='/bocha' class='link'>bōcha</a>, discounts at <a href='/discounts' class='link'>small tea businesses</a>, etc.
+issues of our zine <a href='/bocha' class='link'>bōcha</a>, discounts at <a href='/discounts' class='link'>local small businesses</a>, etc.
 </div>
 <div>
 Join for as little as $1/month!
