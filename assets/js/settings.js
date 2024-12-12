@@ -65,14 +65,12 @@ const cards = [
 const signupDescription = `
 <div>
 The Tea Stand is 
-<a href='/privilege-statement' class='link'>my</a>, 
+<a href='/privilege-statement' class='link'>my</a> 
 full-time work and only source of income.
 </div>
 <div>
-In order to keep The Tea Stand running as an anti-capitalist, community-oriented project, we created this membership program.
-</div>
-<div>
-It enables us to host free events, serve free tea, and create freeing spaces for all.
+In order to keep The Tea Stand running as an anti-capitalist, community-led project, we created this membership program:
+it enables us to host free events, serve free tea, and create freeing spaces for all.
 </div>
 <div>
 Explore the tiers below, featuring perks like seasonal 
