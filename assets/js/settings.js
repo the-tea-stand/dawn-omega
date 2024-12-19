@@ -65,7 +65,7 @@ const cards = [
 const signupDescription = `
 <div>
 The Tea Stand is 
-<a href='/privilege-statement' class='link'>my</a> 
+<a href='/a-note-from-miles' class='link'>my</a> 
 full-time work and only source of income.
 </div>
 <div>
