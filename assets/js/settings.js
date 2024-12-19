@@ -12,7 +12,7 @@ const articlesTitle = "Our Newsletter"
 
 const programmingSubtitle = "serving free tea at parks, food distributions, and events we host"
 
-const newsletterSubtitle = "monthly reflections on what it's like to run this initiative"
+const newsletterSubtitle = "monthly reflections on what it's like to run The Tea Stand"
 
 // Modality cards on homepage
 //
