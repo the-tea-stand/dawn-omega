@@ -8,11 +8,11 @@
 
 const description = "<span>We serve free tea to build solidarity<br/>and community around Brooklyn.<br/><br/>To date, we've served 4,166<br/>free cups and counting 🍵</span>"
 
-const articlesTitle = "Monthly Newsletters"
+const articlesTitle = "Our Newsletter"
 
-const programmingSubtitle = ""
+const programmingSubtitle = "serving free tea at parks, food distributions, and events we host"
 
-const newsletterSubtitle = ""
+const newsletterSubtitle = "monthly reflections on what it's like to run this initiative"
 
 // Modality cards on homepage
 //
