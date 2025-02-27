@@ -66,16 +66,16 @@ const signupDescription = `
 <div>
 The Tea Stand is 
 <a href='/a-note-from-miles' class='link'>my</a> 
-full-time work and only source of income.
+full-time work and main source of income.
 </div>
 <div>
-In order to keep The Tea Stand running as an anti-capitalist, community-led project, we created this membership program:
-it enables us to host free events, serve free tea, and create freeing spaces for all.
+We created this membership program with the goal of keeping The Tea Stand running as an anti-capitalist, community-led project. Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, serve free tea, and cultivate neighborhood trust.
 </div>
 <div>
-Explore the tiers below, featuring perks like seasonal 
-<a href='/the-tea-box' class='link'>Tea Boxes</a>, 
-issues of our zine <a href='/bocha' class='link'>bōcha</a>, discounts at <a href='/discounts' class='link'>local small businesses</a>, etc.
+We offer perks which encourage community participation and alignment with the natural world -- they are not meant to equal the dollar value of your contribtions, but rather are offered as an act of reciprocity for your support.
+</div>
+<div>
+More info about select perks: seasonal <a href='/the-tea-box' class='link'>Tea Boxes</a>, issues of <a href='/bocha' class='link'>our zine bōcha</a>, and <a href='/discounts' class='link'>discounts</a> at local businesses.
 </div>
 <div>
 Join for as little as $1/month!
