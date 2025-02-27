@@ -66,7 +66,7 @@ const signupDescription = `
 <div>
 The Tea Stand is 
 <a href='/a-note-from-miles' class='link'>my</a> 
-full-time work and main source of income.
+full-time work and is supported by many volunteers and comrades.
 </div>
 <div>
 We created this membership program with the goal of sustaining The Tea Stand as an anti-capitalist, community-led project. Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, serve free tea, and cultivate neighborhood trust.
