@@ -69,15 +69,12 @@ The Tea Stand is
 full-time work and is supported by many volunteers, neighbors, and comrades.
 </div>
 <div>
-We created this membership program with the goal of sustaining The Tea Stand as an anti-capitalist, community-led project. Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, serve free tea, and cultivate neighborhood trust.
+We created this membership program to sustain The Tea Stand as an anti-capitalist, community-led project. Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, serve free tea, and cultivate neighborhood trust.
 </div>
 <div>
 We offer perks which encourage community participation and alignment with the natural world — they are not meant to equal the dollar value of your contributions, but rather are offered as an act of reciprocity for your support.
 </div>
 <div>
 More info about select perks:<br><a href='/discounts' class='link'>Discounts</a>, <a href='/town-halls' class='link'>Town Halls</a>, <a href='/the-tea-box' class='link'>Tea Boxes</a>, and <a href='/bocha' class='link'>bōcha (our zine)</a>.
-</div>
-<div>
-Join for as little as $1/month!
 </div>
 `
