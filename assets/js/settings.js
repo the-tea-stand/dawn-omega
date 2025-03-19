@@ -70,6 +70,7 @@ full-time work and is supported by neighbors & comrades.
 </div>
 <div>
 By signing up for our membership program, you sustain The Tea Stand as an anti-capitalist project. In exchange, you receive perks which encourage community participation and alignment with the natural world <a href='/member-perks' class='link'>(more info here)</a>. 
+</div>
 <div>
 Perks are offered as an act of reciprocity and are not meant to equal the dollar value of contributions!
 </div>
