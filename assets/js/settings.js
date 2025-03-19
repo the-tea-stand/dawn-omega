@@ -66,15 +66,15 @@ const signupDescription = `
 <div>
 The Tea Stand is 
 <a href='/a-note-from-miles' class='link'>my</a> 
-full-time work and is supported by many volunteers and comrades.
+full-time work and is supported by neighbors and comrades.
 </div>
 <div>
-Members sustain The Tea Stand as an anti-caplist project. We offer perks to members which encourage community participation and alignment with the natural world. Perks are offered as an act of reciprocity and are not meant to equal the dollar value of contributions!
+Our members sustain The Tea Stand as an anti-capitalist project and receive perks which encourage community participation and alignment with the natural world, such as <br><a href='/discounts' class='link'>🎟️ Discounts</a>, <a href='/town-halls' class='link'>🏠 Town Halls</a>, <a href='/the-tea-box' class='link'>📦 Tea Boxes</a>, and <a href='/bocha' class='link'>📗 bōcha (our zine)</a>. 
+</div>
+<div>
+Perks are offered as an act of reciprocity and are not meant to equal the dollar value of contributions!
 </div>
 <div>
 Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, serve free tea, and create spaces to practice stillness and trust.
 </div>
-<div>
-More info about select perks:<br><a href='/discounts' class='link'>Discounts</a>, <a href='/town-halls' class='link'>Town Halls</a>, <a href='/the-tea-box' class='link'>Tea Boxes</a>, and <a href='/bocha' class='link'>bōcha (our zine)</a>.
-</div>
-`
+
