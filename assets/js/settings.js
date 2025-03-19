@@ -77,4 +77,4 @@ Perks are offered as an act of reciprocity and are not meant to equal the dollar
 <div>
 Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, serve free tea, and create spaces to practice stillness and trust.
 </div>
-
+`
