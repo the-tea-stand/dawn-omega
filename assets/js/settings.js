@@ -56,6 +56,16 @@ const cards = [
         url: "https://www.theteastand.org/steeped-in-sound/",
         image: "https://github.com/the-tea-stand/dawn-omega/blob/main/assets/images/steeped.jpeg?raw=true"
     },
+    {
+        title: "🪷 Silent Sanctuary",
+        url: "https://www.theteastand.org/silent-sanctuary/",
+        image: "https://github.com/the-tea-stand/dawn-omega/blob/main/assets/images/silent-sanctuary.jpg?raw=true"
+    },
+    {
+        title: "🌀 Perpetual Brew",
+        url: "https://www.theteastand.org/perpetual-brew/",
+        image: "https://github.com/the-tea-stand/dawn-omega/blob/main/assets/images/perpetual-brew.jpg?raw=true"
+    },
 ]
 
 // Signup Page Text
