@@ -14,7 +14,7 @@ const programmingSubtitle =
   "we serve free tea at parks, food distributions, and host events. check out <a href='/calendar' class='link'>our calendar</a>!";
 
 const newsletterSubtitle =
-  "this is where we share volunteer opportunities, events, and reflections! it's free :)";
+  "once a month, we share volunteer opportunities, events, and reflections! it's free :)";
 
 // Modality cards on homepage
 //
