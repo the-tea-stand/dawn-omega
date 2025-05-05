@@ -26,7 +26,6 @@
 
 .cover-cta {
     display: flex;
-    margin-top: 2rem;
 }
 
 .cover-cta .button {
@@ -115,4 +114,12 @@
 }
 .margin-right {
     margin-right: auto;
+}
+
+.mb-4 {
+  margin-bottom: 8px;
+}
+
+.italic {
+    font-style: italic;
 }
