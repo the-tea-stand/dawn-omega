@@ -44,17 +44,30 @@
 .card-section-title {
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
     flex-direction: column;
     text-align: center;
     width: 100%;
 }
 
+.teacup-break {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
 .articles-section-title-container {
     display: flex;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
     flex-direction: column;
     width: 100%;
@@ -125,6 +138,8 @@
 
 .cover-cta-container {
     margin-bottom: -32px;
+    z-index: 3;
+    position: relative;
 }
 
 header {
