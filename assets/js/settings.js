@@ -6,15 +6,15 @@
 // It can also just be a regular string, e.g. "This is a string"
 
 const description =
-  "<span>We serve free tea to build trust<br/>and community around Brooklyn.<br/><br/>To date, we've served 5,468<br/>free cups and counting 🍵</span>";
+  "<span>We serve free tea to build trust<br/>and community around Brooklyn.<br/><br/>To date, we've served 6,809<br/>free cups and counting!</span>";
 
 const articlesTitle = "Our Newsletter";
 
 const programmingSubtitle =
-  "serving free tea at parks, food distributions, and events we host";
+  "we serve free tea at parks, food distributions, and host events. check out <a href='/calendar' class='link'>our calendar</a>!";
 
 const newsletterSubtitle =
-  "monthly reflections on what it's like to run The Tea Stand";
+  "this is where we share volunteer opportunities, events, and reflections! it's free :)";
 
 // Modality cards on homepage
 //
