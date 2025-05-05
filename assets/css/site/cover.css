@@ -54,9 +54,8 @@
 .articles-section-title-container {
     display: flex;
     justify-content: center;
-    padding-top: 6rem;
-    padding-bottom: 1rem;
-    
+    margin-top: 6rem;
+    margin-bottom: 2rem;
     flex-direction: column;
     width: 100%;
     text-align: center;
@@ -122,4 +121,8 @@
 
 .italic {
     font-style: italic;
+}
+
+.cover-cta-container {
+    margin-bottom: -32px;
 }

@@ -80,6 +80,7 @@ const cards = [
 //
 // You can use template literals (with `ticks`) to make multiline strings.
 
+// Description below signup and above tiers
 const signupDescription = `
 <div>
 The Tea Stand is 
@@ -96,3 +97,14 @@ Perks are offered as an act of reciprocity and are not meant to equal the dollar
 Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, serve free tea, and create spaces of stillness and trust.
 </div>
 `;
+
+// Description below tiers
+
+// const membersDescription = `
+// <div>
+// Thank you again for your support of this community, and we hope to see you soon!
+// </div>
+// <div>
+// Adin, Miles, Ben, Alex, Jean Paul, Nat, Val, Joyce, Darren, Paula, Jolene, Darren, Lydia.
+// </div>
+// `;
