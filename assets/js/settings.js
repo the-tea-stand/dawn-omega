@@ -85,7 +85,7 @@ const signupDescription = `
 <div>
 The Tea Stand is 
 <a href='/a-note-from-miles' class='link'>my</a> 
-full-time work and is supported by our community of neighbors & comrades. By signing up for our membership program, you sustain The Tea Stand as a community-funded, anti-capitalist project.
+full-time work and is supported by neighbors & comrades. By signing up for our membership program, you sustain The Tea Stand as an anti-capitalist, community-funded project.
 </div>
 <div>
 We offer <a href='/member-perks' class='link'>several perks</a> which encourage community participation and seasonal alignment. Perks are offered as an act of reciprocity and are not meant to equal the dollar value of contributions!
