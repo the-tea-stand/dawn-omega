@@ -11,7 +11,7 @@ const description =
 const articlesTitle = "Our Newsletter";
 
 const programmingSubtitle =
-  "we serve free tea at parks, food distributions, and host events. check out <a href='/calendar' class='link'>our calendar</a>!";
+  "we serve free tea at parks, food distributions, and events. check out <a href='/calendar' class='link'>our calendar</a>!";
 
 const newsletterSubtitle =
   "once a month, we share volunteer opportunities, events, and reflections! it's free :)";
@@ -85,16 +85,13 @@ const signupDescription = `
 <div>
 The Tea Stand is 
 <a href='/a-note-from-miles' class='link'>my</a> 
-full-time work and is supported by neighbors & comrades.
+full-time work and is supported by our community of neighbors & comrades. By signing up for our membership program, you sustain The Tea Stand as an anti-capitalist, community-funded project.
 </div>
 <div>
-By signing up for our membership program, you sustain The Tea Stand as an anti-capitalist project. In exchange, you receive perks which encourage community participation and alignment with the natural world <a href='/member-perks' class='link'>(more info here)</a>. 
+We offer <a href='/member-perks' class='link'>several perks</a> which encourage community participation and seasonal alignment. Perks are offered as an act of reciprocity and are not meant to equal the dollar value of contributions!
 </div>
 <div>
-Perks are offered as an act of reciprocity and are not meant to equal the dollar value of contributions!
-</div>
-<div>
-Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, serve free tea, and create spaces of stillness and trust.
+Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, serve free tea, and create accessible spaces for connection.
 </div>
 `;
 
