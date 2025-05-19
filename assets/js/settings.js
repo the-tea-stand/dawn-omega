@@ -97,11 +97,11 @@ Thank you for enabling us to host <a href='/calendar' class='link'>free events</
 
 // Description below tiers
 
-// const membersDescription = `
-// <div>
-// Thank you again for your support of this community, and we hope to see you soon!
-// </div>
-// <div>
-// Adin, Miles, Ben, Alex, Jean Paul, Nat, Val, Joyce, Darren, Paula, Jolene, Darren, Lydia.
-// </div>
-// `;
+const membersDescription = `
+<div>
+Thank you again for your support of this community, and we hope to see you soon!
+</div>
+<div>
+[names coming soon]
+</div>
+`;
