@@ -42,37 +42,37 @@ const cards = [
     title: "⛩️ Popups",
     url: "https://www.theteastand.org/popups/",
     image:
-      "https://github.com/the-tea-stand/dawn-omega/blob/main/assets/images/popup.JPG?raw=true",
+      "https://i.postimg.cc/k59bH6XL/popup.png",
   },
   {
     title: "🥬 Distros",
     url: "https://www.theteastand.org/distros/",
     image:
-      "https://github.com/the-tea-stand/dawn-omega/blob/main/assets/images/distro.jpg?raw=true",
+      "https://i.postimg.cc/KvM3vr1d/distro.png",
   },
   {
     title: "🫖 Tea Talks",
     url: "https://www.theteastand.org/tea-talks/",
     image:
-      "https://github.com/the-tea-stand/dawn-omega/blob/main/assets/images/tea-talk.JPG?raw=true",
+      "https://i.postimg.cc/RFpJqgQz/tea-talk.png",
   },
   {
     title: "📀 Steeped in Sound",
     url: "https://www.theteastand.org/steeped-in-sound/",
     image:
-      "https://i.postimg.cc/sXhBq6cw/steeped.jpg",
+      "https://i.postimg.cc/zv9LF3ct/steeped.png",
   },
   {
     title: "🪷 Silent Sanctuary",
     url: "https://www.theteastand.org/silent-sanctuary/",
     image:
-      "https://github.com/the-tea-stand/dawn-omega/blob/main/assets/images/silent-sanctuary.jpg?raw=true",
+      "https://i.postimg.cc/5yHYz8nQ/silent-sanctuary.png",
   },
   {
     title: "🌀 Perpetual Brew",
     url: "https://www.theteastand.org/perpetual-brew/",
     image:
-      "https://www.theteastand.org/steeped-in-sound/",
+      "https://i.postimg.cc/tg5xGqsJ/perpetual-brew.png",
   },
 ];
 
