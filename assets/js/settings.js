@@ -72,7 +72,7 @@ const cards = [
     title: "🌀 Perpetual Brew",
     url: "https://www.theteastand.org/perpetual-brew/",
     image:
-      "https://github.com/the-tea-stand/dawn-omega/blob/main/assets/images/perpetual-brew.jpg?raw=true",
+      "https://www.theteastand.org/steeped-in-sound/",
   },
 ];
 
