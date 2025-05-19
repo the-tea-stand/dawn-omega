@@ -60,7 +60,7 @@ const cards = [
     title: "📀 Steeped in Sound",
     url: "https://www.theteastand.org/steeped-in-sound/",
     image:
-      "https://github.com/the-tea-stand/dawn-omega/blob/main/assets/images/steeped.jpeg?raw=true",
+      "https://i.postimg.cc/sXhBq6cw/steeped.jpg",
   },
   {
     title: "🪷 Silent Sanctuary",
