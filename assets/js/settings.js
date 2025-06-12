@@ -54,7 +54,7 @@ const cards = [
     title: "🫖 Tea Talks",
     url: "https://www.theteastand.org/tea-talks/",
     image:
-      "https://i.postimg.cc/RFpJqgQz/tea-talk.png",
+      "https://i.postimg.cc/8c0FrX8v/DSCF0837.jpg",
   },
   {
     title: "📀 Steeped in Sound",
