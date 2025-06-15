@@ -99,9 +99,9 @@ Thank you for enabling us to host <a href='/calendar' class='link'>free events</
 
 const membersDescription = `
 <div>
-Thank you again for your support of this community, and we hope to see you soon!
+We are so grateful to all of our supporters:
 </div>
 <div>
-[names coming soon]
+Shamile Aldossary, Eric Alvarez, Sam Aberbuch, Ben Averbuch, Tim Bannister, Ziggy Bee, Alex Bender, Nat Berman, Micah Bernat, Mat Bibik, Veronica Blackwell, Josie Bradshaw, Autumn Brown, Peter Camardo, Jennifer Calandra, Carmen, Tami Chaize, Kristen Chen, Jac Clayton, Clare Cullinan, Sabar Dasgupta, Kaitlin Deveau, Nick Deveau, Clay Devlin, Hugh Ferguson, Eli Goldman, Eliana Grosof, Emma Gubitz, Emma Hancock, Caroline Hanlon, Dewi Harjanto, Sebastian Hodge, Wilson Jacobs, JW, Divisha Khandelwal, Izzie Kirsch, Kenny Kirsch, Daniela Kotovsky, Ariel Kovlakas, Devika Kumar, Serena Lakhiani, Darren Lee, Tori Lee, Sophia Livecchi, Charlotte McCune, Mark McGovern, Jim Moore, Naqiya Motiwalla, Mae Nagusky, Stephen New, Isa Nicdao, Michelle Nip, Zachary Paul, Addy Pedro, Noel Peng, Momo Ramstedt, Elliot Richardson, Noah Sai, Jada Shannon, Juniper Sokolov, Juliet Shen, Peter Steele, Janice Steele, Jean Paul Torre, Finn Trondson, Adin Vashi, Edmund White, Val Yang, Josh You
 </div>
 `;
