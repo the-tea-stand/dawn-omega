@@ -1,3 +1,7 @@
+// Link to background color for whole site:
+// https://github.com/the-tea-stand/dawn-omega/blob/9db30bdf203f01a65d3431a895821bc13187042f/assets/css/site/cover.css#L145-L151
+
+
 // Homepage text
 //
 // Notes:
