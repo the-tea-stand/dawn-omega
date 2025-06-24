@@ -89,13 +89,12 @@ const signupDescription = `
 <div>
 The Tea Stand is an anti-capitalist, community-funded project which serves free tea to create spaces for local connection. It is 
 <a href='/a-note-from-miles' class='link'>my</a> 
-full-time work and is supported by neighbors & comrades.
-By signing up for our membership program, you sustain The Tea Stand as an anti-capitalist, community-funded project.
+full-time work and is supported by neighbors & comrades like you :)
 </div>
 <div>
-Becoming a member is the best way to sustain The Tea Stand. You'll also receive 
-<a href='/member-perks' class='link'>several perks</a> (see below)
-which encourage community participation and seasonal, sustainable living.
+Members receive <a href='/member-perks' class='link'>several perks</a> (see below) in exchange for financial support.
+All perks encourage community participation and sustainable living and are not meant to equal the dollar value of your contributions.
+Becoming a member is the best way to sustain The Tea Stand -- you'll also receive 
 </div>
 <div>
 Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, serve free tea, and create accessible spaces for connection.
