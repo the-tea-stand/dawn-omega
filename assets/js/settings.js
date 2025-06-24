@@ -92,12 +92,11 @@ The Tea Stand is an anti-capitalist, community-funded project which serves free 
 full-time work and is supported by neighbors & comrades like you :)
 </div>
 <div>
-Members receive <a href='/member-perks' class='link'>several perks</a> (see below) in exchange for financial support.
-All perks encourage community participation and sustainable living and are not meant to equal the dollar value of your contributions.
-Becoming a member is the best way to sustain The Tea Stand -- you'll also receive 
+Members receive <a href='/member-perks' class='link'>several perks</a> (like discounts, zines, & teaware) in exchange for their support.
+All our perks are meant to encourage community participation and sustainable living.
 </div>
 <div>
-Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, serve free tea, and create accessible spaces for connection.
+Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, envision a post-capitalist world, and serve FREE TEA FOR ALL!.
 </div>
 `;
 
