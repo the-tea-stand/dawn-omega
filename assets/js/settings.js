@@ -96,7 +96,7 @@ Members receive <a href='/member-perks' class='link'>several perks</a> (like dis
 All our perks are meant to encourage community participation and sustainable living.
 </div>
 <div>
-Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, envision a post-capitalist world, and serve FREE TEA FOR ALL!.
+Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, work toward a post-capitalist world, and serve FREE TEA FOR ALL!
 </div>
 `;
 
