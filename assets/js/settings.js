@@ -93,7 +93,7 @@ full-time work and is supported by neighbors & comrades like you :)
 </div>
 <div>
 Members receive <a href='/member-perks' class='link'>several perks</a> (like discounts, zines, & teaware) in exchange for their support.
-All our perks are meant to encourage community participation and sustainable living.
+All perks are meant to encourage community participation and sustainable living.
 </div>
 <div>
 Thank you for enabling us to host <a href='/calendar' class='link'>free events</a>, work toward a post-capitalist world, and serve FREE TEA FOR ALL!
