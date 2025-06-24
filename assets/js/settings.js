@@ -87,7 +87,7 @@ const cards = [
 // Description below signup and above tiers
 const signupDescription = `
 <div>
-The Tea Stand is an anti-capitalist, community-funded project which serves free tea to create spaces for local connection. It is 
+The Tea Stand is a community-funded project which serves free tea to create spaces for local connection. It is 
 <a href='/a-note-from-miles' class='link'>my</a> 
 full-time work and is supported by neighbors & comrades like you :)
 </div>
