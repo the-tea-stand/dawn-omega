@@ -193,15 +193,7 @@
             document.getElementById("Big Steeper-payment-button").addEventListener("click", () => getStripeLink(99, false))
         }
 
-        function redirectMembers() {
-            const node = document.getElementById('membership-paid')
-            if (node && node.innerHTML === 'true') {
-                document.location = '/member-perks'
-            }
-        }
-
         document.addEventListener("DOMContentLoaded", function () {
-            redirectMembers()
             addClickHandlers()
             connectMutationObserver()
         });
