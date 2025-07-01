@@ -11,6 +11,10 @@
      font-weight: 500;
  }
 
+ .choose-plan-header {
+    margin-bottom: 1rem;
+ }
+
  .input-container {
     max-width: 400px;
     margin: 0 auto;
