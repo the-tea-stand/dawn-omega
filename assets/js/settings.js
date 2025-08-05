@@ -102,7 +102,10 @@ Thank you for enabling us to host free events, work toward a post-capitalist wor
 
 const membersDescription = `
 <div>
-For more info about perks, <a href='/member-perks' class='link'>click here</a>.
+<b>For more info about perks, <a href='/member-perks' class='link'>click here</a></b>.
+</div>
+<div>
+🍵
 </div>
 <div>
 <b>To gift a membership:</b> simply sign up with your own info and reply to your welcome email with the recipient's info.
