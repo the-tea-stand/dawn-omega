@@ -87,13 +87,11 @@ const cards = [
 // Description below signup and above tiers
 const signupDescription = `
 <div>
-The Tea Stand is a community-funded project which serves free tea to create spaces for local connection. It is 
-<a href='/a-note-from-miles' class='link'>my</a> 
-full-time work and is supported by neighbors & comrades like you :)
+The Tea Stand is a community project which serves free tea to create spaces for local connection. It is 
+<a href='/a-note-from-miles' class='link'>my</a> full-time work and is sustained by neighbors & comrades like you :)
 </div>
 <div>
-Members receive <a href='/member-perks' class='link'>several perks</a> (like discounts, zines, & teaware) in exchange for their support.
-All perks encourage community participation and sustainable living.
+Members receive several perks in exchange for their support. All perks encourage community participation and sustainable living.
 </div>
 <div>
 Thank you for enabling us to host free events, work toward a post-capitalist world, and serve FREE TEA FOR ALL!
@@ -103,6 +101,9 @@ Thank you for enabling us to host free events, work toward a post-capitalist wor
 // Description below tiers
 
 const membersDescription = `
+<div>
+For more details about the perks, <a href='/member-perks' class='link'>click here</a>.
+</div>
 <div>
 <b>To gift a membership:</b> simply sign up with your own info and reply to your welcome email with the recipient's info.
 </div>
