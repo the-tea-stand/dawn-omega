@@ -104,11 +104,13 @@ Thank you for enabling us to host <a href='/calendar' class='link'>free events</
 
 const membersDescription = `
 <div>
-To gift a membership, simply sign up with your own info and reply to your welcome email with the recipient's info.
+<b>To gift a membership:</b> simply sign up with your own info and reply to your welcome email with the recipient's info.
 </div>
 <div>
-For those outside the US: due to high shipping prices, we cannot offer the same perks for Steepers or Big Steepers, but we'd love to work something out. Alternatives include increasing your contribution amount OR less frequent shipments. Sign up and we can discuss, or reach out to theteastandnyc@gmail.com.
+<b>For those outside the US:</b> due to high shipping prices, we cannot offer the same perks for Steepers or Big Steepers. Alternatives include increasing your contribution amount OR less frequent shipments. Reach out to theteastandnyc@gmail.com and we'll work something out :)
 </div>
+<br>
+<br>
 <div>
 We are so grateful to all of our supporters:
 </div>
