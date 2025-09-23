@@ -1,3 +1,4 @@
+# Routes must also be added to content/settings/routes.yaml
 routes:
   /signup/: signup
   /signup-success/: signup-success
