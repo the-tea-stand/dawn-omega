@@ -1,6 +1,7 @@
 routes:
   /signup/: signup
   /signup-success/: signup-success
+  /events/: events
 
 collections:
   /:
