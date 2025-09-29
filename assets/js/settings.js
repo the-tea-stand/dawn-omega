@@ -88,7 +88,7 @@ const cards = [
 const signupDescription = `
 <div>
 The Tea Stand is a community project which serves free tea to create spaces for local connection. It is 
-<a href='/a-note-from-miles' class='link'>my</a> full-time work and it's sustained by neighbors & comrades like you :)
+<b><a href='/a-note-from-miles' class='link'>my</a>/b> full-time work and it's sustained by neighbors & comrades like you :)
 </div>
 <div>
 Members receive <b><a href='/member-perks' class='link'>several perks</a></b> in exchange for their support. All perks encourage community participation and sustainable living.
@@ -115,3 +115,5 @@ We are so grateful to all of our supporters:
 </div>
 <div>
 Moustafa Abdelaziz, Sam Aberbuch, Robin Achtstetter, Shamile Aldossary, Eric Alvarez, Jade Ammeen, Arlene Arevalo, Maria Paula Arriaga, Arlou Arteta, Ben Averbuch, Tim Bannister, Ziggy Bee, Alex Bender, Nat Berman, Micah Bernat, Tanya Bhatia, Mat Bibik, Casey Bivens, Veronica Blackwell, Josie Bradshaw, Autumn Brown, Peter Camardo, Jennifer Calandra, Carmen, Timothy Chacko, Tami Chaize, Kristen Chen, Jac Clayton, Clare Cullinan, Sabar Dasgupta, Kaitlin Deveau, Nick Deveau, Clay Devlin, Lynn Dreifus, Tony Edelstein, Lauren Espinola, Hugh Ferguson, Zoe Fortune, Andrea Garcia, Eli Goldman, Emma Gubitz, Emma Hancock, Caroline Hanlon, Dewi Harjanto, Sebastian Hodge, Mokarram Hossain, Wilson Jacobs, JW, Divisha Khandelwal, Izzie Kirsch, Kenny Kirsch, Nicki Klar, Daniela Kotovsky, Ariel Kovlakas, Devika Kumar, Serena Lakhiani, Darren Lee, Tori Lee, Sophia Livecchi, Charlotte McCune, Mark McGovern, Nickon Mir, Jim Moore, Naqiya Motiwalla, Taher Motiwalla, Mae Nagusky, Stephen New, Isa Nicdao, Michelle Nip, Ray Orr, Zachary Paul, Grayson Pike, Addy Pedro, Noel Peng, Amira R, Momo Ramstedt, Elliot Richardson, Noah Sai, Natalie Sears, Jada Shannon, Juniper Sokolov, Juliet Shen, Peter Steele, Janice Steele, Charmaine Thomas, Tanner Tomasi, Jean Paul Torre, Finn Trondson, Rebecca Urena, Adin Vashi, Edmund White, Val Yang, Josh You
+</div>
+`
