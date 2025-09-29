@@ -91,7 +91,7 @@ The Tea Stand is a community project which serves free tea to create spaces for 
 <a href='/a-note-from-miles' class='link'>my</a> full-time work and it's sustained by neighbors & comrades like you :)
 </div>
 <div>
-Members receive several perks in exchange for their support. All perks encourage community participation and sustainable living.
+Members receive <b><a href='/member-perks' class='link'>several perks</a></b> in exchange for their support. All perks encourage community participation and sustainable living.
 </div>
 <div>
 Thank you for enabling us to host free events, work toward a post-capitalist world, and serve FREE TEA FOR ALL!
@@ -102,13 +102,7 @@ Thank you for enabling us to host free events, work toward a post-capitalist wor
 
 const membersDescription = `
 <div>
-<b>For more info about perks, <a href='/member-perks' class='link'>click here</a></b>.
-</div>
-<div>
-🍵
-</div>
-<div>
-<b>To gift a membership:</b> simply sign up with your own info and reply to your welcome email with the recipient's info.
+<b>To gift a membership:</b> sign up with your own info and reply to your welcome email with the giftee's info.
 </div>
 <div>
 <b>For those outside the US:</b> due to high shipping prices, we cannot offer the same perks for Steepers or Big Steepers. Alternatives include increasing your contribution amount OR less frequent shipments. Reach out to theteastandnyc@gmail.com and we'll work something out :)
@@ -120,4 +114,4 @@ const membersDescription = `
 We are so grateful to all of our supporters:
 </div>
 <div>
-Moustafa Abdelaziz, Sam Aberbuch, Robin Achtstetter, Shamile Aldossary, Eric Alvarez, Jade Ammeen, Maria Paula Arriaga, Arlou Arteta, Ben Averbuch, Tim Bannister, Ziggy Bee, Alex Bender, Nat Berman, Micah Bernat, Tanya Bhatia, Mat Bibik, Casey Bivens, Veronica Blackwell, Josie Bradshaw, Autumn Brown, Peter Camardo, Jennifer Calandra, Carmen, Tami Chaize, Kristen Chen, Jac Clayton, Clare Cullinan, Sabar Dasgupta, Kaitlin Deveau, Nick Deveau, Clay Devlin, Lynn Dreifus, Tony Edelstein, Lauren Espinola, Hugh Ferguson, Zoe Fortune, Eli Goldman, Emma Gubitz, Emma Hancock, Caroline Hanlon, Dewi Harjanto, Sebastian Hodge, Mokarram Hossain, Wilson Jacobs, JW, Divisha Khandelwal, Izzie Kirsch, Kenny Kirsch, Nicki Klar, Daniela Kotovsky, Ariel Kovlakas, Devika Kumar, Serena Lakhiani, Darren Lee, Tori Lee, Sophia Livecchi, Charlotte McCune, Mark McGovern, Nickon Mir, Jim Moore, Naqiya Motiwalla, Taher Motiwalla, Mae Nagusky, Stephen New, Isa Nicdao, Michelle Nip, Ray Orr, Zachary Paul, Grayson Pike, Addy Pedro, Noel Peng, Amira R, Momo Ramstedt, Elliot Richardson, Noah Sai, Natalie Sears, Jada Shannon, Juniper Sokolov, Juliet Shen, Peter Steele, Janice Steele, Charmaine Thomas, Tanner Tomasi, Jean Paul Torre, Finn Trondson, Rebecca Urena, Adin Vashi, Edmund White, Val Yang, Josh You`;
+Moustafa Abdelaziz, Sam Aberbuch, Robin Achtstetter, Shamile Aldossary, Eric Alvarez, Jade Ammeen, Arlene Arevalo, Maria Paula Arriaga, Arlou Arteta, Ben Averbuch, Tim Bannister, Ziggy Bee, Alex Bender, Nat Berman, Micah Bernat, Tanya Bhatia, Mat Bibik, Casey Bivens, Veronica Blackwell, Josie Bradshaw, Autumn Brown, Peter Camardo, Jennifer Calandra, Carmen, Timothy Chacko, Tami Chaize, Kristen Chen, Jac Clayton, Clare Cullinan, Sabar Dasgupta, Kaitlin Deveau, Nick Deveau, Clay Devlin, Lynn Dreifus, Tony Edelstein, Lauren Espinola, Hugh Ferguson, Zoe Fortune, Andrea Garcia, Eli Goldman, Emma Gubitz, Emma Hancock, Caroline Hanlon, Dewi Harjanto, Sebastian Hodge, Mokarram Hossain, Wilson Jacobs, JW, Divisha Khandelwal, Izzie Kirsch, Kenny Kirsch, Nicki Klar, Daniela Kotovsky, Ariel Kovlakas, Devika Kumar, Serena Lakhiani, Darren Lee, Tori Lee, Sophia Livecchi, Charlotte McCune, Mark McGovern, Nickon Mir, Jim Moore, Naqiya Motiwalla, Taher Motiwalla, Mae Nagusky, Stephen New, Isa Nicdao, Michelle Nip, Ray Orr, Zachary Paul, Grayson Pike, Addy Pedro, Noel Peng, Amira R, Momo Ramstedt, Elliot Richardson, Noah Sai, Natalie Sears, Jada Shannon, Juniper Sokolov, Juliet Shen, Peter Steele, Janice Steele, Charmaine Thomas, Tanner Tomasi, Jean Paul Torre, Finn Trondson, Rebecca Urena, Adin Vashi, Edmund White, Val Yang, Josh You
