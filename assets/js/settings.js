@@ -88,7 +88,7 @@ const cards = [
 const signupDescription = `
 <div>
 The Tea Stand is a community project which serves free tea to create spaces for local connection. It is 
-<b><a href='/a-note-from-miles' class='link'>my</a>/b> full-time work and it's sustained by neighbors & comrades like you :)
+<b><a href='/a-note-from-miles' class='link'>my</a></b> full-time work and it's sustained by neighbors & comrades like you :)
 </div>
 <div>
 Members receive <b><a href='/member-perks' class='link'>several perks</a></b> in exchange for their support. All perks encourage community participation and sustainable living.
