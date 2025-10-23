@@ -66,18 +66,18 @@ const cards = [
     image:
       "https://i.postimg.cc/zv9LF3ct/steeped.png",
   },
-  {
-    title: "🪷 Silent Sanctuary",
-    url: "https://www.theteastand.org/silent-sanctuary/",
-    image:
-      "https://i.postimg.cc/5yHYz8nQ/silent-sanctuary.png",
-  },
-  {
-    title: "🌀 Perpetual Brew",
-    url: "https://www.theteastand.org/perpetual-brew/",
-    image:
-      "https://i.postimg.cc/tg5xGqsJ/perpetual-brew.png",
-  },
+//  {
+//    title: "🪷 Silent Sanctuary",
+//    url: "https://www.theteastand.org/silent-sanctuary/",
+//    image:
+//      "https://i.postimg.cc/5yHYz8nQ/silent-sanctuary.png",
+//  },
+//  {
+//   title: "🌀 Perpetual Brew",
+//    url: "https://www.theteastand.org/perpetual-brew/",
+//    image:
+//      "https://i.postimg.cc/tg5xGqsJ/perpetual-brew.png",
+//  },
 ];
 
 // Signup Page Text
