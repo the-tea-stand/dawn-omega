@@ -15,10 +15,10 @@ const description =
 const articlesTitle = "Our Newsletter";
 
 const programmingSubtitle =
-  "we serve free tea at parks, food distributions, and events. check out <a href='/calendar' class='link'>our calendar</a>!";
+  "we serve free tea at parks & food distributions and host community events. view our calendar <a href='/calendar' class='link'>here</a>!";
 
 const newsletterSubtitle =
-  "once a month, we share volunteer opportunities, events, and reflections! it's free :)";
+  "we share events, opportunities for involvement, and updates via our free monthly newsletter";
 
 // Modality cards on homepage
 //
