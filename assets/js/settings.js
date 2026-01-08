@@ -91,7 +91,7 @@ The Tea Stand is a community project which serves free tea to create spaces for 
 <b><a href='/a-note-from-miles' class='link'>my</a></b> full-time work and it's sustained by neighbors & comrades like you :)
 </div>
 <div>
-Members receive <b><a href='/member-perks' class='link'>several perks</a></b> in exchange for their support. All perks encourage community participation and sustainable living.
+In exchange for your support, members receive several perks which encourage community participation & sustainable living. More info <b><a href='/member-perks' class='link'>here</a></b> 
 </div>
 <div>
 Thank you for enabling us to host free events, work toward a post-capitalist world, and serve FREE TEA FOR ALL!
