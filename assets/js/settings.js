@@ -91,10 +91,10 @@ The Tea Stand serves free tea to create spaces for local connection. It is
 <b><a href='/a-note-from-miles' class='link'>my</a></b> full-time work & sustained by neighbors & comrades like you :)
 </div>
 <div>
-In exchange for your support, members receive several perks which encourage community participation & sustainable living. More <b><a href='/member-perks' class='link'>here</a></b>. 
+In exchange for your support, members receive perks which encourage community participation & sustainable living. More <b><a href='/member-perks' class='link'>here</a></b>. 
 </div>
 <div>
-Thank you for enabling us to host free events, work toward a post-capitalist world, and serve FREE TEA FOR ALL!
+Y'all enable us to host free events, work toward a post-capitalist world, and serve FREE TEA FOR ALL!
 </div>
 `;
 
