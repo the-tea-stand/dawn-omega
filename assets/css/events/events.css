@@ -1,13 +1,58 @@
-.event {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 0.25rem;
-    background-color: #fae7cd;
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1200px;
 }
 
-.calendar-container {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+.event {
+  width: 90%;
+  align-items: flex-start;
+  background-color: #fae7cd;
+  border: 1px solid #968978;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  font-weight: 600;
+  gap: 0.25rem;
+  justify-content: center;
+  padding: 24px 18px;
+}
+
+.event h3 {
+  color: black;
+  text-align: left;
+}
+
+.event p {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.event .rsvp-link {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.event .rsvp-link a {
+  color: black;
+}
+
+.event details {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.event details a {
+  display: inline;
 }
