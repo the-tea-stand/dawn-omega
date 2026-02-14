@@ -15,11 +15,12 @@ fetch(iCalUrl).then((response) => {
   // Filter for future events only and limit to next 10
   const now = new Date();
   const upcomingEvents = events.filter((event) => {
-    if ( !event.start.dateTime ) {
+    const startDate = event.start["dateTime"] ? event.start["dateTime"] : event.start["date"];
+    if ( !startDate ) {
       console.warn("Event missing start date:", event);
       return false;
     }
-    return new Date(event.start.dateTime) >= now; // isFuture
+    return new Date(startDate) >= now; // isFuture
   }).sort((a, b) => a.start - b.start).slice(0, 10);
 
   console.log("Upcoming events (next 10):", upcomingEvents);
@@ -31,11 +32,12 @@ fetch(iCalUrl).then((response) => {
     } else {
       upcomingEvents.forEach(
         (event) => {
+          const startDate = event.start["dateTime"] ? event.start["dateTime"] : event.start["date"];
           calendarElement.innerHTML +=
             `
             <div class="event">
               <h3>${ event["summary"] || "Untitled Event" }</h3>
-              <p>Date: ${ new Date(event.start.dateTime).toLocaleDateString() }</p>
+              <p>Date: ${ new Date(startDate).toLocaleDateString() }</p>
               ${ event.location ? `<p>Location: ${ event.location }</p>` : "" }
               ${ event.description ? `<p>${ event.description }</p>` : "" }
             </div>
