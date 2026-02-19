@@ -52,27 +52,17 @@ function displayEvents(upcomingEvents) {
   }
 }
 
-function getUpcomingEvents(events) {
-  // Filter for future events only and limit to next 10
-  const now = new Date();
-  const upcomingEvents = events.filter((event) => {
-    const startDate = event.start["dateTime"] ? event.start["dateTime"] : event.start["date"];
-    if ( !startDate ) {
-      console.warn("Event missing start date:", event);
-      return false;
-    }
-    return new Date(startDate) >= now;
-  }).sort((a, b) => a.start - b.start).slice(0, 10);
-
-  console.log("Upcoming events (next 10):", upcomingEvents);
-  return upcomingEvents;
-}
-
 function getEvents(pageToken) {
 // Fetch calendar events using iCal feed
   let token = "";
-  if (pageToken) token = `&pageToken=${pageToken}`
-  fetch(`${iCalUrl}${apiKey}${token}`).then((response) => {
+  const today = new Date();
+  const future = new Date(+today);
+  future.setMonth(future.getMonth() + 6);
+  const timeMin = today.toISOString(); // today, i.e. 2-17-2026
+  const timeMax = future.toISOString(); // return events up to 6 months from now
+  if ( pageToken ) token = `&pageToken=${ pageToken }`; // pagination
+  const timeRange = encodeURI(`&timeMin=${ timeMin }&timeMax=${ timeMax }`);
+  fetch(`${ iCalUrl }${ apiKey }${ timeRange }${ token }`).then((response) => {
     if ( !response.ok ) {
       throw new Error(`HTTP error! status: ${ response.status }`);
     }
@@ -80,9 +70,9 @@ function getEvents(pageToken) {
   }).then((iCalText) => {
     let events = [];
     if ( iCalText["items"] ) events = iCalText["items"];
-    upcomingEvents = [...upcomingEvents, ...getUpcomingEvents(events)];
-    if ( upcomingEvents.length <= 10 ) displayEvents(upcomingEvents);
-    if ( iCalText["nextPageToken"] ) getEvents(iCalText["nextPageToken"]);
+    upcomingEvents = [...upcomingEvents, ...events];
+    displayEvents(upcomingEvents.slice(0, 10));
+    if ( upcomingEvents.length <= 10 && iCalText["nextPageToken"] ) getEvents(iCalText["nextPageToken"]);
   }).catch((error) => {
     console.error("Error fetching calendar:", error);
     if ( calendarElement ) {
