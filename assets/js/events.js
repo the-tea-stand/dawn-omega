@@ -2,24 +2,38 @@ const iCalUrl = `https://clients6.google.com/calendar/v3/calendars/c40f9cfe3d861
 const apiKey = "AIzaSyDOtGM5jr8bNp1utVpG2_gSRH03RNGBkI8&%24unique=gc456";
 const calendarElement = document.getElementById("calendar");
 let upcomingEvents = [];
+const recurringEventsEmojisRegex = /🥬|⛩️|🏠|🫖/g;
+const lumaRegex = /\"https\:\/\/luma.com\/(.*?)\"/g;
+const linkRegex = /href="(.*?)"/g;
+const priceRegex = /(\$(.*?) )/g;
 
+// parseDescription follows these assumptions:
+// every new line is followed by an emoji
 function parseDescription(desc) {
   if ( !desc ) return '';
-  const regex = /\"https\:\/\/luma.com\/(.*?)\"/g;
-  const found = desc.match(regex);
-  const rsvpLink = found ? `<div class="rsvp-link"><a href=${ found } target="_blank">RSVP</a></div>` : "";
-  return `
-    ${ (rsvpLink) }
-    <details>
-      <summary>more info</summary>
-      ${ desc }
-    </details>
-  `;
+  let tooltip = "";
+  let content = "";
+  let link = "";
+
+  desc.split("<br><br>").forEach((line) => {
+    if ( line.match(recurringEventsEmojisRegex) ) tooltip = line;
+    else if ( line.includes("🔗") ) {
+      console.log(line);
+      const lumaFound = line.match(lumaRegex);
+      const linkFound = line.match(linkRegex);
+      const priceFound = line.match(priceRegex);
+      if ( lumaFound ) {
+        link = `<div class="rsvp-link"><a href=${ lumaFound[0] } target="_blank">RSVP ${ priceFound ? '$' + priceFound : '' }</a></div>`;
+      } else if ( linkFound ) {
+        link = `<div class="rsvp-link"><a ${ linkFound[0] } target="_blank">Join</a></div>`;
+      }
+    } else if ( line.length > 1 ) content += line;
+  })
+  return { tooltip, link, content }
 }
 
 // Display the events in the UI
-// TODO add a different RSVP case if RSVP link is not a luma link
-function displayEvents(upcomingEvents) {
+function displayEvents() {
   upcomingEvents.sort((a, b) => new Date(a["start"]["dateTime"]) - new Date(b["start"]["dateTime"]));
   calendarElement.innerHTML = "";
   if ( calendarElement ) {
@@ -36,15 +50,23 @@ function displayEvents(upcomingEvents) {
       upcomingEvents.forEach(
         (event) => {
           const startDate = event["start"]["dateTime"] ? event["start"]["dateTime"] : event["start"]["date"];
+          const description = parseDescription(event.description);
           calendarElement.innerHTML +=
             `
             <div class="event">
               <div class="event-summary">
-                <h3>${ event["summary"] || "Untitled Event" }</h3>
+                <h3>${ event["summary"] || "Untitled Event" }<span aria-label="info" class="tooltip">ℹ<span class="tooltiptext">${ description["tooltip"] }</span></span></h3>
                 <p>${ new Date(startDate).toLocaleDateString("en-US", options) }</p>
                 ${ event.location ? `<p>${ event.location }</p>` : "" }
               </div>
-              ${ parseDescription(event.description) }
+              ${ description["link"] }
+              <details>
+                <summary>more info</summary>
+                <div>
+                  ${ description["content"] }<br><br>
+                  <small>📆Calendar link <a href="${ event["htmlLink"] }" target="_blank">here</a></small>.
+                </div>
+              </details>
             </div>
           `
         }

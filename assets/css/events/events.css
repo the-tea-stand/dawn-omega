@@ -27,9 +27,28 @@
   width: 100%;
 }
 
-.event h3 {
+.event .event-summary {
+  width: 100%;
+}
+
+.event .event-summary h3 {
   color: black;
+  position: relative;
   text-align: left;
+  width: 100%;
+}
+
+.event .tooltip {
+  border-bottom: 1px dotted black;
+  color: cornflowerblue;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.event .event-summary p, .event details div {
+  padding: 0 28px;
 }
 
 .event p {
@@ -39,23 +58,18 @@
   font-weight: 500;
   justify-content: flex-start;
   line-height: 20px;
-  padding-left: 28px;
   text-align: left;
 }
 
 .event .rsvp-link {
   display: flex;
+  font-weight: 500;
   justify-content: flex-end;
   width: 100%;
 }
 
-.event details {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  flex-flow: row wrap;
+.event details div {
   font-weight: 500;
-  justify-content: flex-end;
   line-height: 18px;
   text-align: left;
   width: 100%;
@@ -68,13 +82,33 @@
 }
 
 .event summary {
-  text-align: right;
   color: var(--ghost-accent-color);
   cursor: pointer;
-  justify-content: flex-end;
+  font-weight: 500;
+  text-align: right;
   width: 100%;
 }
 
 .event details a, .event details u {
   display: inline;
+}
+
+/* Tooltip text */
+.event .tooltiptext {
+  background-color: var(--ghost-accent-color);
+  color: black;
+  font-size: 12px;
+  font-weight: 200;
+  padding: 5px 2px;
+  position: absolute;
+  right: 5px;
+  text-align: center;
+  top: 15px;
+  visibility: hidden;
+  width: 130px;
+  z-index: 1;
+}
+
+.event .tooltip:hover .tooltiptext {
+  visibility: visible;
 }
