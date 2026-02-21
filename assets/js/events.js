@@ -11,7 +11,7 @@ function parseDescription(desc) {
   return `
     ${ (rsvpLink) }
     <details>
-      <summary>details</summary>
+      <summary>more info</summary>
       ${ desc }
     </details>
   `;

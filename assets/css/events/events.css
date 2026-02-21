@@ -23,7 +23,7 @@
   font-weight: 600;
   gap: 0.25rem;
   justify-content: center;
-  padding: 24px 18px;
+  padding: 16px 18px;
   width: 100%;
 }
 
@@ -36,7 +36,11 @@
   align-items: flex-start;
   display: flex;
   flex-flow: row wrap;
+  font-weight: 500;
   justify-content: flex-start;
+  line-height: 20px;
+  padding-left: 28px;
+  text-align: left;
 }
 
 .event .rsvp-link {
@@ -45,15 +49,28 @@
   width: 100%;
 }
 
-.event .rsvp-link a {
-  color: black;
-}
-
 .event details {
   align-items: center;
   cursor: pointer;
   display: flex;
   flex-flow: row wrap;
+  font-weight: 500;
+  justify-content: flex-end;
+  line-height: 18px;
+  text-align: left;
+  width: 100%;
+}
+
+.event details a, .event .rsvp-link a {
+  color: var(--ghost-accent-color);
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+.event summary {
+  text-align: right;
+  color: var(--ghost-accent-color);
+  cursor: pointer;
   justify-content: flex-end;
   width: 100%;
 }
