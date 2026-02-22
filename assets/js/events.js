@@ -1,202 +1,110 @@
-// Google Calendar Public iCal Feed URL
-// Using a proxy endpoint to avoid CORS issues
-const calendarId =
-  "c40f9cfe3d861c76ac9855f5cbb8fd444b41fb2c647bd979fa70bf687fed008a%40group.calendar.google.com";
-
-// Use a CORS proxy service or your own server endpoint
-const proxyUrl = "https://api.allorigins.win/raw?url=";
-const iCalUrl = `${proxyUrl}${encodeURIComponent(
-  `https://calendar.google.com/calendar/ical/${calendarId}/public/basic.ics`
-)}`;
-
+const iCalUrl = `https://clients6.google.com/calendar/v3/calendars/c40f9cfe3d861c76ac9855f5cbb8fd444b41fb2c647bd979fa70bf687fed008a%40group.calendar.google.com/events?calendarId=c40f9cfe3d861c76ac9855f5cbb8fd444b41fb2c647bd979fa70bf687fed008a%40group.calendar.google.com&singleEvents=true&eventTypes=default&eventTypes=focusTime&eventTypes=outOfOffice&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeZone=America%2FNew_York&key=`;
+const apiKey = "AIzaSyDOtGM5jr8bNp1utVpG2_gSRH03RNGBkI8&%24unique=gc456";
 const calendarElement = document.getElementById("calendar");
+let upcomingEvents = [];
+const recurringEventsEmojisRegex = /🥬|⛩️|🏠|🫖/g;
+const lumaRegex = /\"https\:\/\/luma.com\/(.*?)\"/g;
+const linkRegex = /href="(.*?)"/g;
+const priceRegex = /(\$(.*?) )/g;
 
-// Function to parse iCal data
-function parseICalData(iCalText) {
-  const events = [];
-  const lines = iCalText.split("\n");
-  let currentEvent = {};
-  let inEvent = false;
-  let currentField = null;
-  let currentValue = "";
+// parseDescription follows these assumptions:
+// every new line is followed by an emoji
+function parseDescription(desc) {
+  if ( !desc ) return '';
+  let tooltip = "";
+  let content = "";
+  let link = "";
 
-  for (let i = 0; i < lines.length; i++) {
-    let line = lines[i];
-
-    // Handle continuation lines (lines that start with space or tab)
-    if (line.startsWith(" ") || line.startsWith("\t")) {
-      if (currentField && inEvent) {
-        // Add the continuation line to the current field value
-        // Remove the leading space/tab but don't add extra spaces
-        currentValue += line.substring(1);
+  desc.split("<br><br>").forEach((line) => {
+    if ( line.match(recurringEventsEmojisRegex) ) tooltip = line;
+    else if ( line.includes("🔗") ) {
+      console.log(line);
+      const lumaFound = line.match(lumaRegex);
+      const linkFound = line.match(linkRegex);
+      const priceFound = line.match(priceRegex);
+      if ( lumaFound ) {
+        link = `<div class="rsvp-link"><a href=${ lumaFound[0] } target="_blank">RSVP ${ priceFound ? '$' + priceFound : '' }</a></div>`;
+      } else if ( linkFound ) {
+        link = `<div class="rsvp-link"><a ${ linkFound[0] } target="_blank">Join</a></div>`;
       }
-      continue;
-    }
-
-    // Trim the line for processing
-    line = line.trim();
-
-    // Extract field name and value
-    const colonIndex = line.indexOf(":");
-    if (colonIndex === -1) continue;
-
-    const fullField = line.substring(0, colonIndex);
-    const value = line.substring(colonIndex + 1);
-
-    // Extract field name without parameters (e.g., DTSTART;TZID=America/New_York -> DTSTART)
-    const fieldName = fullField.split(";")[0];
-
-    if (fieldName === "BEGIN" && value === "VEVENT") {
-      currentEvent = {};
-      inEvent = true;
-      currentField = null;
-      currentValue = "";
-    } else if (fieldName === "END" && value === "VEVENT" && inEvent) {
-      // Save any pending field value
-      if (currentField && currentValue !== undefined) {
-        currentEvent[currentField] = currentValue;
-      }
-
-      if (currentEvent.summary && currentEvent.start) {
-        events.push(currentEvent);
-      }
-      inEvent = false;
-      currentField = null;
-      currentValue = "";
-    } else if (inEvent) {
-      // Save previous field if we have one
-      if (currentField && currentValue !== undefined) {
-        currentEvent[currentField] = currentValue;
-      }
-
-      // Start new field
-      currentField = null;
-      currentValue = value;
-
-      if (fieldName === "SUMMARY") {
-        currentField = "summary";
-      } else if (fieldName === "DTSTART") {
-        currentField = "start";
-      } else if (fieldName === "DTEND") {
-        currentField = "end";
-      } else if (fieldName === "DESCRIPTION") {
-        currentField = "description";
-      } else if (fieldName === "LOCATION") {
-        currentField = "location";
-      }
-    }
-  }
-
-  // Handle the last field if we're still in an event
-  if (inEvent && currentField && currentValue !== undefined) {
-    currentEvent[currentField] = currentValue;
-    if (currentEvent.summary && currentEvent.start) {
-      events.push(currentEvent);
-    }
-  }
-
-  return events;
-}
-
-// Function to format date
-function formatDate(dateString) {
-  if (!dateString) {
-    console.warn("Empty date string provided");
-    return new Date();
-  }
-
-  // Handle different date formats from iCal
-  if (dateString.length === 8) {
-    // Format: YYYYMMDD (date only)
-    const year = dateString.substring(0, 4);
-    const month = dateString.substring(4, 6);
-    const day = dateString.substring(6, 8);
-    const date = new Date(year, month - 1, day);
-    return date;
-  } else if (dateString.includes("T")) {
-    // Format: YYYYMMDDTHHMMSSZ or YYYYMMDDTHHMMSS
-    const datePart = dateString.substring(0, 8);
-    const timePart = dateString.substring(9, 15);
-    const year = datePart.substring(0, 4);
-    const month = datePart.substring(4, 6);
-    const day = datePart.substring(6, 8);
-    const hour = timePart.substring(0, 2);
-    const minute = timePart.substring(2, 4);
-    const second = timePart.substring(4, 6);
-    const date = new Date(year, month - 1, day, hour, minute, second);
-    return date;
-  } else if (dateString.length === 15) {
-    // Format: YYYYMMDDTHHMMSS (without Z)
-    const datePart = dateString.substring(0, 8);
-    const timePart = dateString.substring(9, 15);
-    const year = datePart.substring(0, 4);
-    const month = datePart.substring(4, 6);
-    const day = datePart.substring(6, 8);
-    const hour = timePart.substring(0, 2);
-    const minute = timePart.substring(2, 4);
-    const second = timePart.substring(4, 6);
-    const date = new Date(year, month - 1, day, hour, minute, second);
-    return date;
-  }
-
-  // Fallback: try to parse as standard date
-  const date = new Date(dateString);
-  return date;
-}
-
-// Fetch calendar events using iCal feed
-fetch(iCalUrl)
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    return response.text();
+    } else if ( line.length > 1 ) content += line;
   })
-  .then((iCalText) => {
-    const events = parseICalData(iCalText);
-    console.log("Total events parsed:", events.length);
+  return { tooltip, link, content }
+}
 
-    // Filter for future events only and limit to next 10
-    const now = new Date();
-    const upcomingEvents = events
-      .filter((event) => {
-        if (!event.start) {
-          console.warn("Event missing start date:", event);
-          return false;
-        }
-
-        const eventDate = formatDate(event.start);
-        const isFuture = eventDate >= now;
-        return isFuture;
-      })
-      .sort((a, b) => formatDate(a.start) - formatDate(b.start))
-      .slice(0, 10);
-
-    console.log("Upcoming events (next 10):", upcomingEvents);
-
-    // Display the events in the UI
-    if (calendarElement) {
-      if (upcomingEvents.length === 0) {
-        calendarElement.innerHTML = "<p>No upcoming events found</p>";
-      } else {
-        calendarElement.innerHTML = upcomingEvents
-          .map(
-            (event) => `
+// Display the events in the UI
+function displayEvents() {
+  upcomingEvents.sort((a, b) => new Date(a["start"]["dateTime"]) - new Date(b["start"]["dateTime"]));
+  calendarElement.innerHTML = "";
+  if ( calendarElement ) {
+    if ( upcomingEvents.length === 0 ) {
+      calendarElement.innerHTML = "<p>No upcoming events found</p>";
+    } else {
+      const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        timeZone: "America/New_York"
+      };
+      upcomingEvents.forEach(
+        (event) => {
+          const startDate = event["start"]["dateTime"] ? event["start"]["dateTime"] : event["start"]["date"];
+          const description = parseDescription(event.description);
+          calendarElement.innerHTML +=
+            `
             <div class="event">
-              <h3>${event.summary || "Untitled Event"}</h3>
-              <p>Date: ${formatDate(event.start).toLocaleDateString()}</p>
-              ${event.location ? `<p>Location: ${event.location}</p>` : ""}
-              ${event.description ? `<p>${event.description}</p>` : ""}
+              <div class="event-summary">
+                <h3>${ event["summary"] || "Untitled Event" }<span aria-label="info" class="tooltip">ℹ<span class="tooltiptext">${ description["tooltip"] }</span></span></h3>
+                <p>${ new Date(startDate).toLocaleDateString("en-US", options) }</p>
+                ${ event.location ? `<p>${ event.location }</p>` : "" }
+              </div>
+              ${ description["link"] }
+              <details>
+                <summary>more info</summary>
+                <div>
+                  ${ description["content"] }<br><br>
+                  <small>📆Calendar link <a href="${ event["htmlLink"] }" target="_blank">here</a></small>.
+                </div>
+              </details>
             </div>
           `
-          )
-          .join("");
-      }
+        }
+      );
     }
-  })
-  .catch((error) => {
+  }
+}
+
+function getEvents(pageToken) {
+  let token = "";
+  let today = new Date();
+  let future = new Date();
+  future.setMonth(future.getMonth() + 2);
+  future.setHours(0, 0, 0, 0);
+  today.setHours(0, 0, 0, 0);
+  // set to New York timezone, and swedish date formatting to fit google ISO parameter reqs, otherwise timerange parameter does not work (?);
+  // Source - https://stackoverflow.com/a/66372460
+  const timeMin = encodeURIComponent(today.toLocaleString("sv", { timeZone: "America/New_York" }).split(" ")[0] + "T00:00:00+18:00"); // today, i.e. '2026-02-20T05:44:56.973Z'
+  const timeMax = encodeURIComponent(future.toLocaleString("sv", { timeZone: "America/New_York" }).split(" ")[0] + "T00:00:00-18:00"); // return events up to 2 months from now
+  if ( pageToken ) token = `&pageToken=${ pageToken }`; // pagination
+  const timeRange = `&timeMin=${ timeMin }&timeMax=${ timeMax }`;
+  fetch(`${ iCalUrl }${ apiKey }${ timeRange }${ token }`).then((response) => {
+    if ( !response.ok ) {
+      throw new Error(`HTTP error! status: ${ response.status }`);
+    }
+    return response.json();
+  }).then((iCalText) => {
+    let events = [];
+    if ( iCalText["items"] ) events = iCalText["items"];
+    upcomingEvents = [...upcomingEvents, ...events];
+    displayEvents(upcomingEvents.slice(0, 10));
+    if ( upcomingEvents.length <= 10 && iCalText["nextPageToken"] ) getEvents(iCalText["nextPageToken"]);
+  }).catch((error) => {
     console.error("Error fetching calendar:", error);
-    if (calendarElement) {
-      calendarElement.innerHTML = `<p>Error loading calendar events: ${error.message}</p>`;
+    if ( calendarElement ) {
+      calendarElement.innerHTML = `<p>Error loading calendar events: ${ error.message }</p>`;
     }
   });
+}
+
+getEvents();
