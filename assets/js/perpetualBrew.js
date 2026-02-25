@@ -5,7 +5,6 @@ const buildDateET = (dayISO, timeHHMM) => {
   // UTC instant and comparing it to its ET representation.
   const probe = new Date(`${dayISO}T12:00:00Z`);
   const etParts = new Intl.DateTimeFormat("en-US", {
-    timeZone: "America/New_York",
     year: "numeric",
     month: "2-digit",
     day: "2-digit",
@@ -45,7 +44,7 @@ const timeDisplayOptionsWithTZ = {
 
 const formatTimeRange = (start, end) => {
   const s = start.toLocaleString("en-US", timeDisplayOptions);
-  const e = end.toLocaleString("en-US", timeDisplayOptionsWithTZ);
+  const e = end.toLocaleString("en-US", timeDisplayOptions);
   return `${s} – ${e}`;
 };
 
