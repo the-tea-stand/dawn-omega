@@ -51,16 +51,29 @@ const formatTimeRange = (start, end) => {
 
 const WMO_CODES = {
   0: "Clear sky",
-  1: "Mainly clear", 2: "Partly cloudy", 3: "Overcast",
-  45: "Fog", 48: "Icy fog",
-  51: "Light drizzle", 53: "Moderate drizzle", 55: "Dense drizzle",
-  61: "Slight rain", 63: "Moderate rain", 65: "Heavy rain",
-  71: "Slight snow", 73: "Moderate snow", 75: "Heavy snow",
+  1: "Mainly clear",
+  2: "Partly cloudy",
+  3: "Overcast",
+  45: "Fog",
+  48: "Icy fog",
+  51: "Light drizzle",
+  53: "Moderate drizzle",
+  55: "Dense drizzle",
+  61: "Slight rain",
+  63: "Moderate rain",
+  65: "Heavy rain",
+  71: "Slight snow",
+  73: "Moderate snow",
+  75: "Heavy snow",
   77: "Snow grains",
-  80: "Slight showers", 81: "Moderate showers", 82: "Violent showers",
-  85: "Slight snow showers", 86: "Heavy snow showers",
+  80: "Slight showers",
+  81: "Moderate showers",
+  82: "Violent showers",
+  85: "Slight snow showers",
+  86: "Heavy snow showers",
   95: "Thunderstorm",
-  96: "Thunderstorm w/ hail", 99: "Thunderstorm w/ heavy hail",
+  96: "Thunderstorm w/ hail",
+  99: "Thunderstorm w/ heavy hail",
 };
 
 const fetchForecast = async (start, end) => {
@@ -69,8 +82,11 @@ const fetchForecast = async (start, end) => {
 
   const etParts = new Intl.DateTimeFormat("en-US", {
     timeZone: "America/New_York",
-    year: "numeric", month: "2-digit", day: "2-digit",
-    hour: "2-digit", hour12: false,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    hour12: false,
   }).formatToParts(midpoint);
   const get = (type) => etParts.find((p) => p.type === type).value;
   const dateStr = `${get("year")}-${get("month")}-${get("day")}`;
@@ -91,7 +107,9 @@ const fetchForecast = async (start, end) => {
   const data = await res.json();
 
   const { time, temperature_2m, windspeed_10m, weathercode } = data.hourly;
-  const idx = time.findIndex((t) => parseInt(t.slice(11, 13), 10) === targetHour);
+  const idx = time.findIndex(
+    (t) => parseInt(t.slice(11, 13), 10) === targetHour,
+  );
   if (idx === -1) throw new Error("Target hour not found");
 
   return {
@@ -105,9 +123,9 @@ const STATES = ["upcoming", "live", "ended"];
 let stateIndex = 0;
 
 const badgeConfig = {
-  upcoming: { text: "Upcoming",          cls: "pb-badge--upcoming" },
-  live:     { text: "🫖 Live now",        cls: "pb-badge--live"     },
-  ended:    { text: "No upcoming events", cls: "pb-badge--ended"    },
+  upcoming: { text: "Upcoming", cls: "pb-badge--upcoming" },
+  live: { text: "🫖 Live now", cls: "pb-badge--live" },
+  ended: { text: "No upcoming events", cls: "pb-badge--ended" },
 };
 
 const setBadge = (state) => {
@@ -124,11 +142,19 @@ const populatePerpetualBrew = () => {
     end: buildDateET(e.day, e.endTime),
   }));
 
-  const shown = entries[0];
+  const now = new Date();
+  const past = entries.filter((e) => e.start <= now);
+  const shown = past.length > 0 ? past[past.length - 1] : entries[0];
 
   document.getElementById("pb-host").textContent = shown.host;
-  document.getElementById("pb-date").textContent = shown.start.toLocaleString("en-US", dateDisplayOptions);
-  document.getElementById("pb-time").textContent = formatTimeRange(shown.start, shown.end);
+  document.getElementById("pb-date").textContent = shown.start.toLocaleString(
+    "en-US",
+    dateDisplayOptions,
+  );
+  document.getElementById("pb-time").textContent = formatTimeRange(
+    shown.start,
+    shown.end,
+  );
 
   const forecastEl = document.getElementById("pb-forecast");
   forecastEl.textContent = "Loading…";
@@ -146,6 +172,10 @@ const populatePerpetualBrew = () => {
     stateIndex = (stateIndex + 1) % STATES.length;
     setBadge(STATES[stateIndex]);
   });
+  document.getElementById("pb-subtitle").textContent =
+    perpetualBrewCupsServed != undefined
+      ? `${perpetualBrewCupsServed} cups served this month!`
+      : "";
 };
 
 document.addEventListener("DOMContentLoaded", populatePerpetualBrew);
