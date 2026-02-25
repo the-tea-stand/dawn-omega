@@ -1,0 +1,48 @@
+.pb-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 99px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.pb-badge--live {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.pb-badge--upcoming {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.pb-badge--ended {
+    background-color: #f0f0f0;
+    color: #666;
+}
+
+.pb-info {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    gap: 0.75rem 1rem;
+    margin-top: 1rem;
+}
+
+.pb-row {
+    display: contents;
+}
+
+.pb-label {
+    font-weight: 700;
+    color: var(--color-mid-gray);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: right;
+    align-self: center;
+}
+
+.pb-row span:last-child {
+    text-align: left;
+}

@@ -1,7 +1,6 @@
 // Link to background color for whole site:
 // https://github.com/the-tea-stand/dawn-omega/blob/9db30bdf203f01a65d3431a895821bc13187042f/assets/css/site/cover.css#L145-L151
 
-
 // Homepage text
 //
 // Notes:
@@ -45,39 +44,35 @@ const cards = [
   {
     title: "⛩️ Popups",
     url: "https://www.theteastand.org/popups/",
-    image:
-      "https://i.postimg.cc/k59bH6XL/popup.png",
+    image: "https://i.postimg.cc/k59bH6XL/popup.png",
   },
   {
     title: "🥬 Distros",
     url: "https://www.theteastand.org/distros/",
-    image:
-      "https://i.postimg.cc/KvM3vr1d/distro.png",
+    image: "https://i.postimg.cc/KvM3vr1d/distro.png",
   },
   {
     title: "🫖 Tea Talks",
     url: "https://www.theteastand.org/tea-talks/",
-    image:
-      "https://i.postimg.cc/8c0FrX8v/DSCF0837.jpg",
+    image: "https://i.postimg.cc/8c0FrX8v/DSCF0837.jpg",
   },
   {
     title: "📀 Steeped in Sound",
     url: "https://www.theteastand.org/steeped-in-sound/",
-    image:
-      "https://i.postimg.cc/zv9LF3ct/steeped.png",
+    image: "https://i.postimg.cc/zv9LF3ct/steeped.png",
   },
-//  {
-//    title: "🪷 Silent Sanctuary",
-//    url: "https://www.theteastand.org/silent-sanctuary/",
-//    image:
-//      "https://i.postimg.cc/5yHYz8nQ/silent-sanctuary.png",
-//  },
-//  {
-//   title: "🌀 Perpetual Brew",
-//    url: "https://www.theteastand.org/perpetual-brew/",
-//    image:
-//      "https://i.postimg.cc/tg5xGqsJ/perpetual-brew.png",
-//  },
+  //  {
+  //    title: "🪷 Silent Sanctuary",
+  //    url: "https://www.theteastand.org/silent-sanctuary/",
+  //    image:
+  //      "https://i.postimg.cc/5yHYz8nQ/silent-sanctuary.png",
+  //  },
+  //  {
+  //   title: "🌀 Perpetual Brew",
+  //    url: "https://www.theteastand.org/perpetual-brew/",
+  //    image:
+  //      "https://i.postimg.cc/tg5xGqsJ/perpetual-brew.png",
+  //  },
 ];
 
 // Signup Page Text
@@ -116,4 +111,48 @@ We are so grateful to all of our supporters:
 <div>
 Moustafa Abdelaziz, Sam Aberbuch, Robin Achtstetter, Shamile Aldossary, Eric Alvarez, Jade Ammeen, Arlene Arevalo, Maria Paula Arriaga, Arlou Arteta, Ben Averbuch, Emily LaBombard, Tim Bannister, Ziggy Bee, Alex Bender, Nat Berman, Micah Bernat, Tanya Bhatia, Mat Bibik, Casey Bivens, Veronica Blackwell, Josie Bradshaw, Autumn Brown, Peter Camardo, Jennifer Calandra, Carmen, Timothy Chacko, Tami Chaize, Kristen Chen, Jac Clayton, Clare Cullinan, Sabar Dasgupta, Steven DeGroot, Kaitlin Deveau, Nick Deveau, Clay Devlin, Lynn Dreifus, Tony Edelstein, Lauren Espinola, Hugh Ferguson, Zoe Fortune, Andrea Garcia, Eli Goldman, Emma Gubitz, Emma Hancock, Caroline Hanlon, Dewi Harjanto, Sebastian Hodge, Mokarram Hossain, Wilson Jacobs, JW, Divisha Khandelwal, Izzie Kirsch, Kenny Kirsch, Nicki Klar, Paige Kloss, Daniela Kotovsky, Ariel Kovlakas, Devika Kumar, Serena Lakhiani, Darren Lee, Tori Lee, Anna Lin, Sophia Livecchi, Charlotte McCune, Mark McGovern, Nickon Mir, Jim Moore, Naqiya Motiwalla, Taher Motiwalla, Mae Nagusky, Stephen New, Isa Nicdao, Michelle Nip, Ray Orr, Zachary Paul, Grayson Pike, Addy Pedro, Noel Peng, Amira R, Momo Ramstedt, Elliot Richardson, Ella Richmond, Noah Sai, Natalie Sears, Jada Shannon, Juniper Sokolov, Yelena Sokolov, Juliet Shen, Peter Steele, Janice Steele, Charmaine Thomas, Tanner Tomasi, Jean Paul Torre, Finn Trondson, Rebecca Urena, Adin Vashi, Lucas Vickers, Thinh Vu, Hannah Weisz, Edmund White, Val Yang, Joellene Yap, Josh You, Jen Zafra, Sarah Zigler
 </div>
-`
+`;
+
+// Perpetual Brew Schedule
+//
+// Notes:
+// dayInISOFormat - "YYYY-MM-DD"
+// startTime / endTime - "HH:MM" in New York time (ET)
+// host - string, name of whoever is hosting that day
+
+// Coordinates used for the weather forecast
+const perpetualBrewLat = 40.6782;
+const perpetualBrewLon = -73.9442;
+
+const perpetualBrewSchedule = [
+  {
+    day: "2026-02-25",
+    host: "Miles Kirsch",
+    startTime: "11:00",
+    endTime: "16:00",
+  },
+  {
+    day: "2026-04-02",
+    host: "Miles Kirsch",
+    startTime: "11:00",
+    endTime: "16:00",
+  },
+  {
+    day: "2026-04-03",
+    host: "Miles Kirsch",
+    startTime: "11:00",
+    endTime: "16:00",
+  },
+  {
+    day: "2026-04-04",
+    host: "Miles Kirsch",
+    startTime: "11:00",
+    endTime: "16:00",
+  },
+  {
+    day: "2026-04-05",
+    host: "Miles Kirsch",
+    startTime: "11:00",
+    endTime: "16:00",
+  },
+];

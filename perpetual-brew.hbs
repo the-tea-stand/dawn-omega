@@ -1,0 +1,37 @@
+{{!< ./default}} <main id="site-main" class="site-main site-signup outer">
+
+    <div class="head">
+        <div class="icon-container">
+            <i class="fa-solid fa-mug-hot fa-4x" style="color: {{@site.accent_color}}"></i>
+        </div>
+        <h3>Perpetual Brew</h3>
+        <div id="pb-live-badge" class="pb-badge"></div>
+        <div class="pb-info">
+            <div class="pb-row">
+                <span class="pb-label">Host</span>
+                <span id="pb-host"></span>
+            </div>
+            <div class="pb-row">
+                <span class="pb-label">Date</span>
+                <span id="pb-date"></span>
+            </div>
+            <div class="pb-row">
+                <span class="pb-label">Time</span>
+                <span id="pb-time"></span>
+            </div>
+            <div class="pb-row">
+                <span class="pb-label">Forecast</span>
+                <span id="pb-forecast"></span>
+            </div>
+        </div>
+        <button id="pb-toggle-btn" class="button">Toggle state</button>
+    </div>
+
+    <div class="button-container">
+        <a href="/" class="button home-button">Back to home</a>
+    </div>
+
+    <script src="{{asset 'js/settings.js'}}"></script>
+    <script src="{{asset 'js/perpetualBrew.js'}}"></script>
+
+    </main>

@@ -3,6 +3,7 @@ routes:
   /signup/: signup
   /signup-success/: signup-success
   /events/: events
+  /perpetual-brew-2/: perpetual-brew
 
 collections:
   /:
