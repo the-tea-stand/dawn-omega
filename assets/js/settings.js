@@ -121,8 +121,8 @@ Moustafa Abdelaziz, Sam Aberbuch, Robin Achtstetter, Shamile Aldossary, Eric Alv
 // host - string, name of whoever is hosting that day
 
 // Coordinates used for the weather forecast
-const perpetualBrewLat = 40.6782;
-const perpetualBrewLon = -73.9442;
+const perpetualBrewLat = 40.70348;
+const perpetualBrewLon = -73.922879;
 const perpetualBrewCupsServed = 0;
 const perpetualBrewSchedule = [
   {
