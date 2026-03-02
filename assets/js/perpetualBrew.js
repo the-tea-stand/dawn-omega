@@ -118,9 +118,6 @@ const fetchForecast = async (start, end) => {
   };
 };
 
-const STATES = ["upcoming", "live", "ended"];
-let stateIndex = 0;
-
 const badgeConfig = {
   upcoming: { text: "Upcoming", cls: "pb-badge--upcoming" },
   live: { text: "🫖 Live now", cls: "pb-badge--live" },
@@ -134,6 +131,23 @@ const setBadge = (state) => {
   badge.textContent = badgeConfig[state].text;
 };
 
+const determineState = (entries) => {
+  const now = new Date();
+
+  const live = entries.find((e) => e.start <= now && now < e.end);
+  if (live) return { state: "live", shown: live };
+
+  const future = entries.filter((e) => e.start > now);
+  if (future.length > 0) {
+    future.sort((a, b) => a.start - b.start);
+    return { state: "upcoming", shown: future[0] };
+  }
+
+  const past = entries.filter((e) => e.end <= now);
+  past.sort((a, b) => b.start - a.start);
+  return { state: "ended", shown: past.length > 0 ? past[0] : null };
+};
+
 const populatePerpetualBrew = () => {
   const entries = perpetualBrewSchedule.map((e) => ({
     host: e.host,
@@ -141,36 +155,32 @@ const populatePerpetualBrew = () => {
     end: buildDateET(e.day, e.endTime),
   }));
 
-  const now = new Date();
-  const past = entries.filter((e) => e.start <= now);
-  const shown = past.length > 0 ? past[past.length - 1] : entries[0];
+  const { state, shown } = determineState(entries);
 
-  document.getElementById("pb-host").textContent = shown.host;
-  document.getElementById("pb-date").textContent = shown.start.toLocaleString(
-    "en-US",
-    dateDisplayOptions,
-  );
-  document.getElementById("pb-time").textContent = formatTimeRange(
-    shown.start,
-    shown.end,
-  );
+  setBadge(state);
 
-  const forecastEl = document.getElementById("pb-forecast");
-  forecastEl.textContent = "Loading…";
-  fetchForecast(shown.start, shown.end)
-    .then(({ description, temp, wind }) => {
-      forecastEl.textContent = `${description} · ${temp}°F · ${wind} mph winds`;
-    })
-    .catch(() => {
-      forecastEl.textContent = "Forecast unavailable";
-    });
+  if (shown) {
+    document.getElementById("pb-host").textContent = shown.host;
+    document.getElementById("pb-date").textContent = shown.start.toLocaleString(
+      "en-US",
+      dateDisplayOptions,
+    );
+    document.getElementById("pb-time").textContent = formatTimeRange(
+      shown.start,
+      shown.end,
+    );
 
-  setBadge(STATES[stateIndex]);
+    const forecastEl = document.getElementById("pb-forecast");
+    forecastEl.textContent = "Loading…";
+    fetchForecast(shown.start, shown.end)
+      .then(({ description, temp, wind }) => {
+        forecastEl.textContent = `${description} · ${temp}°F · ${wind} mph winds`;
+      })
+      .catch(() => {
+        forecastEl.textContent = "Forecast unavailable";
+      });
+  }
 
-  document.getElementById("pb-toggle-btn").addEventListener("click", () => {
-    stateIndex = (stateIndex + 1) % STATES.length;
-    setBadge(STATES[stateIndex]);
-  });
   document.getElementById("pb-subtitle").textContent =
     perpetualBrewCupsServed != undefined
       ? `${perpetualBrewCupsServed} cups served this month!`

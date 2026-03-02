@@ -126,19 +126,19 @@ const perpetualBrewLon = -73.922879;
 const perpetualBrewCupsServed = 0;
 const perpetualBrewSchedule = [
   {
-    day: "2026-02-24",
+    day: "2026-03-15",
     host: "Miles Kirsch",
     startTime: "11:00",
     endTime: "16:00",
   },
   {
-    day: "2026-04-02",
+    day: "2026-03-25",
     host: "Miles Kirsch",
     startTime: "11:00",
     endTime: "16:00",
   },
   {
-    day: "2026-04-03",
+    day: "2026-04-01",
     host: "Miles Kirsch",
     startTime: "11:00",
     endTime: "16:00",
