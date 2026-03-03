@@ -52,3 +52,8 @@
 .pb-row span:last-child {
     text-align: left;
 }
+
+#pb-location a {
+    color: color-mix(in srgb, var(--ghost-accent-color) 70%, black);
+    text-decoration: underline;
+}
