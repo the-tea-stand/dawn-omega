@@ -128,8 +128,8 @@ const perpetualBrewSchedule = [
   {
     day: "2026-03-03",
     host: "Miles Kirsch",
-    startTime: "17:00",
-    endTime: "18:00",
+    startTime: "08:00",
+    endTime: "19:00",
   },
   {
     day: "2026-03-25",

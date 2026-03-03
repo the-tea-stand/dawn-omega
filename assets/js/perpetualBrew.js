@@ -74,9 +74,9 @@ const WMO_CODES = {
   99: "Thunderstorm w/ heavy hail",
 };
 
-const fetchForecast = async (start, end) => {
-  const midpoint = new Date((start.getTime() + end.getTime()) / 2);
-  midpoint.setMinutes(midpoint.getMinutes() >= 30 ? 60 : 0, 0, 0);
+const fetchForecast = async (targetDate) => {
+  const rounded = new Date(targetDate);
+  rounded.setMinutes(rounded.getMinutes() >= 30 ? 60 : 0, 0, 0);
 
   const etParts = new Intl.DateTimeFormat("en-US", {
     timeZone: "America/New_York",
@@ -85,7 +85,7 @@ const fetchForecast = async (start, end) => {
     day: "2-digit",
     hour: "2-digit",
     hour12: false,
-  }).formatToParts(midpoint);
+  }).formatToParts(rounded);
   const get = (type) => etParts.find((p) => p.type === type).value;
   const dateStr = `${get("year")}-${get("month")}-${get("day")}`;
   const targetHour = parseInt(get("hour"), 10) % 24;
@@ -182,11 +182,9 @@ const populatePerpetualBrew = () => {
       shown.start,
       shown.end,
     );
-    // TODO: Use only start time before the event
-    // TODO: During event, use live forecast
     const forecastEl = document.getElementById("pb-forecast");
     forecastEl.textContent = "Loading…";
-    fetchForecast(shown.start, shown.end)
+    fetchForecast(state === "live" ? new Date() : shown.start)
       .then(({ description, temp, wind }) => {
         forecastEl.textContent = `${description} · ${temp}°F · ${wind} mph winds`;
       })
