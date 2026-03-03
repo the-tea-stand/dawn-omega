@@ -4,7 +4,6 @@ routes:
   /signup-success/: signup-success
   /events/: events
   /perpetual-brew-2/: perpetual-brew
-  /account/: account
 
 collections:
   /:
