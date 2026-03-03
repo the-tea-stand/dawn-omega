@@ -118,10 +118,9 @@ const fetchForecast = async (start, end) => {
 };
 
 const badgeConfig = {
-  // change to closed for today
-  upcoming: { text: "Opening Soon", cls: "pb-badge--upcoming" },
-  live: { text: "🫖 Open now", cls: "pb-badge--live" },
-  ended: { text: "No upcoming events", cls: "pb-badge--ended" },
+  upcoming: { text: "Upcoming", cls: "pb-badge--upcoming" },
+  live: { text: "🫖 Open Now", cls: "pb-badge--live" },
+  closed: { text: "Closed for Today", cls: "pb-badge--ended" },
 };
 
 const setBadge = (state) => {
@@ -131,25 +130,39 @@ const setBadge = (state) => {
   badge.textContent = badgeConfig[state].text;
 };
 
+const getTodayISOET = () => {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(new Date());
+  const get = (type) => parts.find((p) => p.type === type).value;
+  return `${get("year")}-${get("month")}-${get("day")}`;
+};
+
 const determineState = (entries) => {
   const now = new Date();
+  const todayISO = getTodayISOET();
 
   const live = entries.find((e) => e.start <= now && now < e.end);
   if (live) return { state: "live", shown: live };
 
-  const future = entries.filter((e) => e.start > now);
-  if (future.length > 0) {
-    future.sort((a, b) => a.start - b.start);
-    return { state: "upcoming", shown: future[0] };
+  const laterToday = entries.filter((e) => e.day === todayISO && e.start > now);
+  if (laterToday.length > 0) {
+    laterToday.sort((a, b) => a.start - b.start);
+    return { state: "upcoming", shown: laterToday[0] };
   }
 
-  const past = entries.filter((e) => e.end <= now);
-  past.sort((a, b) => b.start - a.start);
-  return { state: "ended", shown: past.length > 0 ? past[0] : null };
+  // Today's events have all passed (or no events today) — show next future event
+  const future = entries.filter((e) => e.start > now);
+  future.sort((a, b) => a.start - b.start);
+  return { state: "closed", shown: future.length > 0 ? future[0] : null };
 };
 
 const populatePerpetualBrew = () => {
   const entries = perpetualBrewSchedule.map((e) => ({
+    day: e.day,
     host: e.host,
     start: buildDateET(e.day, e.startTime),
     end: buildDateET(e.day, e.endTime),

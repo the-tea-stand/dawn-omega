@@ -12,6 +12,7 @@ function watchPortalListBtn() {
         ".gh-portal-btn.gh-portal-btn-list:not([data-audiome-wired])",
       )
       .forEach((btn) => {
+        console.log("Wiring up portal button");
         btn.dataset.audiomeWired = "1";
         btn.addEventListener(
           "click",
