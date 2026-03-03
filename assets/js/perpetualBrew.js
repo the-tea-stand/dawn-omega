@@ -25,7 +25,6 @@ const buildDateET = (dayISO, timeHHMM) => {
 
 const dateDisplayOptions = {
   weekday: "long",
-  year: "numeric",
   month: "long",
   day: "numeric",
   timeZone: "America/New_York",
@@ -119,8 +118,9 @@ const fetchForecast = async (start, end) => {
 };
 
 const badgeConfig = {
-  upcoming: { text: "Upcoming", cls: "pb-badge--upcoming" },
-  live: { text: "🫖 Live now", cls: "pb-badge--live" },
+  // change to closed for today
+  upcoming: { text: "Opening Soon", cls: "pb-badge--upcoming" },
+  live: { text: "🫖 Open now", cls: "pb-badge--live" },
   ended: { text: "No upcoming events", cls: "pb-badge--ended" },
 };
 
@@ -169,7 +169,8 @@ const populatePerpetualBrew = () => {
       shown.start,
       shown.end,
     );
-
+    // TODO: Use only start time before the event
+    // TODO: During event, use live forecast
     const forecastEl = document.getElementById("pb-forecast");
     forecastEl.textContent = "Loading…";
     fetchForecast(shown.start, shown.end)
