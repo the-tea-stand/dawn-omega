@@ -17,7 +17,7 @@ const programmingSubtitle =
   "the tea stand takes many forms.<br/>view our event calendar <a href='/calendar' class='link'>here</a>!";
 
 const newsletterSubtitle =
-  "we prefer the slow pace of email.<br/>also, it's free :)";
+  "we prefer the slow pace of email.<br/>it's free!";
 
 // Modality cards on homepage
 //
