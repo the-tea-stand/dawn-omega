@@ -6,6 +6,22 @@ const recurringEventsEmojisRegex = /🥬|⛩️|🏠|🫖/g;
 const lumaRegex = /\"https\:\/\/luma.com\/(.*?)\"/g;
 const linkRegex = /href="(.*?)"/g;
 const priceRegex = /(\$(.*?) )/g;
+const dateOptions = {
+  weekday: "long",
+  month: "long",
+  day: "numeric",
+  timeZone: "America/New_York"
+};
+const timeOptions = {
+  hour12: "true",
+  hour: "2-digit",
+  minute: "2-digit",
+  timeZone: "America/New_York"
+};
+
+function removeEmoji(text) {
+  return text.replace(/\p{Extended_Pictographic}\s*/gu, '');
+}
 
 // parseDescription follows these assumptions:
 // every new line is followed by an emoji
@@ -16,9 +32,10 @@ function parseDescription(desc) {
   let link = "";
 
   desc.split("<br><br>").forEach((line) => {
-    if ( line.match(recurringEventsEmojisRegex) ) tooltip = line;
-    else if ( line.includes("🔗") ) {
-      console.log(line);
+    if ( line.match(recurringEventsEmojisRegex) ) {
+      tooltip = `${ removeEmoji(line).trimStart() }`;
+      console.log({ tooltip });
+    } else if ( line.includes("🔗") ) {
       const lumaFound = line.match(lumaRegex);
       const linkFound = line.match(linkRegex);
       const priceFound = line.match(priceRegex);
@@ -40,23 +57,21 @@ function displayEvents() {
     if ( upcomingEvents.length === 0 ) {
       calendarElement.innerHTML = "<p>No upcoming events found</p>";
     } else {
-      const options = {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-        timeZone: "America/New_York"
-      };
       upcomingEvents.forEach(
         (event) => {
           const startDate = event["start"]["dateTime"] ? event["start"]["dateTime"] : event["start"]["date"];
+          const endDate = event["end"]["dateTime"] ? event["end"]["dateTime"] : event["end"]["date"];
           const description = parseDescription(event.description);
           calendarElement.innerHTML +=
             `
             <div class="event">
               <div class="event-summary">
-                <h3>${ event["summary"] || "Untitled Event" }<span aria-label="info" class="tooltip">ℹ<span class="tooltiptext">${ description["tooltip"] }</span></span></h3>
-                <p>${ new Date(startDate).toLocaleDateString("en-US", options) }</p>
+                <h3>${ event["summary"] || "Untitled Event" }
+                ${ description["tooltip"] ?
+                   `<span aria-label="info" class="tooltip">ℹ<span class="tooltiptext">${ description["tooltip"] }</span></span>` : "" }
+                </h3>
+                <p>${ new Date(startDate).toLocaleDateString("en-US", dateOptions) }</p>
+                <p>${ new Date(startDate).toLocaleTimeString("en-US", timeOptions) } - ${ new Date(endDate).toLocaleTimeString("en-US", timeOptions) }</p>
                 ${ event.location ? `<p>${ event.location }</p>` : "" }
               </div>
               ${ description["link"] }
@@ -64,7 +79,7 @@ function displayEvents() {
                 <summary>more info</summary>
                 <div>
                   ${ description["content"] }<br><br>
-                  <small>📆Calendar link <a href="${ event["htmlLink"] }" target="_blank">here</a></small>.
+                  📆Calendar link <a href="${ event["htmlLink"] }" target="_blank">here</a>.
                 </div>
               </details>
             </div>

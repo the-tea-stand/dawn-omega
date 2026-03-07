@@ -47,8 +47,8 @@
   right: 0;
 }
 
-.event .event-summary p, .event details div {
-  padding: 0 28px;
+.event details {
+  width: 100%;
 }
 
 .event p {
@@ -57,7 +57,7 @@
   flex-flow: row wrap;
   font-weight: 500;
   justify-content: flex-start;
-  line-height: 20px;
+  padding: 0 !important;
   text-align: left;
 }
 
@@ -68,18 +68,38 @@
   width: 100%;
 }
 
+.event details {
+  width: 100%;
+}
+
 .event details div {
   font-weight: 500;
   line-height: 18px;
+  padding: 12px 0;
   text-align: left;
   width: 100%;
 }
 
-.event details a, .event .rsvp-link a {
+.event details a {
   color: var(--ghost-accent-color);
   text-decoration: underline;
   word-break: break-word;
 }
+
+.event .rsvp-link a {
+  background-color: var(--ghost-accent-color);
+  border: 2px solid var(--ghost-accent-color);
+  border-radius: 5px;
+  color: black;
+  padding: 2px 16px;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.event .rsvp-link a:hover {
+  color: white;
+}
+
 
 .event summary {
   color: var(--ghost-accent-color);
@@ -99,14 +119,27 @@
   color: black;
   font-size: 12px;
   font-weight: 200;
-  padding: 5px 2px;
+  padding: 5px 6px;
   position: absolute;
   right: 5px;
-  text-align: center;
+  text-align: left;
   top: 15px;
   visibility: hidden;
   width: 130px;
   z-index: 1;
+}
+
+.event .tooltiptext p {
+  color: black;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 200;
+  padding: 0;
+  text-align: left;
+}
+
+.event .tooltiptext a {
+  display: inline;
 }
 
 .event .tooltip:hover .tooltiptext {
