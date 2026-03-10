@@ -1,29 +1,53 @@
 $(function () {
-    'use strict';
-    featured();
-    pagination(false);
+  "use strict";
+  featured();
+  pagination(false);
+  watchPortalListBtn();
 });
 
+function watchPortalListBtn() {
+  const observer = new MutationObserver(() => {
+    document
+      .querySelectorAll(
+        ".gh-portal-btn.gh-portal-btn-list:not([data-audiome-wired])",
+      )
+      .forEach((btn) => {
+        console.log("Wiring up portal button");
+        btn.dataset.audiomeWired = "1";
+        btn.addEventListener(
+          "click",
+          (e) => {
+            e.stopImmediatePropagation();
+            e.preventDefault();
+            window.location.href = "/signup/";
+          },
+          true,
+        );
+      });
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+}
+
 function featured() {
-    'use strict';
-    $('.featured-feed').owlCarousel({
-        dots: false,
-        margin: 30,
-        nav: true,
-        navText: [
-            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="icon"><path d="M20.547 22.107L14.44 16l6.107-6.12L18.667 8l-8 8 8 8 1.88-1.893z"></path></svg>',
-            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="icon"><path d="M11.453 22.107L17.56 16l-6.107-6.12L13.333 8l8 8-8 8-1.88-1.893z"></path></svg>',
-        ],
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            992: {
-                items: 3,
-            },
-        },
-    });
+  "use strict";
+  $(".featured-feed").owlCarousel({
+    dots: false,
+    margin: 30,
+    nav: true,
+    navText: [
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="icon"><path d="M20.547 22.107L14.44 16l6.107-6.12L18.667 8l-8 8 8 8 1.88-1.893z"></path></svg>',
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="icon"><path d="M11.453 22.107L17.56 16l-6.107-6.12L13.333 8l8 8-8 8-1.88-1.893z"></path></svg>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      992: {
+        items: 3,
+      },
+    },
+  });
 }

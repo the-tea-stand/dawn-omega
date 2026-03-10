@@ -1,22 +1,51 @@
 <div class="cover gh-outer">
     <div class="cover-content gh-inner">
         {{#if @site.icon}}
-            <div class="cover-icon">
-                <img class="cover-icon-image" src="{{@site.icon}}" alt="{{@site.title}}">
-            </div>
+        <div class="cover-icon">
+            <img class="cover-icon-image" src="{{@site.icon}}" alt="{{@site.title}}">
+        </div>
         {{/if}}
 
         {{#if @site.description}}
-            <div class="cover-description">{{@site.description}}</div>
+        <div id="cover-description" class="cover-description"></div>
         {{/if}}
-
+    </div>
+    <div class="teacup-break mt-3">
+        🍵
+    </div>
+    <div class="card-section-title">
+        <h3 class="mb-4">{{@custom.card_section_title}}</h3>
+        <div id="programming-subtitle" class="italic"></div>
+    </div>
+    <section id="card-container">
+    </section>
+    <div class="teacup-break mt-4">
+        🍵
+    </div>
+    <div class="articles-section-title-container">
+        <div>
+            <h3 id="articles-section-title" class="mb-4"></h3>
+        </div>
+        <div id="articles-section-subtitle" class="italic"></div>
+    </div>
+    <div class="cover-cta-container align-center">
         {{#if @site.members_enabled}}
+<<<<<<< HEAD
             {{#unless @member}}
             <div class="cover-cta">
                 <button class="button members-subscribe" data-portal="signup">{{t "Subscribe now"}}</button>
                 <button class="button button-secondary members-login" data-portal="signin">{{t "Login"}}</button>
             </div>
             {{/unless}}
+=======
+        {{#unless @member}}
+        <div class="cover-cta">
+            <a class="button members-subscribe" href="/signup">Sign up</a>
+        </div>
+        {{/unless}}
+>>>>>>> 2f9972873e2945591515da1de72a93cad6f588f5
         {{/if}}
     </div>
+    <script src="{{asset 'js/settings.js'}}"></script>
+    <script src="{{asset 'js/homepage.js'}}"></script>
 </div>

@@ -1,0 +1,14 @@
+# Routes must also be added to content/settings/routes.yaml
+routes:
+  /signup/: signup
+  /signup-success/: signup-success
+  /events/: events
+
+collections:
+  /:
+    permalink: /{slug}/
+    template: index
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
