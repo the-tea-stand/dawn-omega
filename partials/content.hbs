@@ -1,30 +1,6 @@
 <article class="single {{post_class}}">
 
     {{#match @page.show_title_and_feature_image}}
-<<<<<<< HEAD
-        <header class="single-header gh-canvas">
-            {{#is "post"}}
-            <div class="single-meta">
-                <span class="single-meta-item single-meta-date">
-                    <time datetime="{{date format="YYYY-MM-DD"}}">
-                        {{date published_at format="DD MMM YYYY"}}
-                    </time>
-                </span>
-                {{#if reading_time}}
-                    <span class="single-meta-item single-meta-length">
-                        {{reading_time minute=(t "1 min read") minutes=(t "% min read")}}
-                    </span>
-                {{/if}}
-                {{#primary_tag}}
-                    <span class="single-meta-item single-meta-tag">
-                        <a class="post-tag post-tag-{{slug}}" href="{{url}}">
-                            {{name}}
-                        </a>
-                    </span>
-                {{/primary_tag}}
-            </div>
-            {{/is}}
-=======
     <header class="single-header gh-canvas">
         {{#is "post"}}
         <div class="single-meta">
@@ -47,7 +23,6 @@
             {{/primary_tag}}
         </div>
         {{/is}}
->>>>>>> 2f9972873e2945591515da1de72a93cad6f588f5
 
         <h1 class="single-title">{{title}}</h1>
 
@@ -87,14 +62,6 @@
     <div class="gh-canvas">
         <footer class="single-footer">
 
-<<<<<<< HEAD
-        <div class="single-footer-left">
-        {{#prev_post}}
-            <div class="navigation navigation-previous">
-                <a class="navigation-link" href="{{url}}" aria-label="{{t "Previous post"}}">
-                    {{> "icons/arrow-left"}}
-                </a>
-=======
             <div class="single-footer-left">
                 {{#prev_post}}
                 <div class="navigation navigation-previous">
@@ -103,21 +70,8 @@
                     </a>
                 </div>
                 {{/prev_post}}
->>>>>>> 2f9972873e2945591515da1de72a93cad6f588f5
             </div>
 
-<<<<<<< HEAD
-        <div class="single-footer-middle">
-        {{#if @custom.show_author}}
-            <div class="single-footer-top">
-                <h3 class="single-footer-title">{{t "Published by:"}}</h3>
-                <div class="author-list">
-                    {{#foreach authors}}
-                    <div class="author-image-placeholder u-placeholder square">
-                        <a href="{{url}}" title="{{name}}">
-                            <img class="author-image u-object-fit" src="{{img_url profile_image size="xs"}}" alt="{{name}}" loading="lazy">
-                        </a>
-=======
             <div class="single-footer-middle">
                 {{#if @custom.show_author}}
                 <div class="single-footer-top">
@@ -131,20 +85,11 @@
                             </a>
                         </div>
                         {{/foreach}}
->>>>>>> 2f9972873e2945591515da1de72a93cad6f588f5
                     </div>
                 </div>
                 {{/if}}
             </div>
 
-<<<<<<< HEAD
-        <div class="single-footer-right">
-        {{#next_post}}
-            <div class="navigation navigation-next">
-                <a class="navigation-link" href="{{url}}" aria-label="{{t "Next post"}}">
-                    {{> "icons/arrow-right"}}
-                </a>
-=======
             <div class="single-footer-right">
                 {{#next_post}}
                 <div class="navigation navigation-next">
@@ -153,7 +98,6 @@
                     </a>
                 </div>
                 {{/next_post}}
->>>>>>> 2f9972873e2945591515da1de72a93cad6f588f5
             </div>
 
         </footer>
