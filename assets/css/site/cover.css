@@ -26,9 +26,126 @@
 
 .cover-cta {
     display: flex;
-    margin-top: 2rem;
 }
 
 .cover-cta .button {
     margin: 0 0.5rem;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+.card-section-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.teacup-break {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.articles-section-title-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 20px;
+    justify-content: space-around;
+    max-width: 800px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cover-card {
+    flex: 1;
+    max-width: 420px;
+    min-width: 370px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background: var(--white);
+    border-radius: 7px;
+    min-height: 200px;
+    transition: border-color 0.25s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid var(--brand-color);
+}
+
+
+.gradient {
+    display: flex;
+    padding: 2rem 2rem 1.5rem 2rem;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(75,75,75,0.75));
+    justify-content: center;
+    border-radius: 7px;
+
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    background: none;
+}
+
+.margin-left {
+    margin-left: auto;
+}
+.margin-right {
+    margin-right: auto;
+}
+
+.mb-4 {
+  margin-bottom: 8px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.cover-cta-container {
+    margin-bottom: -32px;
+    z-index: 3;
+    position: relative;
+}
+
+header {
+    background-color: #FFF6F0 !important
+}
+
+body {
+    background-color: #FFF6F0
 }
