@@ -47,6 +47,10 @@
   right: 0;
 }
 
+.event .tooltip a {
+  text-decoration: underline;
+}
+
 .event details {
   width: 100%;
 }
@@ -91,7 +95,7 @@
   border: 2px solid var(--ghost-accent-color);
   border-radius: 5px;
   color: black;
-  padding: 2px 16px;
+  padding: 2px 5px;
   text-decoration: none;
   word-break: break-word;
 }
