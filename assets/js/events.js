@@ -31,20 +31,21 @@ function parseDescription(desc) {
   let content = "";
   let link = "";
 
-  desc.split("<br><br>").forEach((line) => {
+  desc.split(/<br><br>|<\/p>/).forEach((line) => {
     if ( line.match(recurringEventsEmojisRegex) ) {
       tooltip = `${ removeEmoji(line).trimStart() }`;
-      console.log({ tooltip });
     } else if ( line.includes("🔗") ) {
       const lumaFound = line.match(lumaRegex);
       const linkFound = line.match(linkRegex);
       const priceFound = line.match(priceRegex);
       if ( lumaFound ) {
         link = `<div class="rsvp-link"><a href=${ lumaFound[0] } target="_blank">RSVP ${ priceFound ? '$' + priceFound : '' }</a></div>`;
+      } else if ( linkFound && line.includes("volunteer") ) {
+        link = `<div class="rsvp-link"><a ${ linkFound[0] } target="_blank">Volunteer</a></div>`;
       } else if ( linkFound ) {
         link = `<div class="rsvp-link"><a ${ linkFound[0] } target="_blank">Join</a></div>`;
       }
-    } else if ( line.length > 1 ) content += line;
+    } else if ( line.length > 1 ) content += removeEmoji(line).trimStart();
   })
   return { tooltip, link, content }
 }
@@ -79,7 +80,7 @@ function displayEvents() {
                 <summary>more info</summary>
                 <div>
                   ${ description["content"] }<br><br>
-                  📆Calendar link <a href="${ event["htmlLink"] }" target="_blank">here</a>.
+                  Calendar link <a href="${ event["htmlLink"] }" target="_blank">here</a>.
                 </div>
               </details>
             </div>
