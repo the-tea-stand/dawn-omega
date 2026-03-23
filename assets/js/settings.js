@@ -9,7 +9,7 @@
 // It can also just be a regular string, e.g. "This is a string"
 
 const description =
-  "<span>We serve free tea to build trust<br/>and community around Brooklyn.<br/><br/>To date, we've served 9,386<br/>free cups and counting!</span>";
+  "<span>We serve free tea to build trust<br/>and community around Brooklyn.<br/><br/>We've served 9,649<br/>free cups thus far!</span>";
 
 const articlesTitle = "Our Newsletter";
 
@@ -17,7 +17,7 @@ const programmingSubtitle =
   "the tea stand takes many forms.<br/>view our event calendar <a href='/calendar' class='link'>here</a>!";
 
 const newsletterSubtitle =
-  "we prefer the slow pace of email.<br/>just like the tea, it's free!";
+  "we prefer the slow pace of email.<br/>it's free, just like the tea";
 
 // Modality cards on homepage
 //
