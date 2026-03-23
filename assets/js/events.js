@@ -23,6 +23,29 @@ function removeEmoji(text) {
   return text.replace(/\p{Extended_Pictographic}\s*/gu, '');
 }
 
+function addInfoPopupHandler() {
+  const tooltips = document.querySelectorAll(".tooltip");
+  if ( !tooltips ) return;
+  Array.from(tooltips).forEach(tooltip => {
+    // mobile / browser supports multi-touch
+    if ( navigator.maxTouchPoints > 1 ) {
+      tooltip.addEventListener("touchstart", () => {
+        tooltip.classList.toggle("active");
+      });
+      tooltip.addEventListener("touchend", () => {
+        tooltip.classList.toggle("active");
+      });
+    } else {
+      tooltip.addEventListener("mouseover", () => {
+        tooltip.classList.toggle("active");
+      });
+      tooltip.addEventListener("mouseout", () => {
+        tooltip.classList.toggle("active");
+      });
+    }
+  })
+}
+
 // parseDescription follows these assumptions:
 // every new line is followed by an emoji
 function parseDescription(desc) {
@@ -87,6 +110,7 @@ function displayEvents() {
           `
         }
       );
+      addInfoPopupHandler();
     }
   }
 }
