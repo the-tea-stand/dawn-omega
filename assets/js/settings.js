@@ -121,22 +121,10 @@ Moustafa Abdelaziz, Sam Aberbuch, Robin Achtstetter, Shamile Aldossary, Eric Alv
 // host - string, name of whoever is hosting that day
 
 // Coordinates used for the weather forecast
-const perpetualBrewLat = 40.70348;
-const perpetualBrewLon = -73.922879;
+const perpetualBrewLat = 40.704011;
+const perpetualBrewLon = -73.922854;
 const perpetualBrewCupsServed = 0;
 const perpetualBrewSchedule = [
-  {
-    day: "2026-03-03",
-    host: "Miles Kirsch",
-    startTime: "08:00",
-    endTime: "09:00",
-  },
-  {
-    day: "2026-03-12",
-    host: "Miles Kirsch",
-    startTime: "08:00",
-    endTime: "09:00",
-  },
   {
     day: "2026-04-01",
     host: "Miles",
@@ -144,15 +132,51 @@ const perpetualBrewSchedule = [
     endTime: "18:00",
   },
   {
-    day: "2026-04-04",
-    host: "Miles Kirsch",
-    startTime: "11:00",
-    endTime: "16:00",
+    day: "2026-04-02",
+    host: "Miles",
+    startTime: "12:00",
+    endTime: "18:00",
   },
-  {
+    {
+    day: "2026-04-03",
+    host: "Miles",
+    startTime: "12:00",
+    endTime: "18:00",
+  },
+    {
+    day: "2026-04-04",
+    host: "Miles",
+    startTime: "12:00",
+    endTime: "18:00",
+  },
+    {
     day: "2026-04-05",
-    host: "Miles Kirsch",
-    startTime: "11:00",
-    endTime: "16:00",
+    host: "Miles",
+    startTime: "12:00",
+    endTime: "18:00",
+  },
+    {
+    day: "2026-04-06",
+    host: "Miles",
+    startTime: "12:00",
+    endTime: "18:00",
+  },
+    {
+    day: "2026-04-07",
+    host: "Miles",
+    startTime: "12:00",
+    endTime: "18:00",
+  },
+    {
+    day: "2026-04-08",
+    host: "Miles",
+    startTime: "12:00",
+    endTime: "18:00",
+  },
+    {
+    day: "2026-04-09",
+    host: "Miles",
+    startTime: "12:00",
+    endTime: "18:00",
   },
 ];
