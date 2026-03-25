@@ -120,7 +120,7 @@ const fetchForecast = async (targetDate) => {
 const badgeConfig = {
   upcoming: { text: "Upcoming", cls: "pb-badge--upcoming" },
   live: { text: "🫖 Open Now", cls: "pb-badge--live" },
-  closed: { text: "Closed for Today", cls: "pb-badge--ended" },
+  closed: { text: "Open on April 1", cls: "pb-badge--ended" },
 };
 
 const setBadge = (state) => {
