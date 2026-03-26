@@ -127,7 +127,7 @@ const perpetualBrewCupsServed = 0;
 const perpetualBrewSchedule = [
   {
     day: "2026-04-01",
-    host: "Miles",
+    host: "Miles K",
     startTime: "12:00",
     endTime: "18:00",
   },
