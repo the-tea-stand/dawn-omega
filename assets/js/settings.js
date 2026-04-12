@@ -123,7 +123,7 @@ Moustafa Abdelaziz, Sam Aberbuch, Robin Achtstetter, Shamile Aldossary, Eric Alv
 // Coordinates used for the weather forecast
 const perpetualBrewLat = 40.704011;
 const perpetualBrewLon = -73.922854;
-const perpetualBrewCupsServed = 588;
+const perpetualBrewCupsServed = 667;
 const perpetualBrewSchedule = [
   {
     day: "2026-04-01",
