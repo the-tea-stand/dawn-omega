@@ -229,13 +229,13 @@ const perpetualBrewSchedule = [
   },
     {
     day: "2026-04-18",
-    host: "Miles",
+    host: "Mae",
     startTime: "12:00",
     endTime: "18:00",
   },
     {    
     day: "2026-04-19",
-    host: "Miles",
+    host: "Aimee",
     startTime: "12:00",
     endTime: "18:00",
   },
@@ -283,13 +283,13 @@ const perpetualBrewSchedule = [
   },
     {
     day: "2026-04-27",
-    host: "Miles",
+    host: "Syd",
     startTime: "12:00",
     endTime: "18:00",
   },
     {
     day: "2026-04-28",
-    host: "Miles",
+    host: "Sarah",
     startTime: "12:00",
     endTime: "18:00",
   },
