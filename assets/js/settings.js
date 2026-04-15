@@ -217,13 +217,13 @@ const perpetualBrewSchedule = [
   },
     {
     day: "2026-04-16",
-    host: "Andrea (12-4pm), Miles (4-6pm)",
+    host: "Andrea",
     startTime: "12:00",
     endTime: "18:00",
   },
     {
     day: "2026-04-17",
-    host: "Miles",
+    host: "Ziggy",
     startTime: "12:00",
     endTime: "18:00",
   },
