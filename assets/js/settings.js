@@ -246,6 +246,12 @@ const perpetualBrewSchedule = [
     endTime: "18:00",
   },
     {
+    day: "2026-04-20",
+    host: "Nickon & Noah",
+    startTime: "19:00",
+    endTime: "21:00",
+  },
+    {
     day: "2026-04-21",
     host: "Miles",
     startTime: "12:00",
