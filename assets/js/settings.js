@@ -9,7 +9,7 @@
 // It can also just be a regular string, e.g. "This is a string"
 
 const description =
-  "<span>We serve free tea to cultivate trust<br/>& connection around Brooklyn.<br/><br/>To date, we've served<br/>9,649 cups of free tea!</span>";
+  "<span>We serve free tea to cultivate trust<br/>& connection around Brooklyn.<br/><br/>To date, we've served<br/>11,020 cups of free tea!</span>";
 
 const articlesTitle = "Our Newsletter";
 
