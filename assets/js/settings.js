@@ -307,8 +307,8 @@ const perpetualBrewSchedule = [
   },
     {
     day: "2026-04-30",
-    host: "Miles",
-    startTime: "12:00",
-    endTime: "18:00",
+    host: "Everyone",
+    startTime: "06:00",
+    endTime: "20:00",
   },
 ];
