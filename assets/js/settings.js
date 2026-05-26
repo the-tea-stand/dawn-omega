@@ -181,7 +181,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Steeper Perks Included",
-        subtitle: "Tea boxes every season, a travel cup, and the Bōcha zine.",
+        subtitle: "Tea boxes every season, a travel cup, and the bōcha zine.",
       },
       {
         state: "bold",
