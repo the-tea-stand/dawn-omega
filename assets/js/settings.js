@@ -112,7 +112,7 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "🎟️ Town Halls",
+        title: "🏠 Town Halls",
         subtitle: "Access to virtual livestreams with Q&A.",
       },
       {
@@ -137,7 +137,7 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "📗 Bōcha",
+        title: "📗 bōcha",
         subtitle: "Receive copies of our collaborative zine every solstice.",
       },
       {
