@@ -102,6 +102,7 @@
   },
   "devDependencies": {
     "@tryghost/shared-theme-assets": "2.4.3",
+    "@tryghost/theme-translations": "^0.0.19",
     "autoprefixer": "10.4.19",
     "beeper": "2.1.0",
     "cssnano": "7.0.2",
