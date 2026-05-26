@@ -50,14 +50,11 @@
                     <div class="card-details">
                         <div class="plan-description" data-testid="product-description">
                             {{description}}</div>
-                        <div class="benefit-list">
-                            {{#foreach benefits as |benefit|}}
-                            <div class="benefit-title">✓ {{benefit}}</div>
-                            {{/foreach}}
+                        <div class="perk-list" id="{{tier.name}}">
                         </div>
                     </div>
                     <div class="plan-button stripe-checkout-link" id="{{name}}-payment-button"
-                        style="background-color: {{@site.accent_color}}">Choose</div>
+                        style="background-color: {{@site.accent_color}}">Choose Tier</div>
                 </div>
                 {{else}}
                 {{#unless @member}}
@@ -72,14 +69,14 @@
                     <div class="card-details">
                         <div class="plan-description" data-testid="product-description">
                             {{description}}</div>
-                        <div class="benefit-list">
+                        <div class="perk-list">
                             {{#foreach benefits as |benefit|}}
-                            <div class="benefit-title">✓ {{benefit}}</div>
+                            <div class="perk-title">{{benefit}}</div>
                             {{/foreach}}
                         </div>
                     </div>
                     <button type="submit" class="plan-button" style="background-color: {{@site.accent_color}}">
-                        Choose
+                        Choose Tier
                     </button>
                 </div>
                 {{/unless}}
@@ -92,6 +89,8 @@
         <div class="card" data-test-tier="paid">
             <div class="card-header">
                 <h4 class="plan-name" style="color: {{@site.accent_color}}">Pay What You Wish</h4>
+                <div class="plan-description" data-testid="product-description">
+                    Choose your own monthly contribution amount and receive the corresponding perks! </div>
                 <div>
                     <form id="pwyw-form">
                         <span class="price-currency">$</span>
@@ -102,31 +101,24 @@
                 </div>
             </div>
             <div class="card-details">
-                <div class="plan-description" data-testid="product-description">
-                    Choose your own monthly contribution and receive perks! </div>
-                <div class="benefit-list">
-                    <div class="benefit-title">✓ $1+/month makes you a Sipper!</div>
-                    <div class="benefit-title">✓ $10+/month makes you a Steeper! </div>
-                    <div class="benefit-title">✓ $100+/month makes you a Big Steeper! </div>
-                </div>
             </div>
             <div id="pwyw-payment-button" class="plan-button" style="background-color: {{@site.accent_color}}">Choose
+                Tier
             </div>
         </div>
         </section>
         {{#if @member.paid}}
-        <div class="cancellation-layout">
-            {{#foreach @member.subscriptions as |sub|}}
-            <div class="cancellation-container">
-                {{cancel_link class="cancel-link" cancelLabel="Cancel Membership"}}
-            </div>
-            {{/foreach}}
+        <div class="cancellation-layout" {{#foreach @member.subscriptions as |sub|}} <div
+            class="cancellation-container">
+            {{cancel_link class="cancel-link" cancelLabel="Cancel Membership"}}
         </div>
-        {{/if}}
-        <div class="members-description-container">
-            <div id="members-description" class="members-description">
-            </div>
+        {{/foreach}}
+    </div>
+    {{/if}}
+    <div class="members-description-container">
+        <div id="members-description" class="members-description">
         </div>
+    </div>
     </div>
     </main>
 

@@ -75,12 +75,13 @@
 }
 
 .number-input {
-    width: 150px;
+    width: 100px;
     background-color: var(--color-lighter-gray);
     border: none;
     font-weight: 800;
     font-size: 3.5rem;
     padding-left: 8px;
+    margin-bottom: 1rem;
 }
 
 .title {
@@ -139,17 +140,27 @@
 }
 
 .plan-description {
-    font-weight: 600;
-    margin-top: 1rem;
-    margin-bottom: 2.5rem;
+    color: var(--color-secondary-text);
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
 }
 
 .card-details {
     margin-bottom: 8rem;
 }
 
-.benefit-title {
-    margin-bottom: 10px;
+.perk-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.perk-title {
+}
+
+.perk-subtitle {
+    color: var(--color-secondary-text);
+    font-size: 1.3rem;
 }
 
 .subscription-link {
@@ -228,4 +239,17 @@
 
 .cancel-link:hover {
     border-color: red
+}
+
+.selected-tier-container {
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+
+.selected-tier-container--visible {
+    opacity: 1;
+}
+
+#selectedTier {
+    transition: opacity 0.15s ease;
 }

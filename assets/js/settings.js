@@ -93,6 +93,105 @@ Y'all enable us to host free events, work toward a post-capitalist world, and se
 </div>
 `;
 
+// Membership Tiers and Perks
+//
+// name - string, should match the name of the tier in Ghost admin (case-sensitive)
+// perks - array objects with {state, title, subtitle}
+// state - string, either "bold" or "normal".  If "bold", perk title will be bolded and subtitle will be included.
+// title - string, the text that will be displayed for that perk
+// subtitle - string, additional text that will be displayed under the title in a smaller font.  Only used if state is "bold".
+let membershipTiers = [
+  {
+    name: "Sipper",
+    perks: [
+      {
+        state: "bold",
+        title: "🎟️ Discounts at local tea shops",
+        subtitle:
+          "Up to 20% off at our partner tea shops and small businesses.",
+      },
+      {
+        state: "bold",
+        title: "🎟️ Town Halls",
+        subtitle: "Access to virtual livestreams with Q&A.",
+      },
+      {
+        state: "bold",
+        title: '🟢 "free tea for all" sticker',
+        subtitle: "A sticker to rep the tea stand far and wide.",
+      },
+    ],
+  },
+  {
+    name: "Steeper",
+    perks: [
+      {
+        state: "bold",
+        title: "📦 Tea Boxes",
+        subtitle: "Receive a box of curated tea & art once per season.",
+      },
+      {
+        state: "bold",
+        title: "🍵 Travel Cup",
+        subtitle: "A customized collapsible & reusable cup made by Stojo.",
+      },
+      {
+        state: "bold",
+        title: "📗 Bōcha",
+        subtitle: "Receive copies of our collaborative zine every solstice.",
+      },
+      {
+        state: "bold",
+        title: "➕ All Sipper Perks Included",
+        subtitle: "Discounts at local tea shops, town halls, and a sticker",
+      },
+    ],
+  },
+  {
+    name: "Big Steeper",
+    perks: [
+      {
+        state: "bold",
+        title: "🏺 Local Ceramics",
+        subtitle:
+          "Receive handcrafted teaware (like a teapot!) by NYC-based artists once a year.",
+      },
+      {
+        state: "bold",
+        title: "🫖 Tea Ceremonies",
+        subtitle:
+          "Partake in an educational, interactive, gongfu-style tea session once a year (in-person & virtual).",
+      },
+      {
+        state: "bold",
+        title: "⛪ Ambient Church",
+        subtitle:
+          "Free ticket giveaways to deep listening events across the US.",
+      },
+      {
+        state: "bold",
+        title: "🌱 Brooklyn Tea Tour",
+        subtitle: "A guided tour of DONA's tea warehouse in Bushwick.",
+      },
+      {
+        state: "bold",
+        title: "🆓 Free Merch",
+        subtitle: "All items in The Tea Stand marketplace are 100% free!",
+      },
+      {
+        state: "bold",
+        title: "➕ All Steeper Perks Included",
+        subtitle: "Tea boxes every season, a travel cup, and the Bōcha zine.",
+      },
+      {
+        state: "bold",
+        title: "➕ All Sipper Perks Included",
+        subtitle: "Discounts at local tea shops, town halls, and a sticker",
+      },
+    ],
+  },
+];
+
 // Description below tiers
 
 const membersDescription = `
