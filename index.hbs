@@ -1,13 +1,11 @@
-{{!< default}}
-
-<main class="site-main">
+{{!< default}} <main class="site-main">
 
     <div class="post-feed gh-feed gh-canvas">
         {{#foreach posts}}
-            {{> "loop"}}
+        {{> "loop"}}
         {{/foreach}}
     </div>
 
     {{pagination}}
 
-</main>
+    </main>
