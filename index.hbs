@@ -6,6 +6,14 @@
         {{/foreach}}
     </div>
 
-    {{pagination}}
+    <div class="cover-cta-container align-center">
+        {{#if @site.members_enabled}}
+        {{#unless @member}}
+        <div class="cover-cta">
+            <a class="button members-subscribe" href="/signup">Sign up</a>
+        </div>
+        {{/unless}}
+        {{/if}}
+    </div>
 
     </main>
