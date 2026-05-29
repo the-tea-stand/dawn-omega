@@ -64,6 +64,10 @@
     margin-top: 4rem;
 }
 
+.mt-6 {
+    margin-top: 6rem;
+}
+
 .articles-section-title-container {
     display: flex;
     justify-content: center;
@@ -100,6 +104,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     border: 3px solid var(--brand-color);
+}
+
+.view-calendar-button {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 

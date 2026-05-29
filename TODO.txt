@@ -1,4 +1,3 @@
 alternate colors on home page
 add calendar button to modalities section
-increase font size of all headers
 add get involved section

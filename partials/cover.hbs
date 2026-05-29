@@ -19,7 +19,16 @@
     </div>
     <section id="card-container">
     </section>
-    <div class="teacup-break mt-4">
+    <div class="cover-cta-container align-center view-calendar-button">
+        {{#if @site.members_enabled}}
+        {{#unless @member}}
+        <div class="cover-cta">
+            <a class="button members-subscribe" href="/calendar">View Calendar</a>
+        </div>
+        {{/unless}}
+        {{/if}}
+    </div>
+    <div class="teacup-break mt-6">
         🍵
     </div>
     <div class="articles-section-title-container">
