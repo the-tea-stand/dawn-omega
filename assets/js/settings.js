@@ -75,6 +75,41 @@ const cards = [
   //  },
 ];
 
+// Get Involved Section
+//
+// Title: string of the section title, e.g. "Get Involved" (REQUIRED)
+// description: string of the section description (REQUIRED)
+//
+// Following fields are optional, but both are required for CTA button to appear
+// ctaText: string of the call to action text, e.g. "Join Now"
+// url: string of the url that the call to action button will link to
+
+// const getInvolvedSections = [
+//   {
+//     title: "Become a Member",
+//     description:
+//       "Become a member to help support the tea stand become a financially sustainable project and get access to perks focused on local art and businesses.",
+//     ctaText: "Join Now",
+//     url: "/sign-up",
+//   },
+//   {
+//     title: "Volunteer",
+//     description:
+//       "Help serve tea at popups and distros or assist in behind-the-scenes work to keep the tea stand running.",
+//     ctaText: "Join Whatsapp",
+//     url: "/volunteer",
+//   },
+//   {
+//     title: "Donate Tea",
+//     description:
+//       "All tea served at the tea stand is donated by the community.  Reach out to us to donate!",
+//     ctaText: "Contact Us",
+//     url: "/donate-tea",
+//   },
+// ];
+
+// ------------------------------------------ Sign up page text ------------------------------------------
+
 // Signup Page Text
 //
 // You can use template literals (with `ticks`) to make multiline strings.
@@ -212,6 +247,8 @@ Moustafa Abdelaziz, Sam Aberbuch, Robin Achtstetter, Shamile Aldossary, Eric Alv
 </div>
 `;
 
+// ------------------------------------------ Perpetual Brew  ------------------------------------------
+
 // Perpetual Brew Schedule
 //
 // Notes:
@@ -236,49 +273,49 @@ const perpetualBrewSchedule = [
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-03",
     host: "Paige",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-04",
     host: "Mattie",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-05",
     host: "Andrea & Noah",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-06",
     host: "Miles",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-07",
     host: "Aimee",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-08",
     host: "Paige",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-09",
     host: "Miles",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-10",
     host: "Ziggy",
     startTime: "12:00",
@@ -290,49 +327,49 @@ const perpetualBrewSchedule = [
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-12",
     host: "Miles",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-13",
     host: "Mattie",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-14",
     host: "Juno (12-4pm), Miles (4-6pm)",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-15",
     host: "Miles",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-16",
     host: "Andrea",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-17",
     host: "Ziggy",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-18",
     host: "Mae",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {    
+  {
     day: "2026-04-19",
     host: "Aimee",
     startTime: "12:00",
@@ -344,67 +381,67 @@ const perpetualBrewSchedule = [
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-20",
     host: "Nickon & Noah",
     startTime: "19:00",
     endTime: "21:00",
   },
-    {
+  {
     day: "2026-04-21",
     host: "Miles",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-22",
     host: "???",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-23",
     host: "Miles",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-24",
     host: "Noah",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-25",
     host: "Miles",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-26",
     host: "Andrea & Noah",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-27",
     host: "Syd",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-28",
     host: "Sarah",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-29",
     host: "Miles",
     startTime: "12:00",
     endTime: "18:00",
   },
-    {
+  {
     day: "2026-04-30",
     host: "Everyone",
     startTime: "06:00",

@@ -68,13 +68,26 @@
     margin-top: 6rem;
 }
 
-.articles-section-title-container {
+.section-title-container {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
     flex-direction: column;
     width: 100%;
     text-align: center;
+}
+
+.get-involved-title {
+    margin-bottom: 1rem;
+}
+
+.get-involved-description {
+    font-size: 1.6rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 1.25rem;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-container {

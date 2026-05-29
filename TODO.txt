@@ -1,3 +1,2 @@
 alternate colors on home page
-add calendar button to modalities section
 add get involved section
