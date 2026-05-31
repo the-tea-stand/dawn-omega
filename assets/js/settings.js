@@ -188,7 +188,7 @@ let membershipTiers = [
         state: "bold",
         title: "🫖 Tea Ceremonies",
         subtitle:
-          "Partake in a small-group, gongfu-style tea session with tea practioner Tim Chacko once a year (in-person or virtual).",
+          "Partake in a small-group, gongfu-style tea ceremony with tea practioner Tim Chacko. Once a year, in-person & virtual.",
       },
       {
         state: "bold",
@@ -198,18 +198,13 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "🍵 Travel Mug",
-        subtitle: "A custom enamel mug for the park & the wild.",
-      },
-      {
-        state: "bold",
-        title: "📗 bōcha",
-        subtitle: "Receive issues of our biannual community zine.",
+        title: "➕ All Steeper Perks Included",
+        subtitle: "Tea boxes, travel mug, and issues of bōcha.",
       },
       {
         state: "bold",
         title: "➕ All Sipper Perks Included",
-        subtitle: "Discounts at local tea shops, town halls, and a sticker.",
+        subtitle: "Discounts at tea shops, town halls, and a sticker.",
       },
     ],
   },
