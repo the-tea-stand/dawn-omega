@@ -162,12 +162,12 @@ let membershipTiers = [
       {
         state: "bold",
         title: "📦 Tea Boxes",
-        subtitle: "A box of curated tea & locally illustrated postcards delivered to your door, 4x / year.",
+        subtitle: "A box of curated tea & locally illustrated postcards delivered to your door, 4x per year.",
       },
       {
         state: "bold",
         title: "🍵 Travel Mug",
-        subtitle: "A custom enamel mug for the park & the wild.",
+        subtitle: "A custom enamel travel cup for tea in the park & the wild.",
       },
       {
         state: "bold",
@@ -242,12 +242,17 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Steeper Perks Included",
-        subtitle: "Tea boxes every season, a travel cup, and the bōcha zine.",
+        subtitle: "Tea boxes, travel mug, and issues of bōcha.",
       },
       {
         state: "bold",
         title: "➕ All Sipper Perks Included",
-        subtitle: "Discounts at tea shops, town halls, and a sticker",
+        subtitle: "Discounts at tea shops, town halls, and a sticker.",
+      },
+            {
+        state: "bold",
+        title: "➕ All Big Steeper Perks Included",
+        subtitle: "Tea ceremonies, Ambient Church giveaways, Future Space free entry.",
       },
     ],
   },
