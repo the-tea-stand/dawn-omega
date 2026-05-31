@@ -194,7 +194,7 @@ let membershipTiers = [
         state: "bold",
         title: "⛪ Ambient Church",
         subtitle:
-          "Free ticket giveaways to deep listening, site-specific events across the US.",
+          "Free ticket giveaways to deep listening events across the US.",
       },
             {
         state: "bold",
@@ -221,13 +221,13 @@ let membershipTiers = [
         state: "bold",
         title: "🫖 Handmade Teapot",
         subtitle:
-          "A handcrafted, 'easy gaiwan' teapot made by local ceramicist Lilian Wu.",
+          "An artisnal 'easy gaiwan' teapot made by local ceramicist Lilian Wu.",
       },
             {
         state: "bold",
         title: "🏺 Local Ceramics",
         subtitle:
-          "Receive handcrafted teaware (like a teapot!) by NYC-based artists once a year.",
+          "Receive handcrafted tea accessories, like tea cups & tea pets, by NYC-based artists once a year.",
       },
       {
         state: "bold",
