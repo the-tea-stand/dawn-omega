@@ -162,12 +162,12 @@ let membershipTiers = [
       {
         state: "bold",
         title: "📦 Tea Boxes",
-        subtitle: "A box of curated tea & locally illustrated postcards delivered to your door, 4 times per year.",
+        subtitle: "A box of curated tea & locally illustrated postcards delivered to your door, 4x / year.",
       },
       {
         state: "bold",
         title: "🍵 Travel Mug",
-        subtitle: "A customized enamel mug for tea in the park & the wild.",
+        subtitle: "A custom enamel mug for tea in the park & the wild.",
       },
       {
         state: "bold",
@@ -220,7 +220,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Sipper Perks Included",
-        subtitle: "Discounts at local tea shops, town halls, and a sticker",
+        subtitle: "Discounts at tea shops, town halls, and a sticker",
       },
     ],
   },
