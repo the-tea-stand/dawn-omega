@@ -167,7 +167,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "🍵 Travel Mug",
-        subtitle: "A custom enamel travel cup for tea in the park & the wild.",
+        subtitle: "A custom enamel cup for tea in the park & the wild.",
       },
       {
         state: "bold",
@@ -221,7 +221,7 @@ let membershipTiers = [
         state: "bold",
         title: "🫖 Handmade Teapot",
         subtitle:
-          "An artisnal 'easy gaiwan' teapot made by local ceramicist Lilian Wu.",
+          "An artisinal 'easy gaiwan' teapot made by local ceramicist Lilian Wu.",
       },
             {
         state: "bold",
