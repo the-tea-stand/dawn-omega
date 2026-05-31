@@ -177,30 +177,50 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Sipper Perks Included",
-        subtitle: "Discounts at local tea shops, town halls, and a sticker.",
+        subtitle: "Discounts at tea shops, town halls, and a sticker.",
       },
     ],
   },
-  {
+    {
     name: "Big Steeper",
     perks: [
       {
         state: "bold",
-        title: "🏺 Local Ceramics",
-        subtitle:
-          "Receive handcrafted teaware (like a teapot!) by NYC-based artists once a year.",
-      },
-      {
-        state: "bold",
         title: "🫖 Tea Ceremonies",
         subtitle:
-          "Partake in an educational, interactive, gongfu-style tea session once a year (in-person & virtual).",
+          "Partake in a small-group, gongfu-style tea session with tea practioner Tim Chacko once a year (in-person or virtual).",
       },
       {
         state: "bold",
         title: "⛪ Ambient Church",
         subtitle:
           "Free ticket giveaways to deep listening events across the US.",
+      },
+      {
+        state: "bold",
+        title: "🍵 Travel Mug",
+        subtitle: "A custom enamel mug for the park & the wild.",
+      },
+      {
+        state: "bold",
+        title: "📗 bōcha",
+        subtitle: "Receive issues of our biannual community zine.",
+      },
+      {
+        state: "bold",
+        title: "➕ All Sipper Perks Included",
+        subtitle: "Discounts at local tea shops, town halls, and a sticker.",
+      },
+    ],
+  },
+  {
+    name: "Mega Steeper",
+    perks: [
+      {
+        state: "bold",
+        title: "🏺 Local Ceramics",
+        subtitle:
+          "Receive handcrafted teaware (like a teapot!) by NYC-based artists once a year.",
       },
       {
         state: "bold",
