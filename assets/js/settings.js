@@ -142,7 +142,7 @@ let membershipTiers = [
         state: "bold",
         title: "🎟️ Discounts at local tea shops",
         subtitle:
-          "Receive 10-20% off at several local tea shops & small businesses, like Brooklyn Tea and Grand Tea & Imports"
+          "Receive 10-20% off at several local tea shops & small businesses, like Brooklyn Tea."
       },
       {
         state: "bold",
@@ -162,22 +162,22 @@ let membershipTiers = [
       {
         state: "bold",
         title: "📦 Tea Boxes",
-        subtitle: "Receive a box of curated tea & art once per season.",
+        subtitle: "A box of curated tea & locally illustrated postcards delivered to your door, 4 times per year.",
       },
       {
         state: "bold",
-        title: "🍵 Travel Cup",
-        subtitle: "A customized collapsible & reusable cup made by Stojo.",
+        title: "🍵 Travel Mug",
+        subtitle: "A customized enamel mug for tea in the park & the wild.",
       },
       {
         state: "bold",
         title: "📗 bōcha",
-        subtitle: "Receive copies of our collaborative zine every solstice.",
+        subtitle: "Receive issues of our community zine every solstice.",
       },
       {
         state: "bold",
         title: "➕ All Sipper Perks Included",
-        subtitle: "Discounts at local tea shops, town halls, and a sticker",
+        subtitle: "Discounts at local tea shops, town halls, and a sticker.",
       },
     ],
   },
