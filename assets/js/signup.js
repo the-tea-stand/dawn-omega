@@ -46,9 +46,10 @@ const populateMembershipTierPerks = () => {
 };
 
 const getTierForAmount = (amount) => {
-  if (amount >= 100) return "Big Steeper";
-  if (amount >= 10) return "Steeper";
-  if (amount < 10) return "Sipper";
+  if (amount >= 99) return "Mega Steeper";
+  if (amount >= 33) return "Big Steeper";
+  if (amount >= 9) return "Steeper";
+  if (amount < 9) return "Sipper";
   return null;
 };
 
