@@ -241,8 +241,8 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "➕ All Sipper Perks Included",
-        subtitle: "Discounts at tea shops, town halls, and a sticker.",
+        title: "➕ All Big Steeper Perks Included",
+        subtitle: "Tea ceremonies, Ambient Church giveaways, and Future Space free entry.",
       },
       {
         state: "bold",
@@ -251,8 +251,8 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "➕ All Big Steeper Perks Included",
-        subtitle: "Tea ceremonies, Ambient Church giveaways, and Future Space free entry.",
+        title: "➕ All Sipper Perks Included",
+        subtitle: "Discounts at tea shops, town halls, and a sticker.",
       },
     ],
   },
