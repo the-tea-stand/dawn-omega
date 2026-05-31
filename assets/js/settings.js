@@ -117,13 +117,13 @@ const cards = [
 // Description below signup and above tiers
 const signupDescription = `
 <div>
-The Tea Stand serves free tea to create spaces for local connection. Our membership program makes it possible.
+The Tea Stand serves free tea to create spaces for local connection.
 </div>
 <div>
-In exchange for your support, members receive perks like discounts at tea shops, boxes of curated tea, and locally made teapots. Explore the tiers below!
+Our members make this possible, and in exchange, receive perks like seasonal tea boxes and locally made teapots. Explore the tiers below!
 </div>
 <div>
-Your support enables us to host free events, work toward a post-capitalist world, and serve FREE TEA FOR ALL!
+Together, we can build local autonomy, practice reciprocity, and continue serving FREE TEA FOR ALL!
 </div>
 `;
 
