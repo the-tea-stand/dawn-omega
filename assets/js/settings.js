@@ -117,14 +117,13 @@ const cards = [
 // Description below signup and above tiers
 const signupDescription = `
 <div>
-The Tea Stand serves free tea to create spaces for local connection. It is 
-<b><a href='/a-note-from-miles' class='link'>my</a></b> full-time work & sustained by neighbors & people like you :)
+The Tea Stand serves free tea to create spaces for local connection. Our membership program makes it possible.
 </div>
 <div>
-In exchange for your support, members receive perks which encourage community participation & sustainable living. More <b><a href='/member-perks' class='link'>here</a></b>. 
+In exchange for your support, members receive perks like discounts at tea shops, boxes of curated tea, and locally made teapots. Explore the tiers below!
 </div>
 <div>
-Y'all enable us to host free events, work toward a post-capitalist world, and serve FREE TEA FOR ALL!
+Your support enables us to host free events, work toward a post-capitalist world, and serve FREE TEA FOR ALL!
 </div>
 `;
 
