@@ -188,13 +188,19 @@ let membershipTiers = [
         state: "bold",
         title: "🫖 Tea Ceremonies",
         subtitle:
-          "Partake in a small-group, gongfu-style tea ceremony with tea practioner Tim Chacko. Once a year, in-person & virtual.",
+          "Partake in a gongfu-style tea ceremony with tea practioner Tim Chacko. Once a year, in-person & virtual.",
       },
       {
         state: "bold",
         title: "⛪ Ambient Church",
         subtitle:
-          "Free ticket giveaways to deep listening events across the US.",
+          "Free ticket giveaways to deep listening, site-specific events across the US.",
+      },
+            {
+        state: "bold",
+        title: "🔮 Future Space",
+        subtitle:
+          "Free entry to Future Space's weekly Open Studio hours. One free entry per month.",
       },
       {
         state: "bold",
@@ -213,19 +219,25 @@ let membershipTiers = [
     perks: [
       {
         state: "bold",
+        title: "🫖 Handmade Teapot",
+        subtitle:
+          "A handcrafted, 'easy gaiwan' teapot made by local ceramicist Lilian Wu.",
+      },
+            {
+        state: "bold",
         title: "🏺 Local Ceramics",
         subtitle:
           "Receive handcrafted teaware (like a teapot!) by NYC-based artists once a year.",
       },
       {
         state: "bold",
-        title: "🌱 Brooklyn Tea Tour",
-        subtitle: "A guided tour of DONA's tea warehouse in Bushwick.",
-      },
-      {
-        state: "bold",
         title: "🆓 Free Merch",
-        subtitle: "All items in The Tea Stand marketplace are 100% free!",
+        subtitle: "All items in The Tea Stand marketplace are 100% free. Up to $100 of goodies per year.",
+      },
+            {
+        state: "bold",
+        title: "🌱 Brooklyn Tea Tour",
+        subtitle: "A tour of DONA's tea warehouse in Bushwick.",
       },
       {
         state: "bold",
