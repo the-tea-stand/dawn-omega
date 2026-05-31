@@ -142,7 +142,7 @@ let membershipTiers = [
         state: "bold",
         title: "🎟️ Discounts at local tea shops",
         subtitle:
-          "Up to 20% off at our partner tea shops and small businesses.",
+          "Receive 10-20% off at several local tea shops & small businesses, like Brooklyn Tea and Grand Tea & Imports"
       },
       {
         state: "bold",
@@ -152,7 +152,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: '🟢 "free tea for all" sticker',
-        subtitle: "A sticker to rep the tea stand far and wide.",
+        subtitle: "Put it on your water bottle or on the sidewalk :)",
       },
     ],
   },
