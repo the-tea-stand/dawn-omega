@@ -142,7 +142,7 @@ let membershipTiers = [
         state: "bold",
         title: "🎟️ Discounts at local tea shops",
         subtitle:
-          "Receive 10-20% off at several local tea shops & small businesses, like Brooklyn Tea."
+          "Receive up to 20% off at several local tea shops & small businesses, like Brooklyn Tea."
       },
       {
         state: "bold",
