@@ -196,7 +196,7 @@ let membershipTiers = [
     perks: [
       {
         state: "bold",
-        title: "🫖 Tea Ceremonies",
+        title: "🪷 Tea Ceremonies",
         subtitle:
           "Partake in an educational, intimate tea ceremony once a year. Offered in-person & virtually.",
       },
