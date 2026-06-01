@@ -4,8 +4,11 @@
         {{!-- Choose plan --}}
         {{!-- Else --}}
         {{!-- Inputs --}}
-        <div class="signup-header">
-            <h1 class="signup-title">Join Newsletter</h1>
+        <div class="newsletter-header">
+            <h1 class="newsletter-title">Join Newsletter</h1>
+            <div id="newsletter-subtitle" class="newsletter-subtitle">
+
+            </div>
         </div>
         <form data-members-form data-members-autoredirect="false" id="signup-form">
             <div class="form-header">
@@ -49,6 +52,7 @@
     </main>
 
     <script src="{{asset 'js/settings.js'}}"></script>
+    <script src="{{asset 'js/newsletter.js'}}"></script>
 
 
     <script type="text/javascript">
@@ -72,7 +76,6 @@
             const observer = new MutationObserver(callback);
             observer.observe(targetNode, config);
         }
-
         document.addEventListener("DOMContentLoaded", function () {
             connectMutationObserver()
         });

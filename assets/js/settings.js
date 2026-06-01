@@ -129,7 +129,7 @@ Together, we can build local autonomy, practice reciprocity, and continue servin
 
 // Newsletter Page Text
 //
-const newsletterDescription = ``;
+const newsletterSignupDescription = ``;
 
 // Membership Tiers and Perks
 //
