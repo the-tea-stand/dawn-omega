@@ -171,7 +171,7 @@ let membershipTiers = [
         state: "bold",
         title: "📦 Tea Boxes",
         subtitle:
-          "A box of curated tea & locally illustrated postcards delivered to your door, 4x per year.",
+          "Boxes of curated tea & locally illustrated postcards delivered to your door, 4x per year.",
       },
       {
         state: "bold",
@@ -186,7 +186,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Sipper Perks Included",
-        subtitle: "Discounts at tea shops, town halls, and a sticker.",
+        subtitle: "Discounts, town halls, and a sticker.",
       },
     ],
   },
@@ -198,7 +198,7 @@ let membershipTiers = [
         state: "bold",
         title: "🪷 Tea Ceremonies",
         subtitle:
-          "Partake in an educational, intimate tea ceremony once a year. Offered in-person & virtually.",
+          "Partake in an educational, intimate tea ceremony led by tea practioner Tim Chacko once a year. In-person & virtual.",
       },
       {
         state: "bold",
@@ -220,7 +220,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Sipper Perks Included",
-        subtitle: "Discounts at tea shops, town halls, and a sticker.",
+        subtitle: "Discounts, town halls, and a sticker.",
       },
     ],
   },
@@ -265,7 +265,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Sipper Perks Included",
-        subtitle: "Discounts at tea shops, town halls, and a sticker.",
+        subtitle: "Discounts, town halls, and a sticker.",
       },
     ],
   },
