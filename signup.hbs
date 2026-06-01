@@ -54,32 +54,7 @@
                     <div class="plan-button stripe-checkout-link" id="{{name}}-payment-button"
                         style="background-color: {{@site.accent_color}}">Choose Tier</div>
                 </div>
-                {{else}}
-                {{#unless @member}}
-                {{!-- Free tier and not a member --}}
-                <div class="card" data-test-tier="free">
-                    <div class="card-header">
-                        <h4 class="plan-name" style="color: {{@site.accent_color}}">{{name}}</h4>
-                        <div class="price-container">
-                            <span class="plan-amount title">Free</span>
-                        </div>
-                    </div>
-                    <div class="card-details">
-                        <div class="plan-description" data-testid="product-description">
-                            {{description}}</div>
-                        <div class="perk-list">
-                            {{#foreach benefits as |benefit|}}
-                            <div class="perk-title">{{benefit}}</div>
-                            {{/foreach}}
-                        </div>
-                    </div>
-                    <button type="submit" class="plan-button" style="background-color: {{@site.accent_color}}">
-                        Choose Tier
-                    </button>
-                </div>
-                {{/unless}}
                 {{/if}}
-
                 {{/foreach}}
                 {{/get}}
                 {{!-- Pay what you wish --}}
