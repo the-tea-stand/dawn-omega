@@ -2,6 +2,7 @@
 routes:
   /signup/: signup
   /signup-success/: signup-success
+  /newsletter/: newsletter
   /events/: events
 
 collections:
