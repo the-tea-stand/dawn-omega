@@ -127,6 +127,10 @@ Together, we can build local autonomy, practice reciprocity, and continue servin
 </div>
 `;
 
+// Newsletter Page Text
+//
+const newsletterDescription = ``;
+
 // Membership Tiers and Perks
 //
 // name - string, should match the name of the tier in Ghost admin (case-sensitive)

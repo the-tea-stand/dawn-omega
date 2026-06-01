@@ -4,9 +4,11 @@
         {{!-- Choose plan --}}
         {{!-- Else --}}
         {{!-- Inputs --}}
+        <div class="signup-header">
+            <h1 class="signup-title">Join Newsletter</h1>
+        </div>
         <form data-members-form data-members-autoredirect="false" id="signup-form">
             <div class="form-header">
-                {{#unless @member}}
                 <div class="input-container">
                     <label class="name-input">
                         Name
@@ -21,17 +23,6 @@
                 </div>
                 <div id="signup-description" class="signup-description">
                 </div>
-                {{else }}
-                <h1 class="choose-plan-header">Choose a plan</h1>
-                <div id="signup-description" class="signup-description">
-                </div>
-                <span id="signup-name" style="display: none;"></span>
-                <span id="signup-email" style="display: none;">{{@member.email}}</span>
-                <span id="membership-paid" style="display: none;">{{@member.paid}}</span>
-                {{#foreach @member.subscriptions as |sub|}}
-                <span id="member-subscription" style="display:none;">{{sub.tier.name}}</span>
-                {{/foreach}}
-                {{/unless}}
             </div>
             <section class="membership-plans">
                 <div data-test-tier="free">
@@ -59,7 +50,9 @@
 
     <script src="{{asset 'js/settings.js'}}"></script>
 
+
     <script type="text/javascript">
+
         // Redirect to success page on successful free tier signup
         function connectMutationObserver() {
             const targetNode = document.getElementById("signup-form");
@@ -83,6 +76,8 @@
         document.addEventListener("DOMContentLoaded", function () {
             connectMutationObserver()
         });
+
+
 
 
     </script>
