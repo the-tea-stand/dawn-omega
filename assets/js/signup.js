@@ -99,7 +99,7 @@ const rearrangeSignupTiers = () => {
   if (!container) return;
 
   const cards = Array.from(container.querySelectorAll(".card[id]")).filter(
-    (card) => card.id !== "" && !isNaN(Number(card.id))
+    (card) => card.id !== "" && !isNaN(Number(card.id)),
   );
 
   if (cards.length < 2) return;
@@ -119,24 +119,7 @@ const rearrangeSignupTiers = () => {
   }
 };
 
-const populateTierImages = () => {
-  if (!membershipTiers) return;
-  membershipTiers.forEach((tier) => {
-    if (!tier.image) return;
-    const perkList = document.getElementById(tier.name);
-    if (!perkList) return;
-    const card = perkList.closest(".card");
-    if (!card) return;
-    const img = document.createElement("img");
-    img.src = tier.image;
-    img.className = "card-image";
-    img.alt = tier.name;
-    card.insertBefore(img, card.firstChild);
-  });
-};
-
 populateSignupText();
 populateMembershipTierPerks();
-populateTierImages();
 rearrangeSignupTiers();
 document.addEventListener("DOMContentLoaded", initSubscriptionAmountListener);
