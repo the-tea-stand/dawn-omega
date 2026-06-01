@@ -244,7 +244,7 @@ let membershipTiers = [
         state: "bold",
         title: "🆓 Free Merch",
         subtitle:
-          "All items in The Tea Stand marketplace are 100% free. Up to $100 of goodies per year.",
+          "All items in The Tea Stand marketplace are 100% free (up to $100 per year).",
       },
       {
         state: "bold",
