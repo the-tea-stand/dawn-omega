@@ -159,7 +159,7 @@ let membershipTiers = [
     ],
   },
   {
-    name: "the tea stand",
+    name: "Steeper",
     image:
       "https://static.wikia.nocookie.net/kong/images/9/91/Esquire-npr-2015--2_custom-026f28deb64e00c991a9edf63fcd413b5a4d9adc-s1100-c50.jpg/revision/latest?cb=20231028221828",
     perks: [
