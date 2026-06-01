@@ -90,7 +90,7 @@ const cards = [
 //     description:
 //       "Become a member to help support the tea stand become a financially sustainable project and get access to perks focused on local art and businesses.",
 //     ctaText: "Join Now",
-//     url: "/sign-up",
+//     url: "/signup",
 //   },
 //   {
 //     title: "Volunteer",
