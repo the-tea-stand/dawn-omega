@@ -40,20 +40,26 @@
                 {{#if monthly_price}}
                 {{!-- Paid tier --}}
                 <div class="card" id="{{monthly_price}}" data-test-tier="paid">
-                    <div class="card-header">
-                        <h4 class="plan-name" style="color: {{@site.accent_color}}">{{name}}</h4>
-                        <div class="price-container">
-                            <span class="price-currency">$</span>
-                            <span class="plan-amount title" data-testid="product-amount">{{price monthly_price}}</span>
-                            <span class="billing-period">/month</span>
-                        </div>
+                    <div class="image-header">
+                        <img class="plan-image" src="/assets/images/signup/{{tier.name}}.jpeg" alt="{{name}}" />
                     </div>
-                    <div class="card-details">
-                        <div class="perk-list" id="{{tier.name}}">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h4 class="plan-name" style="color: {{@site.accent_color}}">{{name}}</h4>
+                            <div class="price-container">
+                                <span class="price-currency">$</span>
+                                <span class="plan-amount title" data-testid="product-amount">{{price
+                                    monthly_price}}</span>
+                                <span class="billing-period">/month</span>
+                            </div>
                         </div>
+                        <div class="card-details">
+                            <div class="perk-list" id="{{tier.name}}">
+                            </div>
+                        </div>
+                        <div class="plan-button stripe-checkout-link" id="{{name}}-payment-button"
+                            style="background-color: {{@site.accent_color}}">Choose Tier</div>
                     </div>
-                    <div class="plan-button stripe-checkout-link" id="{{name}}-payment-button"
-                        style="background-color: {{@site.accent_color}}">Choose Tier</div>
                 </div>
                 {{/if}}
                 {{/foreach}}
@@ -61,23 +67,27 @@
                 {{!-- Pay what you wish --}}
         </form>
         <div class="card" data-test-tier="paid">
-            <div class="card-header">
-                <h4 class="plan-name" style="color: {{@site.accent_color}}">Pay What You Wish</h4>
-                <div class="plan-description" data-testid="product-description">
-                    Choose your own monthly contribution amount and receive the corresponding perks! </div>
-                <div>
-                    <form id="pwyw-form">
-                        <span class="price-currency">$</span>
-                        <input id="subscriptionAmount" class="number-input title" type="number" placeholder="50"
-                            required="true" min="1" />
-                        <span class="billing-period">/month</span>
-                    </form>
+            <div class="card-content">
+                <div class="spacer"></div>
+                <div class="card-header">
+                    <h4 class="plan-name" style="color: {{@site.accent_color}}">Pay What You Wish</h4>
+                    <div class="plan-description" data-testid="product-description">
+                        Choose your own monthly contribution amount and receive the corresponding perks! </div>
+                    <div>
+                        <form id="pwyw-form">
+                            <span class="price-currency">$</span>
+                            <input id="subscriptionAmount" class="number-input title" type="number" placeholder="50"
+                                required="true" min="1" />
+                            <span class="billing-period">/month</span>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="card-details">
-            </div>
-            <div id="pwyw-payment-button" class="plan-button" style="background-color: {{@site.accent_color}}">Choose
-                Tier
+                <div class="card-details">
+                </div>
+                <div id="pwyw-payment-button" class="plan-button" style="background-color: {{@site.accent_color}}">
+                    Choose
+                    Tier
+                </div>
             </div>
         </div>
         </section>
