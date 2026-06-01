@@ -61,6 +61,7 @@ const populateGetInvolvedSection = () => {
     teacup.textContent = "🍵";
     section.after(teacup);
   }
+  section.classList.add("section-title-container");
   getInvolvedSections.map((item) => {
     if (!item.title || !item.description) {
       console.warn(
