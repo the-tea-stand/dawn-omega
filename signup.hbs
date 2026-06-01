@@ -4,6 +4,11 @@
         {{!-- Choose plan --}}
         {{!-- Else --}}
         {{!-- Inputs --}}
+        <div class="signup-header">
+            <h1 class="signup-title">Sign Up</h1>
+            <div id="signup-description" class="signup-description">
+            </div>
+        </div>
         <form data-members-form data-members-autoredirect="false" id="signup-form">
             <div class="form-header">
                 {{#unless @member}}
@@ -23,8 +28,6 @@
                 </div>
                 {{else }}
                 <h1 class="choose-plan-header">Choose a plan</h1>
-                <div id="signup-description" class="signup-description">
-                </div>
                 <span id="signup-name" style="display: none;"></span>
                 <span id="signup-email" style="display: none;">{{@member.email}}</span>
                 <span id="membership-paid" style="display: none;">{{@member.paid}}</span>

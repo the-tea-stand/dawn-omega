@@ -130,6 +130,7 @@ Together, we can build local autonomy, practice reciprocity, and continue servin
 // Membership Tiers and Perks
 //
 // name - string, should match the name of the tier in Ghost admin (case-sensitive)
+// image - string (optional), URL of a photo shown at the top of the tier card
 // perks - array objects with {state, title, subtitle}
 // state - string, either "bold" or "normal".  If "bold", perk title will be bolded and subtitle will be included.
 // title - string, the text that will be displayed for that perk
@@ -137,12 +138,13 @@ Together, we can build local autonomy, practice reciprocity, and continue servin
 let membershipTiers = [
   {
     name: "Sipper",
+    image: "",
     perks: [
       {
         state: "bold",
         title: "🎟️ Discounts at local tea shops",
         subtitle:
-          "Receive up to 20% off at several local tea shops & small businesses, like Brooklyn Tea."
+          "Receive up to 20% off at several local tea shops & small businesses, like Brooklyn Tea.",
       },
       {
         state: "bold",
@@ -158,11 +160,13 @@ let membershipTiers = [
   },
   {
     name: "Steeper",
+    image: "",
     perks: [
       {
         state: "bold",
         title: "📦 Tea Boxes",
-        subtitle: "A box of curated tea & locally illustrated postcards delivered to your door, 4x per year.",
+        subtitle:
+          "A box of curated tea & locally illustrated postcards delivered to your door, 4x per year.",
       },
       {
         state: "bold",
@@ -181,8 +185,9 @@ let membershipTiers = [
       },
     ],
   },
-    {
+  {
     name: "Big Steeper",
+    image: "",
     perks: [
       {
         state: "bold",
@@ -196,7 +201,7 @@ let membershipTiers = [
         subtitle:
           "Free ticket giveaways to deep listening events across the US.",
       },
-            {
+      {
         state: "bold",
         title: "🔮 Future Space",
         subtitle:
@@ -216,6 +221,7 @@ let membershipTiers = [
   },
   {
     name: "Mega Steeper",
+    image: "",
     perks: [
       {
         state: "bold",
@@ -223,7 +229,7 @@ let membershipTiers = [
         subtitle:
           "An artisinal 'easy gaiwan' teapot made by local ceramicist Lilian Wu.",
       },
-            {
+      {
         state: "bold",
         title: "🏺 Local Ceramics",
         subtitle:
@@ -232,9 +238,10 @@ let membershipTiers = [
       {
         state: "bold",
         title: "🆓 Free Merch",
-        subtitle: "All items in The Tea Stand marketplace are 100% free. Up to $100 of goodies per year.",
+        subtitle:
+          "All items in The Tea Stand marketplace are 100% free. Up to $100 of goodies per year.",
       },
-            {
+      {
         state: "bold",
         title: "🌱 Brooklyn Tea Tour",
         subtitle: "A tour of DONA's tea warehouse in Bushwick.",
@@ -242,7 +249,8 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Big Steeper Perks Included",
-        subtitle: "Tea ceremonies, Ambient Church giveaways, and Future Space free entry.",
+        subtitle:
+          "Tea ceremonies, Ambient Church giveaways, and Future Space free entry.",
       },
       {
         state: "bold",
@@ -267,7 +275,7 @@ const membersDescription = `
 <div>
 <b>For those outside the US:</b> due to high shipping prices, we cannot offer the same perks for Steepers or Big Steepers. Alternatives include increasing your contribution amount OR less frequent shipments. Reach out to theteastandnyc@gmail.com and we'll work something out :)
 </div>
-<div>
+<div class="text-align-center">
 🍵
 </div>
 <div>
