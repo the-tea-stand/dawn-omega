@@ -94,6 +94,32 @@ const initSubscriptionAmountListener = () => {
   });
 };
 
+const rearrangeSignupTiers = () => {
+  const container = document.querySelector(".membership-plans");
+  if (!container) return;
+
+  const cards = Array.from(container.querySelectorAll(".card[id]")).filter(
+    (card) => card.id !== "" && !isNaN(Number(card.id))
+  );
+
+  if (cards.length < 2) return;
+
+  const parent = cards[0].parentElement;
+  const after = cards[cards.length - 1].nextSibling;
+
+  cards.sort((a, b) => Number(a.id) - Number(b.id));
+
+  const fragment = document.createDocumentFragment();
+  cards.forEach((card) => fragment.appendChild(card));
+
+  if (after) {
+    parent.insertBefore(fragment, after);
+  } else {
+    parent.appendChild(fragment);
+  }
+};
+
 populateSignupText();
 populateMembershipTierPerks();
+rearrangeSignupTiers();
 document.addEventListener("DOMContentLoaded", initSubscriptionAmountListener);
