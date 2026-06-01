@@ -122,7 +122,16 @@
     border-radius: 7px;
     border: 1px solid rgb(225, 225, 225);
     min-height: 200px;
+    overflow: hidden;
     transition: border-color 0.25s ease-in-out;
+}
+
+.card-image {
+    width: calc(100% + 64px);
+    margin: -32px -32px 24px -32px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
 }
 
 .card-header {
