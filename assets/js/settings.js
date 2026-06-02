@@ -84,29 +84,29 @@ const cards = [
 // ctaText: string of the call to action text, e.g. "Join Now"
 // url: string of the url that the call to action button will link to
 
-// const getInvolvedSections = [
-//   {
-//     title: "Become a Member",
-//     description:
-//       "Become a member to help support the tea stand become a financially sustainable project and get access to perks focused on local art and businesses.",
-//     ctaText: "Join Now",
-//     url: "/signup",
-//   },
-//   {
-//     title: "Volunteer",
-//     description:
-//       "Help serve tea at popups and distros or assist in behind-the-scenes work to keep the tea stand running.",
-//     ctaText: "Join Whatsapp",
-//     url: "/volunteer",
-//   },
-//   {
-//     title: "Donate Tea",
-//     description:
-//       "All tea served at the tea stand is donated by the community.  Reach out to us to donate!",
-//     ctaText: "Contact Us",
-//     url: "/donate-tea",
-//   },
-// ];
+const getInvolvedSections = [
+   {
+     title: "Become a Member",
+     description:
+       "Become a member to help support the tea stand become a financially sustainable project and get access to perks focused on local art and businesses.",
+     ctaText: "See Membership Tiers",
+     url: "/signup",
+   },
+   {
+     title: "Volunteer",
+     description:
+       "Help serve tea at popups and distros or assist in behind-the-scenes work to keep the tea stand running.",
+     ctaText: "Learn More",
+     url: "/volunteer",
+   },
+   {
+     title: "Donate Tea",
+     description:
+       "All tea served at the tea stand is donated by the community. Reach out to us to donate!",
+     ctaText: "Learn More",
+     url: "/donate-tea",
+   },
+ ];
 
 // ------------------------------------------ Sign up page text ------------------------------------------
 
