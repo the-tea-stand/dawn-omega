@@ -88,22 +88,22 @@ const getInvolvedSections = [
    {
      title: "Become a Member",
      description:
-       "Help us become a financially sustainable project and receive perks focused on local art & teaware. Tiers start at $3/mo.",
+       "Help sustain The Tea Stand and receive perks focused on local art & teaware. Tiers start at $3/mo.",
      ctaText: "See Membership Tiers",
      url: "/signup",
    },
    {
      title: "Volunteer",
      description:
-       "Serve tea at an event or assist with behind-the-scenes work to help keep The Tea Stand running.",
+       "Serve tea at an event, help with design or photography, or assist with behind-the-scenes prep work.",
      ctaText: "Learn More",
      url: "/volunteer",
    },
    {
      title: "Donate Tea",
      description:
-       "All the tea we serve has been donated by the community. Learn more about how & what to donate!",
-     ctaText: "Get In Touch",
+       "All the tea we serve has been donated by the community. Learn more about how to donate!",
+     ctaText: "Tea Donation Guidelines",
      url: "/donate-tea",
    },
  ];
