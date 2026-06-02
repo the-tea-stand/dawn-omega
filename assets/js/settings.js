@@ -176,7 +176,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "🍵 Travel Mug",
-        subtitle: "A custom enamel cup for tea in the park & the wild.",
+        subtitle: "A custom enamel cup for tea in the park.",
       },
       {
         state: "bold",
