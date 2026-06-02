@@ -14,7 +14,7 @@ const description =
 const articlesTitle = "Our Newsletter";
 
 const programmingSubtitle =
-  "the tea stand takes many forms.<br/>view our event calendar <a href='/calendar' class='link'>here</a>!";
+  "the tea stand takes many forms.<br/>explore our core event types below.";
 
 const newsletterSubtitle =
   "we prefer the slow pace of email.<br/>it's free, just like the tea!";
