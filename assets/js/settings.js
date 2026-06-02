@@ -202,13 +202,13 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "⛪ Ambient Church Tickets",
+        title: "⛪ Ambient Church",
         subtitle:
           "Free ticket giveaways to deep listening events across the US.",
       },
       {
         state: "bold",
-        title: "🔮 Future Space Open Hours",
+        title: "🔮 Future Space",
         subtitle:
           "Free entry to Future Space's weekly Open Hours event series. One free entry per month.",
       },
