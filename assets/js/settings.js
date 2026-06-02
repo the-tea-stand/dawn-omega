@@ -236,9 +236,9 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "🏺 Local Ceramics",
+        title: "🏺 Locally Made Tea Accessories",
         subtitle:
-          "Receive locally made tea accessories, like tea cups & tea pets, once a year.",
+          "Receive handcrafted tea accessories, like tea cups & tea pets, every year.",
       },
       {
         state: "bold",
