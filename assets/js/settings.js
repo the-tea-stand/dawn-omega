@@ -232,7 +232,7 @@ let membershipTiers = [
         state: "bold",
         title: "🫖 Handmade Teapot",
         subtitle:
-          "An artisinal 'easy gaiwan' teapot made by local ceramicist Lilian Wu.",
+          "An artisanal 'easy gaiwan' teapot made by local ceramicist Lilian Wu.",
       },
       {
         state: "bold",
