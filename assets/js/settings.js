@@ -88,7 +88,7 @@ const getInvolvedSections = [
    {
      title: "Become a Member",
      description:
-       "Help sustain The Tea Stand and receive perks like zines art & teaware. Tiers start at $3/mo.",
+       "Help sustain The Tea Stand and receive perks like zines & teaware. Tiers start at $3/mo.",
      ctaText: "See Membership Tiers",
      url: "/signup",
    },
