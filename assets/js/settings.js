@@ -158,7 +158,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: '🟢 "free tea for all" sticker',
-        subtitle: "Put it on your water bottle or on the sidewalk :)",
+        subtitle: "Put it on your thermos or on the sidewalk :)",
       },
     ],
   },
