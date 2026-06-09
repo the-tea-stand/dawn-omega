@@ -198,7 +198,7 @@ let membershipTiers = [
         state: "bold",
         title: "🪷 Tea Ceremonies",
         subtitle:
-          "Partake in an educational, intimate tea ceremony led by tea practitioner Tim Chacko once a year. Offered in-person & virtual.",
+          "Partake in educational, intimate tea ceremonies led by tea practitioner Tim Chacko. Offered in-person & virtual, once per year.",
       },
       {
         state: "bold",
