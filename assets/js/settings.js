@@ -261,7 +261,7 @@ let membershipTiers = [
         state: "bold",
         title: "➕ All Big Steeper Perks Included",
         subtitle:
-          "Tea ceremonies, Ambient Church giveaways, and Future Space free entry.",
+          "Tea ceremonies, tea towel, Ambient Church giveaways, and Future Space free entry.",
       },
       {
         state: "bold",
