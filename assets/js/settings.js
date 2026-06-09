@@ -204,7 +204,7 @@ let membershipTiers = [
         state: "bold",
         title: "🧵 Embroidered Tea Towel",
         subtitle:
-          "Linen tea towels with custom, hand-embroidered designs. Your choice of brown or green. 22cm x 22cm.",
+          "Linen tea towel with custom hand-embroidery. Your choice of brown or green. 22cm x 22cm.",
       },
       {
         state: "bold",
