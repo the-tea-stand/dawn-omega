@@ -120,7 +120,7 @@ const signupDescription = `
 The Tea Stand serves free tea to create spaces for local connection.
 </div>
 <div>
-Our members make this possible, and in exchange, receive perks like seasonal tea boxes and locally made teapots. Explore the tiers below!
+Our members make this possible, and in exchange receive perks like seasonal tea boxes and locally made teapots. Explore the tiers below!
 </div>
 <div>
 Together, we can build local autonomy, practice reciprocity, and continue serving FREE TEA FOR ALL!
