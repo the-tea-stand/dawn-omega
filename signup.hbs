@@ -88,11 +88,9 @@
         </div>
         </section>
         {{#if @member.paid}}
-        <div class="cancellation-layout" {{#foreach @member.subscriptions as |sub|}} <div
-            class="cancellation-container">
-            {{cancel_link class="cancel-link" cancelLabel="Cancel Membership"}}
+        <div class="cancellation-layout">
         </div>
-        {{/foreach}}
+        {{/if}}
     </div>
     {{/if}}
     <div class="members-description-container">
