@@ -32,12 +32,6 @@
     flex-direction: column;
 }
 
-.account-row {
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-}
-
 
 .account-value {
     font-weight: 600;

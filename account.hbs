@@ -25,12 +25,10 @@
             <section class="account-section">
                 <div class="account-details">
                     {{#foreach @member.subscriptions as |sub|}}
-                    <div class="account-row">
-                        <span class="account-value">{{sub.tier.name}}</span>
-                        <span class="value-description">${{price sub.plan.amount}}/{{sub.plan.interval}}</span>
-                        <span class="value-description">{{#if sub.cancel_at_period_end}}Ends{{else}}Renews{{/if}} {{date
-                            sub.current_period_end format="MMMM D, YYYY"}}</span>
-                    </div>
+                    <span class="account-value">{{sub.tier.name}}</span>
+                    <span class="value-description">${{price sub.plan.amount}}/{{sub.plan.interval}}</span>
+                    <span class="value-description">{{#if sub.cancel_at_period_end}}Ends{{else}}Renews{{/if}} {{date
+                        sub.current_period_end format="MMMM D, YYYY"}}</span>
                     {{/foreach}}
                 </div>
                 <button class="account-cta" data-portal="account/plans">Change</button>
@@ -40,10 +38,8 @@
             <section class="account-section">
                 <div class="account-details">
                     {{#foreach @member.subscriptions as |sub|}}
-                    <div class="account-row">
-                        <span class="account-value">Billing</span>
-                        <span class="value-description">•••• •••• •••• {{sub.default_payment_card_last4}}</span>
-                    </div>
+                    <span class="account-value">Billing</span>
+                    <span class="value-description">•••• •••• •••• {{sub.default_payment_card_last4}}</span>
                     {{/foreach}}
                 </div>
                 <button class="account-cta" data-portal="account/profile">Update</button>
@@ -53,12 +49,8 @@
             {{!-- Emails --}}
             <section class="account-section">
                 <div class="account-details">
-                    <div class="account-row">
-                        <span class="account-value">Emails</span>
-                    </div>
-                    <div class="value-description">
-                        <span>Manage your email preferences</span>
-                    </div>
+                    <span class="account-value">Emails</span>
+                    <span class="value-description">Manage your email preferences</span>
                 </div>
                 <button class="account-cta" data-portal="account/newsletters">Manage</button>
             </section>
