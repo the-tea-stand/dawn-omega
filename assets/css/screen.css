@@ -23,5 +23,6 @@
 @import "misc/dark.css";
 @import "subscriptions/signup.css";
 @import "subscriptions/signup-success.css";
+@import "subscriptions/account.css";
 @import "perpetual-brew/perpetual-brew.css";
 @import "events/events.css";

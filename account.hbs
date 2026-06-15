@@ -1,0 +1,81 @@
+{{!< ./default}} <main id="site-main" class="site-main site-signup account-page outer">
+    <div class="membership-container">
+        <div class="signup-header">
+            <h1 class="signup-title">Your account</h1>
+        </div>
+
+        {{#if @member}}
+        <div class="account-container">
+
+            {{!-- Profile --}}
+            <section class="account-section">
+                <div class="account-details">
+                    <div class="account-row">
+                        <span class="account-value">{{@member.name}}</span>
+                    </div>
+                    <div class="value-description">
+                        <span>{{@member.email}}</span>
+                    </div>
+                </div>
+                <button class="account-cta" data-portal="account/profile">Edit</button>
+            </section>
+
+            {{#if @member.paid}}
+            {{!-- Membership --}}
+            <section class="account-section">
+                <div class="account-details">
+                    <span class="account-label">Membership</span>
+                    {{#foreach @member.subscriptions as |sub|}}
+                    <div class="account-row">
+                        <span class="account-label">Plan</span>
+                        <span class="account-value">{{sub.tier.name}}</span>
+                    </div>
+                    <div class="account-row">
+                        <span class="account-label">Cost</span>
+                        <span class="account-value">${{price sub.plan.amount}}/{{sub.plan.interval}}</span>
+                    </div>
+                    <div class="account-row">
+                        <span class="account-label">{{#if sub.cancel_at_period_end}}Ends{{else}}Renews{{/if}}</span>
+                        <span class="account-value">{{date sub.current_period_end format="MMMM D, YYYY"}}</span>
+                    </div>
+                    {{/foreach}}
+                </div>
+                <button class="account-cta" data-portal="account/plans">Change</button>
+            </section>
+
+            {{!-- Billing --}}
+            <section class="account-section">
+                <div class="account-details">
+                    <span class="account-label">Billing</span>
+                    {{#foreach @member.subscriptions as |sub|}}
+                    <div class="account-row">
+                        <span class="account-label">Card</span>
+                        <span class="account-value">•••• •••• •••• {{sub.default_payment_card_last4}}</span>
+                    </div>
+                    {{/foreach}}
+                </div>
+                <button class="account-cta" data-portal="account/profile">Update</button>
+            </section>
+            {{/if}}
+
+            {{!-- Emails --}}
+            <section class="account-section">
+                <div class="account-details">
+                    <div class="account-row">
+                        <span class="account-value">Emails</span>
+                    </div>
+                    <div class="value-description">
+                        <span>Manage your email preferences</span>
+                    </div>
+                </div>
+                <button class="account-cta" data-portal="account/newsletters">Manage</button>
+            </section>
+
+        </div>
+        {{else}}
+        <div class="members-description-container">
+            <p>Please <a href="#/portal/signin" data-portal="signin">sign in</a> to view your account.</p>
+        </div>
+        {{/if}}
+    </div>
+    </main>
