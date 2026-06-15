@@ -1,15 +1,11 @@
 {{!< ./default}} <main id="site-main" class="site-main site-signup outer">
     <div class="membership-container">
-        {{!-- If member --}}
-        {{!-- Choose plan --}}
-        {{!-- Else --}}
-        {{!-- Inputs --}}
-        <div class="signup-header">
-            <h1 class="signup-title">Become a Member</h1>
-        </div>
         <form data-members-form data-members-autoredirect="false" id="signup-form">
             <div class="form-header">
                 {{#unless @member}}
+                <div class="signup-header">
+                    <h1 class="signup-title">Become a Member</h1>
+                </div>
                 <div class="input-container">
                     <label class="name-input">
                         Name
