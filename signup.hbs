@@ -100,6 +100,18 @@
     </div>
     </main>
 
+    <div id="confirm-dialog-overlay" class="confirm-dialog-overlay" hidden>
+        <div class="confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="confirm-dialog-message">
+            <p id="confirm-dialog-message" class="confirm-dialog-message"></p>
+            <div class="confirm-dialog-actions">
+                <button type="button" id="confirm-dialog-cancel"
+                    class="confirm-dialog-button confirm-dialog-cancel">Cancel</button>
+                <button type="button" id="confirm-dialog-confirm" class="confirm-dialog-button confirm-dialog-confirm"
+                    style="background-color: {{@site.accent_color}}">Confirm</button>
+            </div>
+        </div>
+    </div>
+
     <script src="{{asset 'js/settings.js'}}"></script>
     <script src="{{asset 'js/signup.js'}}"></script>
 
@@ -124,6 +136,39 @@
             observer.observe(targetNode, config);
         }
 
+        // Custom in-page confirmation modal. Returns a Promise that resolves to true (Confirm)
+        // or false (Cancel / Escape / overlay click).
+        function showConfirmDialog(message) {
+            return new Promise(function (resolve) {
+                var overlay = document.getElementById("confirm-dialog-overlay")
+                var messageNode = document.getElementById("confirm-dialog-message")
+                var confirmBtn = document.getElementById("confirm-dialog-confirm")
+                var cancelBtn = document.getElementById("confirm-dialog-cancel")
+
+                messageNode.textContent = message
+                overlay.hidden = false
+                confirmBtn.focus()
+
+                function cleanup(result) {
+                    overlay.hidden = true
+                    confirmBtn.removeEventListener("click", onConfirm)
+                    cancelBtn.removeEventListener("click", onCancel)
+                    overlay.removeEventListener("click", onOverlayClick)
+                    document.removeEventListener("keydown", onKeydown)
+                    resolve(result)
+                }
+                function onConfirm() { cleanup(true) }
+                function onCancel() { cleanup(false) }
+                function onOverlayClick(e) { if (e.target === overlay) { cleanup(false) } }
+                function onKeydown(e) { if (e.key === "Escape") { cleanup(false) } }
+
+                confirmBtn.addEventListener("click", onConfirm)
+                cancelBtn.addEventListener("click", onCancel)
+                overlay.addEventListener("click", onOverlayClick)
+                document.addEventListener("keydown", onKeydown)
+            })
+        }
+
         function getStripeLink(subscriptionAmount, payWhatYouWish) {
             subscriptionAmount = subscriptionAmount || document.getElementById("subscriptionAmount").value;
             var emailNode = document.getElementById("signup-email");
@@ -146,25 +191,26 @@
             var paidNode = document.getElementById("membership-paid")
             var isPaid = paidNode && paidNode.innerHTML.trim() === "true"
             if (isPaid) {
-                var confirmed = window.confirm(
+                showConfirmDialog(
                     "Switch your membership to $" + subscriptionAmount +
                     "/month now? You'll be charged a prorated amount today."
-                )
-                if (!confirmed) {
-                    return
-                }
-                fetch("https://teastand-backend.vercel.app/api/change-subscription", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "Accept": "*/*"
-                    },
-                    body: JSON.stringify({ email, amount: subscriptionAmount })
-                }).then(function (result) {
-                    return result.json()
-                }).then(function (json) {
-                    // post update redirection
-                    document.location = json.url
+                ).then(function (confirmed) {
+                    if (!confirmed) {
+                        return
+                    }
+                    fetch("https://teastand-backend.vercel.app/api/change-subscription", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Accept": "*/*"
+                        },
+                        body: JSON.stringify({ email, amount: subscriptionAmount })
+                    }).then(function (result) {
+                        return result.json()
+                    }).then(function (json) {
+                        // post update redirection
+                        document.location = json.url
+                    })
                 })
                 return
             }

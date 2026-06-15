@@ -321,3 +321,77 @@
 #selectedTier {
     transition: opacity 0.15s ease;
 }
+
+/* Custom confirmation dialog (replaces window.confirm on plan change) */
+.confirm-dialog-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.confirm-dialog-overlay[hidden] {
+    display: none;
+}
+
+.confirm-dialog {
+    width: 100%;
+    max-width: 420px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.confirm-dialog-message {
+    margin: 0 0 1.75rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #15171a;
+}
+
+.confirm-dialog-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.confirm-dialog-button {
+    flex: 1;
+    height: 44px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1em;
+    letter-spacing: 0.2px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .25s ease;
+    user-select: none;
+    outline: none;
+}
+
+.confirm-dialog-cancel {
+    background-color: white;
+    color: #15171a;
+    border: 1px solid rgb(225, 225, 225);
+}
+
+.confirm-dialog-cancel:hover {
+    border-color: #b3b3b3;
+}
+
+.confirm-dialog-confirm {
+    color: white;
+    border: none;
+}
+
+.confirm-dialog-confirm:hover {
+    opacity: 0.9;
+}
