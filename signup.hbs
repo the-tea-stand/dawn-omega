@@ -26,7 +26,7 @@
                 <span id="signup-email" style="display: none;">{{@member.email}}</span>
                 <span id="membership-paid" style="display: none;">{{@member.paid}}</span>
                 {{#foreach @member.subscriptions as |sub|}}
-                <span id="member-subscription" style="display:none;">{{sub.tier.name}}</span>
+                <span class="member-subscription" style="display:none;">{{sub.tier.name}}</span>
                 {{/foreach}}
                 {{/unless}}
             </div>
@@ -194,6 +194,22 @@
             document.getElementById("Mega Steeper-payment-button").addEventListener("click", () => getStripeLink(99, false))
         }
 
+        // Gray out and disable the button for any plan the member is already subscribed to.
+        // The `.disabled` CSS class also sets pointer-events:none, so the click handler can't fire.
+        function disableSubscribedPlans() {
+            document.querySelectorAll(".member-subscription").forEach(function (node) {
+                var tierName = node.textContent.trim()
+                if (!tierName) {
+                    return
+                }
+                var button = document.getElementById(tierName + "-payment-button")
+                if (button) {
+                    button.classList.add("disabled")
+                    button.textContent = "Current Plan"
+                }
+            })
+        }
+
         // Disable scroll on PWYW number input
         document.addEventListener("wheel", function (e) {
             if (document.activeElement.type === "number" && document.activeElement === e.target) {
@@ -203,6 +219,7 @@
 
         document.addEventListener("DOMContentLoaded", function () {
             addClickHandlers()
+            disableSubscribedPlans()
             connectMutationObserver()
         });
 

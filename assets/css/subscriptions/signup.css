@@ -260,6 +260,13 @@
     border: none;
 }
 
+.plan-button.disabled {
+    background-color: #cccccc !important;
+    color: #6b6b6b;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 .cancellation-layout {
     margin: 4rem auto;
     font-weight: 700;
