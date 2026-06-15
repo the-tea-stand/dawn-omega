@@ -143,6 +143,33 @@
                     return
                 }
             }
+            // Existing paying members switch (overwrite) their current subscription instead of
+            // creating a new one, which would double-charge them.
+            var paidNode = document.getElementById("membership-paid")
+            var isPaid = paidNode && paidNode.innerHTML.trim() === "true"
+            if (isPaid) {
+                var confirmed = window.confirm(
+                    "Switch your membership to $" + subscriptionAmount +
+                    "/month now? You'll be charged a prorated amount today."
+                )
+                if (!confirmed) {
+                    return
+                }
+                fetch("https://teastand-backend.vercel.app/api/change-subscription", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "*/*"
+                    },
+                    body: JSON.stringify({ email, amount: subscriptionAmount })
+                }).then(function (result) {
+                    return result.json()
+                }).then(function (json) {
+                    // post update redirection
+                    document.location = json.url
+                })
+                return
+            }
             // call our custom backend
             fetch("https://teastand-backend.vercel.app/api/get-stripe-session", {
                 method: "POST",
@@ -154,7 +181,7 @@
             }).then(function (result) {
                 return result.json()
             }).then(function (json) {
-                // post payment redirection 
+                // post payment redirection
                 document.location = json.url
             })
         }
