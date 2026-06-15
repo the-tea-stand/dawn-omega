@@ -26,7 +26,7 @@
                 <span id="signup-email" style="display: none;">{{@member.email}}</span>
                 <span id="membership-paid" style="display: none;">{{@member.paid}}</span>
                 {{#foreach @member.subscriptions as |sub|}}
-                <span class="member-subscription" style="display:none;">{{sub.tier.name}}</span>
+                <span class="member-subscription" style="display:none;">{{sub.price.amount}}</span>
                 {{/foreach}}
                 {{/unless}}
             </div>
@@ -54,7 +54,8 @@
                             </div>
                         </div>
                         <div class="plan-button stripe-checkout-link" id="{{name}}-payment-button"
-                            style="background-color: {{@site.accent_color}}">Choose Tier</div>
+                            data-monthly-price="{{monthly_price}}" style="background-color: {{@site.accent_color}}">
+                            Choose Tier</div>
                     </div>
                 </div>
                 {{/if}}
@@ -92,7 +93,6 @@
         </div>
         {{/if}}
     </div>
-    {{/if}}
     <div class="members-description-container">
         <div id="members-description" class="members-description">
         </div>
@@ -192,16 +192,24 @@
             document.getElementById("Mega Steeper-payment-button").addEventListener("click", () => getStripeLink(99, false))
         }
 
-        // Gray out and disable the button for any plan the member is already subscribed to.
-        // The `.disabled` CSS class also sets pointer-events:none, so the click handler can't fire.
+        // Gray out and disable a plan button only when the member is already paying that exact
+        // price (amounts are in cents). A pay-what-you-wish member paying a non-tier amount keeps
+        // every tier button enabled. The `.disabled` CSS class also sets pointer-events:none, so
+        // the click handler can't fire.
         function disableSubscribedPlans() {
+            var paidAmounts = []
             document.querySelectorAll(".member-subscription").forEach(function (node) {
-                var tierName = node.textContent.trim()
-                if (!tierName) {
-                    return
+                var amount = parseInt(node.textContent.trim(), 10)
+                if (!isNaN(amount)) {
+                    paidAmounts.push(amount)
                 }
-                var button = document.getElementById(tierName + "-payment-button")
-                if (button) {
+            })
+            if (!paidAmounts.length) {
+                return
+            }
+            document.querySelectorAll(".plan-button[data-monthly-price]").forEach(function (button) {
+                var tierPrice = parseInt(button.getAttribute("data-monthly-price"), 10)
+                if (paidAmounts.indexOf(tierPrice) !== -1) {
                     button.classList.add("disabled")
                     button.textContent = "Current Plan"
                 }
