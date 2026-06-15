@@ -24,19 +24,12 @@
             {{!-- Membership --}}
             <section class="account-section">
                 <div class="account-details">
-                    <span class="account-label">Membership</span>
                     {{#foreach @member.subscriptions as |sub|}}
                     <div class="account-row">
-                        <span class="account-label">Plan</span>
                         <span class="account-value">{{sub.tier.name}}</span>
-                    </div>
-                    <div class="account-row">
-                        <span class="account-label">Cost</span>
-                        <span class="account-value">${{price sub.plan.amount}}/{{sub.plan.interval}}</span>
-                    </div>
-                    <div class="account-row">
-                        <span class="account-label">{{#if sub.cancel_at_period_end}}Ends{{else}}Renews{{/if}}</span>
-                        <span class="account-value">{{date sub.current_period_end format="MMMM D, YYYY"}}</span>
+                        <span class="value-description">${{price sub.plan.amount}}/{{sub.plan.interval}}</span>
+                        <span class="value-description">{{#if sub.cancel_at_period_end}}Ends{{else}}Renews{{/if}} {{date
+                            sub.current_period_end format="MMMM D, YYYY"}}</span>
                     </div>
                     {{/foreach}}
                 </div>
@@ -46,11 +39,10 @@
             {{!-- Billing --}}
             <section class="account-section">
                 <div class="account-details">
-                    <span class="account-label">Billing</span>
                     {{#foreach @member.subscriptions as |sub|}}
                     <div class="account-row">
-                        <span class="account-label">Card</span>
-                        <span class="account-value">•••• •••• •••• {{sub.default_payment_card_last4}}</span>
+                        <span class="account-value">Billing</span>
+                        <span class="value-description">•••• •••• •••• {{sub.default_payment_card_last4}}</span>
                     </div>
                     {{/foreach}}
                 </div>

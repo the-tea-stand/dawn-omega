@@ -38,11 +38,6 @@
     gap: 1rem;
 }
 
-.account-label {
-    color: var(--color-secondary-text);
-    font-weight: 500;
-    min-width: 90px;
-}
 
 .account-value {
     font-weight: 600;
