@@ -204,7 +204,7 @@ let membershipTiers = [
         state: "bold",
         title: "🧵 Embroidered Tea Towel",
         subtitle:
-          "Linen tea towel with custom hand-embroidery. Towels available in brown and green — the choice is yours!",
+          "Linen tea towel with custom hand-embroidery. Available in brown and green — the choice is yours!",
       },
       {
         state: "bold",
