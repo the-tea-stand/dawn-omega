@@ -58,7 +58,7 @@
         </div>
 
         <div class="account-cancel-container">
-            {{#foreach @member.subscriptions}} {{cancel_link class="account-cancel-cta"}} {{/foreach}}
+            {{#foreach @member.subscriptions}} {{cancel_link class="account-cancel-cta" errorClass="account-cancel-error"}} {{/foreach}}
         </div>
         {{else}}
         <div class="members-description-container">
