@@ -57,7 +57,9 @@
 
         </div>
 
-        {{#foreach @member.subscriptions}} {{cancel_link}} {{/foreach}}
+        <div class="account-cancel-container">
+            {{#foreach @member.subscriptions}} {{cancel_link class="account-cancel-cta"}} {{/foreach}}
+        </div>
         {{else}}
         <div class="members-description-container">
             <p>Please <a href="#/portal/signin" data-portal="signin">sign in</a> to view your account.</p>

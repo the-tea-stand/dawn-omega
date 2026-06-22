@@ -72,3 +72,38 @@
 .account-cta:hover {
     border-color: rgb(61, 61, 61);
 }
+
+.account-cancel-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.account-cancel-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1em;
+    letter-spacing: 0.2px;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--color-secondary-text);
+    height: 34px;
+    padding: 0 1.4rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .25s ease;
+    border: 1px solid rgb(225, 225, 225);
+    background: transparent;
+    user-select: none;
+}
+
+.account-cancel-cta:hover {
+    color: rgb(180, 40, 40);
+    border-color: rgb(180, 40, 40);
+}
