@@ -176,7 +176,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "🍵 Custom Mug",
-        subtitle: "A 14oz enamel cup with \"free tea for all\" printed on the side. Perfect for tea in the park.",
+        subtitle: "A 14oz, green & brown enamel cup with \"free tea for all\" printed on the side. Perfect for tea in the park.",
       },
       {
         state: "bold",
@@ -238,7 +238,7 @@ let membershipTiers = [
         state: "bold",
         title: "🫖 Handmade Teapot",
         subtitle:
-          "An artisanal 'easy gaiwan' teapot (pictured above) made by local ceramicist Lilian Wu.",
+          "An artisanal \"easy gaiwan\" teapot (pictured above) made by local ceramicist Lilian Wu.",
       },
       {
         state: "bold",
