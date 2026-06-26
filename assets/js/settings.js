@@ -175,7 +175,7 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "🍵 Travel Mug",
+        title: "🍵 Custom Mug",
         subtitle: "A custom enamel cup for tea in the park.",
       },
       {
@@ -221,7 +221,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Steeper Perks Included",
-        subtitle: "Tea boxes, travel mug, and issues of bōcha.",
+        subtitle: "Tea boxes, custom mug, and issues of bōcha.",
       },
       {
         state: "bold",
@@ -266,7 +266,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Steeper Perks Included",
-        subtitle: "Tea boxes, travel mug, and issues of bōcha.",
+        subtitle: "Tea boxes, custom mug, and issues of bōcha.",
       },
       {
         state: "bold",
