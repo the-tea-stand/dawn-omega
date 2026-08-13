@@ -1,7 +1,7 @@
 {{!< ./default}} <main id="site-main" class="site-main site-signup account-page outer">
     <div class="membership-container">
         <div class="signup-header">
-            <h1 class="signup-title">Your account</h1>
+            <h1 class="signup-title">My Account</h1>
         </div>
 
         {{#if @member}}
@@ -56,14 +56,19 @@
             </section>
 
         </div>
-
-        <div class="account-cancel-container">
-            {{#foreach @member.subscriptions}} {{cancel_link class="account-cancel-cta" errorClass="account-cancel-error"}} {{/foreach}}
+        <div class="flex-col">
+            <div class="account-cancel-container">
+                {{#foreach @member.subscriptions}} {{cancel_link class="account-cancel-cta"
+                errorClass="account-cancel-error"}} {{/foreach}}
+            </div>
+            {{else}}
+            <div class="members-description-container">
+                <p>Please <a href="#/portal/signin" data-portal="signin">sign in</a> to view your account.</p>
+            </div>
+            {{/if}}
+            <div class="account-cancel-container">
+                <a class="account-cta" href="javascript:" data-members-signout>Sign out</a>
+            </div>
         </div>
-        {{else}}
-        <div class="members-description-container">
-            <p>Please <a href="#/portal/signin" data-portal="signin">sign in</a> to view your account.</p>
-        </div>
-        {{/if}}
     </div>
     </main>
