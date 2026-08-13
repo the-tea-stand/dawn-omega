@@ -16,13 +16,15 @@
     <div class="card-section-title">
         <h2 class="mb-4">{{@custom.card_section_title}}</h2>
         <div id="programming-subtitle" class="italic"></div>
+        <div class="center-content mt-1">
+            <div class="cover-cta">
+                <a class="button members-subscribe" href="/calendar">View Calendar</a>
+            </div>
+        </div>
     </div>
     <section id="card-container">
     </section>
     <div class="cover-cta-container align-center view-calendar-button">
-        <div class="cover-cta">
-            <a class="button members-subscribe" href="/calendar">View Calendar</a>
-        </div>
     </div>
 
     <div class="teacup-break mt-6">
@@ -35,6 +37,15 @@
             <h2 id="articles-section-title" class="mb-4"></h2>
         </div>
         <div id="articles-section-subtitle" class="italic"></div>
+        {{#if @site.members_enabled}}
+        {{#unless @member}}
+        <div class="center-content mt-1">
+            <div class="cover-cta">
+                <a class="button members-subscribe" href="/newsletter">Join Newsletter</a>
+            </div>
+        </div>
+        {{/unless}}
+        {{/if}}
     </div>
 
     <script src="{{asset 'js/settings.js'}}"></script>

@@ -38,6 +38,16 @@
     display: none;
 }
 
+.nav-dropdown > details > summary.nav-dropdown-toggle::after {
+    content: "";
+    display: inline-block;
+    margin-left: 0.4em;
+    border-left: 0.25em solid transparent;
+    border-right: 0.25em solid transparent;
+    border-top: 0.25em solid currentColor;
+    vertical-align: middle;
+}
+
 .nav-dropdown-menu {
     position: absolute;
     top: 100%;

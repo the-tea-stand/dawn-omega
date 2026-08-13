@@ -56,6 +56,10 @@
     font-size: 2rem;
 }
 
+.mt-1 {
+    margin-top: 1rem;
+}
+
 .mt-3 {
     margin-top: 3rem;
 }
@@ -66,6 +70,15 @@
 
 .mt-6 {
     margin-top: 6rem;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-items: center;
 }
 
 .section-title-container {
