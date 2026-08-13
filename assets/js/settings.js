@@ -88,7 +88,7 @@ const getInvolvedSections = [
    {
      title: "Become a Member",
      description:
-       "Support The Tea Stand and receive perks like zines & teaware. Tiers start at $3/mo.",
+       "Support our work and receive perks like zines & teaware. Starting at $3/mo.",
      ctaText: "See Membership Tiers",
      url: "/signup",
    },
@@ -102,7 +102,7 @@ const getInvolvedSections = [
    {
      title: "Donate Tea",
      description:
-       "All the tea we serve is donated by our community. A circular tea economy for all!",
+       "All the tea we serve is donated by our community. A circular tea economy!",
      ctaText: "Tea Donation Guidelines",
      url: "/donate-tea",
    },
