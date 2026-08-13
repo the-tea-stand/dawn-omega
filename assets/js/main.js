@@ -3,7 +3,18 @@ $(function () {
   featured();
   pagination(false);
   watchPortalListBtn();
+  closeNavDropdownOnOutsideClick();
 });
+
+function closeNavDropdownOnOutsideClick() {
+  $(document).on("click", function (e) {
+    $(".nav-dropdown details[open]").each(function () {
+      if (!$(this).is(e.target) && $(this).has(e.target).length === 0) {
+        this.removeAttribute("open");
+      }
+    });
+  });
+}
 
 function watchPortalListBtn() {
   const observer = new MutationObserver(() => {

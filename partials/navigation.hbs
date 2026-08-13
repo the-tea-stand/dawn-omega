@@ -1,0 +1,34 @@
+<div class="my-fancy-nav-wrapper">
+    <ul class="nav">
+        {{!-- Regular nav items, everything except the ones grouped into the dropdown below --}}
+        {{#foreach navigation}}
+        {{#match slug "=" "about"}}
+        {{else match slug "=" "faq"}}
+        {{else match slug "=" "resources"}}
+        {{else}}
+        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute=" true"}}">{{label}}</a></li>
+        {{/match}}
+        {{/foreach}}
+
+        {{!-- About / FAQ / Resources grouped into a single dropdown --}}
+        <li class="nav-dropdown">
+            <details>
+                <summary class="nav-dropdown-toggle">About</summary>
+                <div class="nav-dropdown-menu">
+                    {{#foreach navigation}}
+                    {{#match slug "=" "about"}}
+                    <a class="nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="
+                        true"}}">{{label}}</a>
+                    {{else match slug "=" "faq"}}
+                    <a class="nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="
+                        true"}}">{{label}}</a>
+                    {{else match slug "=" "resources"}}
+                    <a class="nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="
+                        true"}}">{{label}}</a>
+                    {{/match}}
+                    {{/foreach}}
+                </div>
+            </details>
+        </li>
+    </ul>
+</div>
