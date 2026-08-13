@@ -14,10 +14,10 @@ const description =
 const articlesTitle = "Our Newsletter";
 
 const programmingSubtitle =
-  "the tea stand takes many forms.<br/>explore our core event types below.";
+  "the tea stand takes many forms";
 
 const newsletterSubtitle =
-  "we prefer the slow pace of email.<br/>it's free, just like the tea!";
+  "we prefer the slow pace of email";
 
 // Modality cards on homepage
 //
