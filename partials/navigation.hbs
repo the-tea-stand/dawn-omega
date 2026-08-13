@@ -8,7 +8,7 @@
                 <summary class="nav-dropdown-toggle">About</summary>
                 <div class="nav-dropdown-menu">
                     {{#foreach navigation}}
-                    {{#match slug "=" "about"}}
+                    {{#match slug "=" "introduction"}}
                     <a class="nav-{{slug}}{{#if current}} nav-current{{/if}}"
                         href='{{url absolute="true"}}'>{{label}}</a>
                     {{else match slug "=" "faq"}}
