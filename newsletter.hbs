@@ -49,6 +49,15 @@
         </div>
     </div>
     </div>
+
+    {{#get "posts" as |posts|}}
+    <div class="post-feed gh-feed gh-canvas">
+        {{#foreach posts}}
+        {{> "loop"}}
+        {{/foreach}}
+    </div>
+    {{/get}}
+
     </main>
 
     <script src="{{asset 'js/settings.js'}}"></script>
