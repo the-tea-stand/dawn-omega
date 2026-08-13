@@ -137,7 +137,7 @@ Our monthly newsletter is forever free and the best way to stay updated on all T
 Each newsletter features upcoming events, housekeeping notes, and deeper dives into our programming and philosophy.
 </div>
 <div>
-Explore our past newsletters below.
+Scroll down to explore our past newsletters.
 </div>`;
 
 // Membership Tiers and Perks
