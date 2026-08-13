@@ -11,7 +11,7 @@
 const description =
   "<span>We serve free tea to cultivate trust<br/>& connection around Brooklyn.<br/><br/>To date, we've served<br/>12,918 cups of free tea!</span>";
 
-const articlesTitle = "Our Newsletter";
+const articlesTitle = "Newsletter";
 
 const programmingSubtitle =
   "the tea stand takes many forms";
