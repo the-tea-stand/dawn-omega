@@ -2,7 +2,8 @@
     <ul class="nav">
         {{!-- Regular nav items, everything except the ones grouped into the dropdown below --}}
         {{#unless isSecondary}}
-        <li class="nav-dropdown">
+        {{!-- Top nav bar (above the hamburger breakpoint): collapse About/FAQ/Resources into a dropdown --}}
+        <li class="nav-dropdown nav-dropdown-desktop">
             <details>
                 <summary class="nav-dropdown-toggle">About</summary>
                 <div class="nav-dropdown-menu">
@@ -21,6 +22,16 @@
                 </div>
             </details>
         </li>
+        {{!-- Hamburger menu (below the breakpoint): render About/FAQ/Resources as plain links --}}
+        {{#foreach navigation}}
+        {{#match slug "=" "about"}}
+        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}} nav-dropdown-mobile"><a href='{{url absolute="true"}}'>{{label}}</a></li>
+        {{else match slug "=" "faq"}}
+        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}} nav-dropdown-mobile"><a href='{{url absolute="true"}}'>{{label}}</a></li>
+        {{else match slug "=" "resources"}}
+        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}} nav-dropdown-mobile"><a href='{{url absolute="true"}}'>{{label}}</a></li>
+        {{/match}}
+        {{/foreach}}
         {{/unless}}
         {{#foreach navigation}}
         {{#match slug "=" "about"}}
