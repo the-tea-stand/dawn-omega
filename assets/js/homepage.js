@@ -31,7 +31,7 @@ const populateHomepageCards = () => {
     let section = document.getElementById("card-container");
     cards.map((card) => {
       const cardElement = `
-        <a href="${card.url}">
+        <a href="${card.url}" class="cover-card-link">
             <div class="cover-card" style="background-image: url(${card.image});">
                 <div class="gradient">
                     <span class="card-title">
@@ -57,7 +57,7 @@ const populateGetInvolvedSection = () => {
   if (getInvolvedSections && getInvolvedSections.length > 0) {
     section.innerHTML += `<h2 class="section-title">Get Involved</h2>`;
     const teacup = document.createElement("div");
-    teacup.className = "teacup-break mt-6";
+    teacup.className = "teacup-break mt-3";
     teacup.textContent = "🍵";
     section.after(teacup);
   }
