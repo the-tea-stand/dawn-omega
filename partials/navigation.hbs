@@ -1,6 +1,7 @@
 <div class="my-fancy-nav-wrapper">
     <ul class="nav">
         {{!-- Regular nav items, everything except the ones grouped into the dropdown below --}}
+        {{#unless isSecondary}}
         <li class="nav-dropdown">
             <details>
                 <summary class="nav-dropdown-toggle">About</summary>
@@ -20,6 +21,7 @@
                 </div>
             </details>
         </li>
+        {{/unless}}
         {{#foreach navigation}}
         {{#match slug "=" "about"}}
         {{else match slug "=" "faq"}}
