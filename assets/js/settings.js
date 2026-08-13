@@ -129,7 +129,16 @@ Together, we can build local autonomy, practice reciprocity, and continue servin
 
 // Newsletter Page Text
 //
-const newsletterSignupDescription = ``;
+const newsletterSignupDescription = `
+<div>
+Our monthly newsletter is forever free and the best way to stay updated on all Tea Stand happenings. Long term, we plan to leave social media and rely on email for all communications.
+</div>
+<div>
+Each newsletter features upcoming events, housekeeping notes, and deeper dives into our programming and philosophy.
+</div>
+<div>
+Explore our past newsletters below.
+</div>`;
 
 // Membership Tiers and Perks
 //
