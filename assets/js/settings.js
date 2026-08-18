@@ -117,7 +117,7 @@ const getInvolvedSections = [
 // Description below signup and above tiers
 const signupDescription = `
 <div>
-Members financially and spiritually make this project possible <3
+Members make this project possible through monthly contributions <3
 </div>
 <div>
 In exchange for your support, you'll receive perks like seasonal tea boxes, discounts, and handmade teaware. Explore the tiers below.
