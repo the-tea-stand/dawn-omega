@@ -120,7 +120,7 @@ const signupDescription = `
 Members financially and spiritually make this project possible <3
 </div>
 <div>
-In exchange for your support, you'll receive perks like seasonal tea boxes and locally made teaware. Explore the tiers below!
+In exchange for your support, you'll receive perks like seasonal tea boxes, discounts, and locally made teaware. Explore the tiers below.
 </div>
 <div>
 Together, we can build local autonomy, cultivate trust, and continue serving FREE TEA FOR ALL!
