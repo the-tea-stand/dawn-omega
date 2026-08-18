@@ -117,13 +117,10 @@ const getInvolvedSections = [
 // Description below signup and above tiers
 const signupDescription = `
 <div>
-The Tea Stand serves free tea to create spaces for local connection.
+Members financially and spiritually sustain this project, and in exchange receive perks like seasonal tea boxes and locally made teaware. Explore the tiers below!
 </div>
 <div>
-Our members make this possible, and in exchange receive perks like seasonal tea boxes and locally made teapots. Explore the tiers below!
-</div>
-<div>
-Together, we can build local autonomy, practice reciprocity, and continue serving FREE TEA FOR ALL!
+Together, we can build local autonomy, cultivate trust, and continue serving FREE TEA FOR ALL!
 </div>
 `;
 
