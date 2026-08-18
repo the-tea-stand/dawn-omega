@@ -155,7 +155,7 @@ let membershipTiers = [
         state: "bold",
         title: "📍 Vote on Tea Stand locations",
         subtitle:
-          "Once per season, submit a public park you'd like us to serve free tea at. Winner is randomly selected!"
+          "Once per season, submit a public park where you'd like us to serve free tea. One lucky submission is randomly selected each time!"
       },
       {
         state: "bold",
