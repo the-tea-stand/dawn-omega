@@ -117,11 +117,10 @@ const getInvolvedSections = [
 // Description below signup and above tiers
 const signupDescription = `
 <div>
-Members financially and spiritually sustain this project.
+Members financially and spiritually make this project possible <3
 </div>
 <div>
 In exchange for your support, you'll receive perks like seasonal tea boxes and locally made teaware. Explore the tiers below!
-<div>
 </div>
 <div>
 Together, we can build local autonomy, cultivate trust, and continue serving FREE TEA FOR ALL!
