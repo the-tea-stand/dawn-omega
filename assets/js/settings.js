@@ -188,7 +188,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "🍵 Custom Mug",
-        subtitle: "A 12oz enamel cup with \"free tea for all\" printed on the side. Perfect for tea in the park.",
+        subtitle: "A 12oz, green enamel mug with \"free tea for all\" printed on the side. Perfect for an outdoor cup of tea.",
       },
       {
         state: "bold",
@@ -198,7 +198,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Sipper Perks Included",
-        subtitle: "Discounts, town halls, and a sticker.",
+        subtitle: "Voting, discounts, town halls, and a sticker.",
       },
     ],
   },
@@ -238,7 +238,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Sipper Perks Included",
-        subtitle: "Discounts, town halls, and a sticker.",
+        subtitle: "Voting, discounts, town halls, and a sticker.",
       },
     ],
   },
@@ -283,7 +283,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Sipper Perks Included",
-        subtitle: "Discounts, town halls, and a sticker.",
+        subtitle: "Voting, discounts, town halls, and a sticker.",
       },
     ],
   },
