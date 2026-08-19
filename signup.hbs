@@ -245,13 +245,15 @@
         // the click handler can't fire.
         function disableSubscribedPlans() {
             var paidAmounts = []
+            var paidNode = document.getElementById("membership-paid")
+            var isPaid = paidNode && paidNode.innerHTML.trim() === "true"
             document.querySelectorAll(".member-subscription").forEach(function (node) {
                 var amount = parseInt(node.textContent.trim(), 10)
                 if (!isNaN(amount)) {
                     paidAmounts.push(amount)
                 }
             })
-            if (!paidAmounts.length) {
+            if (!paidAmounts.length || !isPaid) {
                 return
             }
             document.querySelectorAll(".plan-button[data-monthly-price]").forEach(function (button) {
