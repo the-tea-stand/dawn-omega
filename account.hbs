@@ -57,10 +57,12 @@
 
         </div>
         <div class="flex-col">
+            {{#if @member.paid}}
             <div class="account-cancel-container">
                 {{#foreach @member.subscriptions}} {{cancel_link class="account-cancel-cta"
                 errorClass="account-cancel-error"}} {{/foreach}}
             </div>
+            {{/if}}
             {{else}}
             <div class="members-description-container">
                 <p>Please <a href="#/portal/signin" data-portal="signin">sign in</a> to view your account.</p>
