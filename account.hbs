@@ -25,10 +25,13 @@
             <section class="account-section">
                 <div class="account-details">
                     {{#foreach @member.subscriptions as |sub|}}
+                    {{!-- show active + payment-issue states, not trialing/canceled/paused --}}
+                    {{#match "active,unpaid,past_due" "~" sub.status}}
                     <span class="account-value">{{sub.tier.name}}</span>
                     <span class="value-description">${{price sub.plan.amount}}/{{sub.plan.interval}}</span>
                     <span class="value-description">{{#if sub.cancel_at_period_end}}Ends{{else}}Renews{{/if}} {{date
                         sub.current_period_end format="MMMM D, YYYY"}}</span>
+                    {{/match}}
                     {{/foreach}}
                 </div>
                 <a class="account-cta" href="/signup">Change</a>
@@ -38,8 +41,10 @@
             <section class="account-section">
                 <div class="account-details">
                     {{#foreach @member.subscriptions as |sub|}}
+                    {{#match "active,unpaid,past_due" "~" sub.status}}
                     <span class="account-value">Billing</span>
                     <span class="value-description">•••• •••• •••• {{sub.default_payment_card_last4}}</span>
+                    {{/match}}
                     {{/foreach}}
                 </div>
                 <a class="account-cta" href="javascript:" data-members-manage-billing>Update</a>
@@ -59,8 +64,8 @@
         <div class="flex-col">
             {{#if @member.paid}}
             <div class="account-cancel-container">
-                {{#foreach @member.subscriptions}} {{cancel_link class="account-cancel-cta"
-                errorClass="account-cancel-error"}} {{/foreach}}
+                {{#foreach @member.subscriptions as |sub|}} {{#match "active,unpaid,past_due" "~" sub.status}}
+                {{cancel_link class="account-cancel-cta" errorClass="account-cancel-error"}} {{/match}} {{/foreach}}
             </div>
             {{/if}}
             {{else}}
