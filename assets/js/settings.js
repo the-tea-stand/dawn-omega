@@ -42,8 +42,8 @@ const newsletterSubtitle =
 
 const cards = [
   {
-    title: "⛩️ Popups",
-    url: "https://www.theteastand.org/popups/",
+    title: "⛩️ Park Popups",
+    url: "https://www.theteastand.org/park-popups/",
     image: "https://i.postimg.cc/k59bH6XL/popup.png",
   },
   {
