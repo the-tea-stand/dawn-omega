@@ -197,7 +197,7 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "🛒 20% off merch",
+        title: "🛒 20% off Merch",
         subtitle:
           "Receive 20% discount on all items on our online marketplace. Plus free shipping!",
       },
@@ -232,7 +232,7 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "🛒 50% off merch",
+        title: "🛒 50% off Merch",
         subtitle:
           "Receive 50% discount on all items on our online marketplace. Plus free shipping!",
       },
@@ -268,7 +268,7 @@ let membershipTiers = [
         state: "bold",
         title: "🆓 Free Merch",
         subtitle:
-          "All items on our online marketplace are 100% free (up to $100 per year).",
+          "All items on our online marketplace are 100% free (up to $100 per year). Plus free shipping!",
       },
       {
         state: "bold",
