@@ -152,25 +152,25 @@ let membershipTiers = [
     perks: [
       {
         state: "bold",
-        title: "📍 Community Voting",
+        title: "📍 Vote on Tea Stand locations",
         subtitle:
           "Once per season, submit a public park where you'd like us to serve free tea. One lucky submission is randomly selected each time!"
       },
       {
         state: "bold",
-        title: "🎟️ Discounts",
+        title: "🎟️ Discounts at tea shops",
         subtitle:
           "Receive up to 20% off at several tea shops & small businesses, like Brooklyn Tea.",
       },
       {
         state: "bold",
-        title: "🏠 Town Halls",
-        subtitle: "Access to virtual livestreams with Q&A.",
+        title: "🏠 Seasonal Town Halls",
+        subtitle: "Join our virtual livestreams where we share behind-the-scenes updates and host Q&A.",
       },
       {
         state: "bold",
-        title: '🟢 "free tea for all" sticker',
-        subtitle: "Put it on your thermos or on the sidewalk :)",
+        title: '🟢 Sticker',
+        subtitle: 'Our classic "free tea for all" circle sticker.',
       },
     ],
   },
@@ -228,7 +228,7 @@ let membershipTiers = [
         state: "bold",
         title: "🔮 Future Space",
         subtitle:
-          "Free entry to Future Space's weekly Open Hours event series. One free entry per month.",
+          "Free entry to Future Space's (Ridgewood) Open Hours event series. One free entry per month.",
       },
       {
         state: "bold",
@@ -250,7 +250,7 @@ let membershipTiers = [
         state: "bold",
         title: "🫖 Handmade Teapot",
         subtitle:
-          "An artisanal \"easy gaiwan\" teapot (pictured above) made by local ceramicist Lilian Wu.",
+          "An artisanal \"easy gaiwan\" (pictured above) made by local ceramicist Lilian Wu.",
       },
       {
         state: "bold",
@@ -262,12 +262,12 @@ let membershipTiers = [
         state: "bold",
         title: "🆓 Free Merch",
         subtitle:
-          "All items in The Tea Stand marketplace are 100% free (up to $100 per year).",
+          "All items in our online marketplace are 100% free (up to $100 per year).",
       },
       {
         state: "bold",
         title: "🌱 Brooklyn Tea Tour",
-        subtitle: "A tour of DONA's tea warehouse in Bushwick.",
+        subtitle: "Tour the tea warehouse of DONA, an independent tea company based in Bushwick.",
       },
       {
         state: "bold",
