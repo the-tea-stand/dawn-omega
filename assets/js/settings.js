@@ -152,13 +152,13 @@ let membershipTiers = [
     perks: [
       {
         state: "bold",
-        title: "📍 Vote on Tea Stand locations",
+        title: "📍 Vote on Tea Stand Locations",
         subtitle:
           "Once per season, submit a public park where you'd like us to serve free tea. One lucky submission is randomly selected each time!"
       },
       {
         state: "bold",
-        title: "🎟️ Discounts at tea shops",
+        title: "🎟️ Discounts at Tea Shops",
         subtitle:
           "Receive up to 20% off at several tea shops & small businesses, like Brooklyn Tea.",
       },
