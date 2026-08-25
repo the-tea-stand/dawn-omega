@@ -160,7 +160,7 @@ let membershipTiers = [
         state: "bold",
         title: "🎟️ Discounts",
         subtitle:
-          "Receive up to 20% off at several local tea shops & small businesses, like Brooklyn Tea.",
+          "Receive up to 20% off at several tea shops & small businesses, like Brooklyn Tea.",
       },
       {
         state: "bold",
@@ -208,7 +208,7 @@ let membershipTiers = [
     perks: [
       {
         state: "bold",
-        title: "🪷 Tea Ceremonies",
+        title: "🪷 Annual Tea Ceremonies",
         subtitle:
           "Partake in educational, intimate tea ceremonies led by tea practitioner Tim Chacko once per year. Offered in-person & virtual.",
       },
