@@ -299,10 +299,10 @@ let membershipTiers = [
 
 const membersDescription = `
 <div>
-<b>To gift a membership:</b> sign up with your own info and reply to your welcome email with the giftee's info.
+<b>To gift a membership:</b> simply sign up with your own info and reply to your welcome email with the giftee's info.
 </div>
 <div>
-<b>For those outside the US:</b> due to high shipping prices, we cannot offer the same perks for Steepers or Big Steepers. Alternatives include increasing your contribution amount OR less frequent shipments. Reach out to theteastandnyc@gmail.com and we'll work something out :)
+<b>For those outside the US:</b> due to high shipping prices, we cannot offer the perks as listed above (except for Sippers). Alternatives include less frequent shipments and/or increasing your monthly contribution amount. Reach out to theteastandnyc@gmail.com and we'll work something out!
 </div>
 <div class="text-align-center">
 🍵
