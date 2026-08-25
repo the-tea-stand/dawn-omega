@@ -197,6 +197,12 @@ let membershipTiers = [
       },
       {
         state: "bold",
+        title: "🛒 20% Off Merch",
+        subtitle:
+          "Receive 20% discount on all items on our online marketplace. Plus free shipping!",
+      },
+      {
+        state: "bold",
         title: "➕ All Sipper Perks",
         subtitle: "Voting, discounts, town halls, and a sticker.",
       },
@@ -226,9 +232,9 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "🔮 Future Space",
+        title: "🛒 50% Off Merch",
         subtitle:
-          "Free entry to Future Space's (Ridgewood) Open Hours event series. One free entry per month.",
+          "Receive 50% discount on all items on our online marketplace. Plus free shipping!",
       },
       {
         state: "bold",
@@ -262,7 +268,7 @@ let membershipTiers = [
         state: "bold",
         title: "🆓 Free Merch",
         subtitle:
-          "All items in our online marketplace are 100% free (up to $100 per year).",
+          "All items on our online marketplace are 100% free (up to $100 per year).",
       },
       {
         state: "bold",
