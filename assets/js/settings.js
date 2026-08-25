@@ -197,7 +197,7 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "🛒 20% Off Merch",
+        title: "🛒 20% off merch",
         subtitle:
           "Receive 20% discount on all items on our online marketplace. Plus free shipping!",
       },
@@ -232,7 +232,7 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "🛒 50% Off Merch",
+        title: "🛒 50% off merch",
         subtitle:
           "Receive 50% discount on all items on our online marketplace. Plus free shipping!",
       },
@@ -279,7 +279,7 @@ let membershipTiers = [
         state: "bold",
         title: "➕ All Big Steeper Perks",
         subtitle:
-          "Tea ceremonies, tea towel, Ambient Church giveaways, and Future Space free entry.",
+          "Tea ceremonies, tea towel, and Ambient Church ticket giveaways.",
       },
       {
         state: "bold",
