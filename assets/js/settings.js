@@ -152,13 +152,13 @@ let membershipTiers = [
     perks: [
       {
         state: "bold",
-        title: "📍 Vote on Tea Stand locations",
+        title: "📍 Community Voting",
         subtitle:
           "Once per season, submit a public park where you'd like us to serve free tea. One lucky submission is randomly selected each time!"
       },
       {
         state: "bold",
-        title: "🎟️ Discounts at local tea shops",
+        title: "🎟️ Discounts",
         subtitle:
           "Receive up to 20% off at several local tea shops & small businesses, like Brooklyn Tea.",
       },
@@ -197,7 +197,7 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "➕ All Sipper Perks Included",
+        title: "➕ All Sipper Perks",
         subtitle: "Voting, discounts, town halls, and a sticker.",
       },
     ],
@@ -232,12 +232,12 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "➕ All Steeper Perks Included",
+        title: "➕ All Steeper Perks",
         subtitle: "Tea boxes, custom mug, and issues of bōcha.",
       },
       {
         state: "bold",
-        title: "➕ All Sipper Perks Included",
+        title: "➕ All Sipper Perks",
         subtitle: "Voting, discounts, town halls, and a sticker.",
       },
     ],
@@ -271,18 +271,18 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "➕ All Big Steeper Perks Included",
+        title: "➕ All Big Steeper Perks",
         subtitle:
           "Tea ceremonies, tea towel, Ambient Church giveaways, and Future Space free entry.",
       },
       {
         state: "bold",
-        title: "➕ All Steeper Perks Included",
+        title: "➕ All Steeper Perks",
         subtitle: "Tea boxes, custom mug, and issues of bōcha.",
       },
       {
         state: "bold",
-        title: "➕ All Sipper Perks Included",
+        title: "➕ All Sipper Perks",
         subtitle: "Voting, discounts, town halls, and a sticker.",
       },
     ],
