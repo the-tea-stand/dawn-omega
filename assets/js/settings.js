@@ -266,14 +266,14 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "🆓 Free Merch",
-        subtitle:
-          "All items on our online merch store are 100% free (up to $100 per year). Plus free shipping!",
+        title: "🌱 Brooklyn Tea Tour",
+        subtitle: "Tour the tea warehouse of DONA, an independent tea company based in Bushwick.",
       },
       {
         state: "bold",
-        title: "🌱 Brooklyn Tea Tour",
-        subtitle: "Tour the tea warehouse of DONA, an independent tea company based in Bushwick.",
+        title: "🛒 FREE Merch",
+        subtitle:
+          "All items on our online merch store are 100% free (up to $100 per year). Plus free shipping!",
       },
       {
         state: "bold",
