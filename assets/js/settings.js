@@ -302,7 +302,7 @@ const membersDescription = `
 <b>To gift a membership:</b> simply sign up with your own info and reply to your welcome email with the giftee's info.
 </div>
 <div>
-<b>For those outside the US:</b> due to high shipping prices, we cannot offer the perks as listed above (except for Sippers). Alternatives include less frequent shipments and/or increasing your monthly contribution amount. Reach out to theteastandnyc@gmail.com and we'll work something out!
+<b>For those outside the US:</b> due to high shipping prices, we cannot offer the perks as listed above (except for Sippers). Alternatives include less frequent shipments and/or increasing your monthly contribution amount. Reach out to miles@theteastand.org and we'll work something out!
 </div>
 <div class="text-align-center">
 🍵
