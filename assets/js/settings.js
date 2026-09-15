@@ -123,7 +123,7 @@ Our members make this all this possible — together, we can build local autonom
 In exchange for your support, you'll receive perks like quarterly tea boxes, discounts, and locally made teaware.
 </div>
 <div>
-↓ Explore the tiers below ↓.
+↓ Explore the tiers below ↓
 </div>
 `;
 
