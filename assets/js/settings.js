@@ -117,13 +117,13 @@ const getInvolvedSections = [
 // Description below signup and above tiers
 const signupDescription = `
 <div>
-Members make this project possible through monthly contributions <3
+Members make this project possible through monthly contributions — together, we can build local autonomy, cultivate trust, and keep serving FREE TEA FOR ALL!
 </div>
 <div>
-In exchange for your support, you'll receive perks like seasonal tea boxes, discounts, and handmade teaware. Explore the tiers below.
+In exchange for your support, you'll receive perks like quarterly tea boxes, discounts, and locally made teaware.
 </div>
 <div>
-Together, we can build local autonomy, cultivate trust, and continue serving FREE TEA FOR ALL!
+↓ Explore the tiers below ↓.
 </div>
 `;
 
