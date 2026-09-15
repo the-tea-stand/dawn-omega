@@ -188,7 +188,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "🍵 Custom Mug",
-        subtitle: "Green enamel mug with \"free tea for all\" etched on the side. Perfect for an outdoor cuppa.",
+        subtitle: "Green enamel mug with \"free tea for all\" etched on the side. Perfect for tea outdoors.",
       },
       {
         state: "bold",
