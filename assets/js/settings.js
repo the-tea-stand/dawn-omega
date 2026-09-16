@@ -117,7 +117,7 @@ const getInvolvedSections = [
 // Description below signup and above tiers
 const signupDescription = `
 <div>
-Our members make all this possible — together, we are cultivating neighborhood trust, building local autonomy, and serving FREE TEA FOR ALL!
+Our members make all this possible — together, we are cultivating local trust, building autonomy, and serving FREE TEA FOR ALL!
 </div>
 <div>
 In exchange for your support, you'll receive perks like quarterly tea boxes and locally made teaware.
