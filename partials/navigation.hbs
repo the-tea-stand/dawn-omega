@@ -2,13 +2,13 @@
     <ul class="nav">
         {{!-- Regular nav items, everything except the ones grouped into the dropdown below --}}
         {{#unless isSecondary}}
-        {{!-- Top nav bar (above the hamburger breakpoint): collapse Introduction/FAQ/Resources into a dropdown --}}
+        {{!-- Top nav bar (above the hamburger breakpoint): collapse Overview/FAQ/Resources into a dropdown --}}
         <li class="nav-dropdown nav-dropdown-desktop">
             <details>
                 <summary class="nav-dropdown-toggle">About</summary>
                 <div class="nav-dropdown-menu">
                     {{#foreach navigation}}
-                    {{#match slug "=" "introduction"}}
+                    {{#match slug "=" "overview"}}
                     <a class="nav-{{slug}}{{#if current}} nav-current{{/if}}"
                         href='{{url absolute="true"}}'>{{label}}</a>
                     {{else match slug "=" "faq"}}
@@ -22,9 +22,9 @@
                 </div>
             </details>
         </li>
-        {{!-- Hamburger menu (below the breakpoint): render Introduction/FAQ/Resources as plain links --}}
+        {{!-- Hamburger menu (below the breakpoint): render Overview/FAQ/Resources as plain links --}}
         {{#foreach navigation}}
-        {{#match slug "=" "introduction"}}
+        {{#match slug "=" "overview"}}
         <li class="nav-{{slug}}{{#if current}} nav-current{{/if}} nav-dropdown-mobile"><a href='{{url absolute="true"}}'>{{label}}</a></li>
         {{else match slug "=" "faq"}}
         <li class="nav-{{slug}}{{#if current}} nav-current{{/if}} nav-dropdown-mobile"><a href='{{url absolute="true"}}'>{{label}}</a></li>
@@ -34,7 +34,7 @@
         {{/foreach}}
         {{/unless}}
         {{#foreach navigation}}
-        {{#match slug "=" "introduction"}}
+        {{#match slug "=" "overview"}}
         {{else match slug "=" "faq"}}
         {{else match slug "=" "resources"}}
         {{else}}
