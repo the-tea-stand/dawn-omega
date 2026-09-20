@@ -197,9 +197,9 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "🛒 Discounted Merch (20%)",
+        title: "🛒 Discounted Merch (25%)",
         subtitle:
-          "Receive 20% off on all items on our online merch store. Plus free shipping!",
+          "Receive 25% off on all items on our online merch store. Plus free shipping!",
       },
       {
         state: "bold",
