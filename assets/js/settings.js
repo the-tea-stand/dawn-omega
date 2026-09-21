@@ -183,7 +183,7 @@ let membershipTiers = [
         state: "bold",
         title: "📗 bōcha: our quarterly zine",
         subtitle:
-          "Every issue of our riso-printed, collaborative zine delivered to your door. Published on the solstices + equinoxes (4x/year). Folded by many hands.",
+          "Every issue of our riso-printed, collaborative zine delivered to your door. Published on the solstices + equinoxes (4x/year).",
       },
       {
         state: "bold",
@@ -239,7 +239,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Steeper Perks",
-        subtitle: "Issues of bōcha, enamel mug, and seasonal teas.",
+        subtitle: "Issues of bōcha, enamel mug, and curated teas.",
       },
       {
         state: "bold",
@@ -284,7 +284,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Steeper Perks",
-        subtitle: "Issues of bōcha, enamel mug, and seasonal teas.",
+        subtitle: "Issues of bōcha, enamel mug, and curated teas.",
       },
       {
         state: "bold",
