@@ -222,7 +222,7 @@ let membershipTiers = [
         state: "bold",
         title: "🧵 Embroidered Tea Towel",
         subtitle:
-          "Linen tea towel with custom hand-embroidery. Available in brown or green, your choice.",
+          "Linen tea towel with \"free tea for all\" embroidery. Available in brown or green, your choice!",
       },
       {
         state: "bold",
@@ -256,7 +256,7 @@ let membershipTiers = [
         state: "bold",
         title: "🫖 Handmade Teapot",
         subtitle:
-          "An artisanal \"easy gaiwan\" (pictured above) made by local ceramicist Lilian Wu. Each ware is unique!",
+          "An artisanal \"easy gaiwan\" teapot made by local ceramicist Lilian Wu. Example photo above, though each one is unique!",
       },
       {
         state: "bold",
