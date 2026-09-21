@@ -262,7 +262,7 @@ let membershipTiers = [
         state: "bold",
         title: "🏺 Custom Teaware",
         subtitle:
-          "Receive locally made teaware, like tea cups & tea pets, every year on the winter solstice. Over time, you'll receive an entire tea set, all handmade.",
+          "Receive locally made teaware, like tea cups & tea pets, every year on the winter solstice. Over time, you'll receive an entire tea set!",
       },
       {
         state: "bold",
