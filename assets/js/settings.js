@@ -120,7 +120,7 @@ const signupDescription = `
 Our members make all this possible — together, we are cultivating local trust, building autonomy, and serving FREE TEA FOR ALL!
 </div>
 <div>
-In exchange for your support, you'll receive perks like quarterly tea boxes and locally made teaware.
+In exchange for your support, you'll receive perks like our quarterly zine and locally made teaware.
 </div>
 <div>
 ↓ Explore the tiers below ↓
@@ -239,7 +239,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Steeper Perks",
-        subtitle: "Issues of bōcha, enamel mug, and curated teas.",
+        subtitle: "bōcha issues, enamel mug, and curated teas.",
       },
       {
         state: "bold",
@@ -284,7 +284,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Steeper Perks",
-        subtitle: "Issues of bōcha, enamel mug, and curated teas.",
+        subtitle: "bōcha issues, enamel mug, and curated teas.",
       },
       {
         state: "bold",
