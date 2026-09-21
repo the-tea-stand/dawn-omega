@@ -181,9 +181,9 @@ let membershipTiers = [
     perks: [
       {
         state: "bold",
-        title: "📦 Tea Boxes",
+        title: "📗 bōcha: our quarterly zine",
         subtitle:
-          "Boxes of curated tea & locally illustrated postcards delivered to your door, 4x per year.",
+          "Receive every issue of our riso-printed zine delivered to your door. Published every solstice + equinox (4x/year). Created by many minds, folded by many hands.",
       },
       {
         state: "bold",
@@ -192,8 +192,8 @@ let membershipTiers = [
       },
       {
         state: "bold",
-        title: "📗 bōcha",
-        subtitle: "Receive issues of our biannual community zine.",
+        title: "🌿 Seasonal Teas + Storage Tins",
+        subtitle: "Receive 3 tea bags of unique, curated teas with each zine delivery (4x/year). Plus a set of 3 custom, stackable tins to store your teas!",
       },
       {
         state: "bold",
@@ -239,7 +239,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Steeper Perks",
-        subtitle: "Tea boxes, custom mug, and issues of bōcha.",
+        subtitle: "Issues of bōcha, enamel mug, and seasonal teas.",
       },
       {
         state: "bold",
@@ -284,7 +284,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "➕ All Steeper Perks",
-        subtitle: "Tea boxes, custom mug, and issues of bōcha.",
+        subtitle: "Issues of bōcha, enamel mug, and seasonal teas.",
       },
       {
         state: "bold",
