@@ -199,7 +199,7 @@ let membershipTiers = [
         state: "bold",
         title: "🛒 Merch Discounts (25%)",
         subtitle:
-          "Receive 25% off on all items on our online merch store. Plus free shipping!",
+          "Receive 25% off on all items on our online merch store. Shipping is free :)",
       },
       {
         state: "bold",
@@ -234,7 +234,7 @@ let membershipTiers = [
         state: "bold",
         title: "🛒 Merch Discounts (50%)",
         subtitle:
-          "Receive 50% off on all items on our online merch store. Plus free shipping!",
+          "Receive 50% off on all items on our online merch store. Shipping is free :)",
       },
       {
         state: "bold",
@@ -273,7 +273,7 @@ let membershipTiers = [
         state: "bold",
         title: "🛒 FREE Merch",
         subtitle:
-          "All items on our online merch store are 100% free (up to $100 per year). Plus free shipping!",
+          "All items on our online merch store are 100% free (up to $100 per year). Shipping is free :)",
       },
       {
         state: "bold",
