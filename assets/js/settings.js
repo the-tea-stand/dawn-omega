@@ -188,7 +188,7 @@ let membershipTiers = [
       {
         state: "bold",
         title: "🌿 Seasonal Teas + Storage Tins",
-        subtitle: "Receive 3 tea bags of unique, curated teas with every zine delivery (4x/year). Plus, a set of 3 custom, stackable tins to store your teas!",
+        subtitle: "Receive 3 tea bags of unique, curated teas with every zine delivery (4x/year). You'll also receive a set of 3 custom, stackable tins for your teas!",
       },
       {
         state: "bold",
