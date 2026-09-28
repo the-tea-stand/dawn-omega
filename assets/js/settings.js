@@ -120,7 +120,7 @@ const signupDescription = `
 Our members make all this possible — together, we are cultivating local trust, building autonomy, and serving FREE TEA FOR ALL!
 </div>
 <div>
-In exchange for your support, you'll receive perks like our quarterly zine, <i>bōcha</i>, and handmade teaware, and more.
+In exchange for your support, you'll receive perks like our quarterly zine, locally made teaware, and more.
 </div>
 <div>
 ↓ Explore the tiers below ↓
