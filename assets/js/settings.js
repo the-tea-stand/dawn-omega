@@ -183,7 +183,7 @@ let membershipTiers = [
         state: "bold",
         title: "📗 bōcha: our quarterly zine",
         subtitle:
-          "Every issue of our riso-printed, collaborative zine delivered to your door. 20 pages per issue. Published on solstices + equinoxes (4x/year).",
+          "Every issue of our riso-printed, collaborative zine delivered to your door. 20 pages each. Published on solstices + equinoxes (4x/year).",
       },
       {
         state: "bold",
