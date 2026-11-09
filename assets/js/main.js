@@ -1,13 +1,16 @@
 $(function () {
   "use strict";
   featured();
-  pagination(false);
+  if (document.querySelector(".gh-loadmore")) {
+    pagination(false);
+  }
   watchPortalListBtn();
   closeNavDropdownOnOutsideClick();
 });
 
 function closeNavDropdownOnOutsideClick() {
   $(document).on("click", function (e) {
+    console.log("Clicked outside");
     $(".nav-dropdown details[open]").each(function () {
       if (!$(this).is(e.target) && $(this).has(e.target).length === 0) {
         this.removeAttribute("open");
