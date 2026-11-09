@@ -55,8 +55,6 @@
     padding: 3rem;
     margin-top: 4rem !important;
     text-align: center;
-    border-top: 5px solid var(--brand-color);
-    border-bottom: 1px solid var(--light-gray-color);
 }
 
 .single-cta-title {
@@ -66,6 +64,8 @@
 .single-cta-button {
     margin-bottom: 1rem;
     font-weight: 800 !important;
+    color: var(--color-white) !important;
+    text-decoration: none !important;
 }
 
 .single-cta-footer {
