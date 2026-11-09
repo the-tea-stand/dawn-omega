@@ -29,18 +29,6 @@
     position: relative;
 }
 
-@media (max-width: 767px) {
-    .nav-dropdown-desktop {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    .nav-dropdown-mobile {
-        display: none;
-    }
-}
-
 .nav-dropdown > details > summary.nav-dropdown-toggle {
     cursor: pointer;
     list-style: none;
@@ -58,6 +46,11 @@
     border-right: 0.25em solid transparent;
     border-top: 0.25em solid currentColor;
     vertical-align: middle;
+}
+
+.nav-dropdown > details[open] > summary.nav-dropdown-toggle::after {
+    border-top: 0;
+    border-bottom: 0.25em solid currentColor;
 }
 
 .nav-dropdown-menu {
@@ -92,3 +85,38 @@
     border-bottom-color: #fff6f0;
 }
 
+
+/* Hamburger menu: links render inline beneath the toggle, styled like the other nav links */
+@media (max-width: 767px) {
+    #gh-head .nav-dropdown > details > summary.nav-dropdown-toggle {
+        font-size: 2.6rem;
+        font-weight: 600;
+        text-align: center;
+        text-transform: none;
+    }
+
+    .nav-dropdown-menu {
+        position: static;
+        align-items: center;
+        gap: 12px;
+        width: fit-content;
+        margin: 16px auto 0;
+        padding: 0 0 0 20px;
+        background: none;
+        outline: none;
+        border-left: 2px solid var(--brand-color);
+        border-radius: 0;
+        white-space: normal;
+    }
+
+    /* Sub-links read as children of "About": smaller and lighter */
+    #gh-head .nav-dropdown-menu a {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .nav-dropdown-menu::before,
+    .nav-dropdown-menu::after {
+        display: none;
+    }
+}
